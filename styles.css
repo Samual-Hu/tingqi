@@ -49,3 +49,14 @@ html,body{height:auto;overflow:auto;}
 #review-tools-dialog #review-editor{display:flex;max-height:65dvh;min-height:300px;}#review-tools-dialog #review-editor[hidden]{display:none;}
 @media(min-width:1800px){.workspace{padding-left:40px;padding-right:40px;gap:44px;}.comment{font-size:26px;}}
 @media(max-width:950px){.workspace{grid-template-columns:1fr;padding:14px 18px;gap:18px;}.board-stage{position:static;}.board-host,.board-foot,.board-stage .analysis{width:min(100%,650px);}.topbar{margin:0 18px;gap:10px;}.lecture-panel{width:100%;}.comment{font-size:22px;}.game-heading h1{font-size:25px;}}
+
+/* The analysis uses the spare lower-right area, leaving the board its full height. */
+.board-host,.board-foot{width:min(100%,calc(100dvh - 110px));}
+.lecture-panel{display:flex;flex-direction:column;min-height:calc(100dvh - 100px);}
+.game-heading,.transcript{flex:none;}
+.lecture-panel>.analysis{width:100%;height:auto;min-height:115px;flex:none;margin-top:auto;padding:28px 0 0;}
+.lecture-panel .chart-wrap{height:65px;}
+.lecture-panel .analysis-heading h2{font-size:13px;}
+.lecture-panel .analysis-foot{font-size:10px;}
+.board-host svg,.comment{animation:none;transition:none;}
+@media(max-width:950px){.board-host,.board-foot{width:min(100%,650px);}.lecture-panel{min-height:0;}.lecture-panel>.analysis{margin-top:24px;}}

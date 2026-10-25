@@ -1,7 +1,7 @@
-import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs';
-import {createReviewEditor} from './review-editor.mjs';
+import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-review-layout2';
+import {createReviewEditor} from './review-editor.mjs?v=20261025-review-layout2';
 const $=id=>document.getElementById(id);
-document.querySelector('.board-stage').append(document.querySelector('.analysis'));
+document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
 document.querySelector('.tools-menu-content').addEventListener('click',event=>{if(event.target.closest('a,button'))document.querySelector('.tools-menu').open=false;});
 const appBase=new URL('./',import.meta.url);
 const routeParts=location.pathname.slice(appBase.pathname.length).split('/').filter(Boolean);
@@ -167,7 +167,7 @@ $('source-button').addEventListener('click',()=>$('source-dialog').showModal());
 $('close-source').addEventListener('click',()=>$('source-dialog').close());
 $('source-dialog').addEventListener('click',event=>{if(event.target===$('source-dialog')){const r=$('source-dialog').getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)$('source-dialog').close();}});
 document.addEventListener('keydown',event=>{
- if(!data||$('source-dialog').open||$('review-tools-dialog').open||event.target.closest('input,textarea,select,button,a,[contenteditable],[role=slider]'))return;
+ if(!data||$('source-dialog').open||$('review-tools-dialog').open||document.querySelector('.tools-menu').open||event.target.closest('input,textarea,select,[contenteditable],[role=slider]'))return;
  if(event.key==='ArrowRight'){event.preventDefault();moveTo(adjacentEvent(data.events,index,1,skipped));}
  else if(event.key==='ArrowLeft'){event.preventDefault();moveTo(adjacentEvent(data.events,index,-1,skipped));}
 });

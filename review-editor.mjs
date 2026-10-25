@@ -1,4 +1,4 @@
-import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,exportSgf,coordinate}from'./review-core.mjs';
+import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,exportSgf,coordinate}from'./review-core.mjs?v=20261025-review-layout2';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  const host=document.getElementById('review-editor'),toggle=document.getElementById('review-toggle'),key='tingqi-review-v1:'+data.id;
