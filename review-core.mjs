@@ -19,15 +19,18 @@ export function validateDraft(d,data){
  if(d?.version!==1||d.caseId!==data.id||d.baseVersion!==baseVersion(data))throw Error('整理稿与当前棋局版本不匹配；原稿保留，请使用对应版本。');
  const original=createDraft(data),source=new Map(original.sentences.map(s=>[s.id,s]));
  const ids=new Set(),events=new Map(data.events.map(e=>[e.id,e]));
- if(!Array.isArray(d.sentences)||d.sentences.length!==source.size||!Array.isArray(d.placements))throw Error('整理稿句子不完整');
- for(const s of d.sentences){const old=source.get(s.id);if(!old||ids.has(s.id)||typeof s.text!=='string'||s.text.length>20000||s.originalText!==old.originalText||JSON.stringify(s.sourceIds??[])!==JSON.stringify(old.sourceIds??[]))throw Error('句子或来源记录无效');ids.add(s.id);}
+ if(!Array.isArray(d.sentences)||!Array.isArray(d.placements))throw Error('整理稿句子不完整');
+ for(const s of d.sentences){const old=source.get(s.id);const added=s.userAdded===true&&s.id.startsWith('user:')&&events.has(s.id.slice(5))&&s.originalText===''&&JSON.stringify(s.sourceIds??[])==='[]';if((!old&&!added)||ids.has(s.id)||typeof s.text!=='string'||s.text.length>20000||old&&(s.originalText!==old.originalText||JSON.stringify(s.sourceIds??[])!==JSON.stringify(old.sourceIds??[])))throw Error('句子或来源记录无效');ids.add(s.id);}
+ if([...source.keys()].some(id=>!ids.has(id)))throw Error('整理稿句子不完整');
+ if(d.bookmark&&!events.has(d.bookmark.eventId))throw Error('审阅位置无效');
+ if(d.reviewedEventIds&&(!Array.isArray(d.reviewedEventIds)||new Set(d.reviewedEventIds).size!==d.reviewedEventIds.length||d.reviewedEventIds.some(id=>!events.has(id))))throw Error('审核记录无效');
  const assigned=new Set();for(const p of d.placements){if(!ids.has(p.sentenceId)||assigned.has(p.sentenceId)||!events.has(p.eventId)||positionKey(events.get(p.eventId))!==p.position)throw Error('归属记录无效');assigned.add(p.sentenceId);}
  const keys=new Set(data.events.map(positionKey));
  for(const [key,v] of Object.entries(d.points??{})){if(!keys.has(key)||!Array.isArray(v.point)||v.point.length!==2||v.point.some(n=>!Number.isInteger(n)||n<0||n>18)||!['B','W'].includes(v.color))throw Error('落点记录无效');const e=data.events.find(e=>positionKey(e)===key);if(e.board[v.point[1]*19+v.point[0]]!=='.')throw Error('提示点不能放到已有棋子上');}
  d.humanReview='in_progress';d.trainingEligible=false;return d;
 }
-export function assign(d,id,e){if(!d.sentences.some(s=>s.id===id&&!s.excluded))throw Error('句子不可用');d.placements=d.placements.filter(p=>p.sentenceId!==id);d.placements.push({sentenceId:id,position:positionKey(e),eventId:e.id});}
-export function detach(d,id){d.placements=d.placements.filter(p=>p.sentenceId!==id);}
+export function assign(d,id,e){if(!d.sentences.some(s=>s.id===id&&!s.excluded))throw Error('句子不可用');const affected=new Set([e.id,...d.placements.filter(p=>p.sentenceId===id).map(p=>p.eventId)]);d.reviewedEventIds=(d.reviewedEventIds??[]).filter(id=>!affected.has(id));d.placements=d.placements.filter(p=>p.sentenceId!==id);d.placements.push({sentenceId:id,position:positionKey(e),eventId:e.id});}
+export function detach(d,id){const affected=new Set(d.placements.filter(p=>p.sentenceId===id).map(p=>p.eventId));d.reviewedEventIds=(d.reviewedEventIds??[]).filter(id=>!affected.has(id));d.placements=d.placements.filter(p=>p.sentenceId!==id);}
 export function notesAt(d,e){const byId=new Map(d.sentences.map(s=>[s.id,s]));return d.placements.filter(p=>p.position===positionKey(e)).map(p=>byId.get(p.sentenceId)).filter(Boolean);}
 export function effectiveEvent(d,e){
  const result={...e},ids=d.placements.filter(p=>p.eventId===e.id).map(p=>p.sentenceId),notes=ids.map(id=>d.sentences.find(s=>s.id===id)).filter(Boolean);

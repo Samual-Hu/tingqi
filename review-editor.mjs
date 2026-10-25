@@ -20,13 +20,27 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  const finder=el('div',undefined,'review-finder');finder.append(search,filters);const pool=el('div',undefined,'review-pool');
  const footer=el('div',undefined,'review-footer'),status=el('span','修改仅保存在此浏览器，导出后可跨电脑继续。','review-status');
  function button(text,action){const b=el('button',text);b.type='button';b.onclick=action;footer.append(b);return b;}
- function persist(){try{localStorage.setItem(key,JSON.stringify(draft));storageError=false;status.textContent='已保存到此浏览器 · 导出后可跨电脑继续';}catch{storageError=true;status.textContent='浏览器保存失败，请立即导出整理稿';}}
+ function persist(){try{localStorage.setItem(key,JSON.stringify(draft));storageError=false;status.textContent='已保存到此浏览器 · 备份后可跨电脑继续';}catch{if(!storageError)notice('浏览器保存失败，请用右上角“⋯ → 备份修改”保存。');storageError=true;status.textContent='浏览器保存失败，请立即备份修改';}}
  function commit(fn){undo.push(JSON.stringify(draft));if(undo.length>40)undo.shift();redo=[];fn();draft.updatedAt=new Date().toISOString();persist();refresh();render();}
+ const comment=document.getElementById('comment'),progress=document.getElementById('review-progress');
+ const progressText=el('span');progress.append(progressText);progress.title='修改和当前局面自动保存在此浏览器，重新打开本局会回到上次位置。';
+ document.getElementById('backup-review').onclick=()=>{download((data.slug||data.id)+'.review.json',JSON.stringify(draft,null,2),'application/json');notice('已下载修改备份；换电脑时可用“恢复修改备份”。');};
+ function savePosition(){draft.bookmark={eventId:current().id,hash:location.hash,savedAt:new Date().toISOString()};persist();renderProgress();}
+ function renderProgress(){progressText.textContent=storageError?'未保存，请备份修改':'已自动保存在此浏览器';}
+ let editing=null;
+ comment.onfocus=()=>{stop();editing={event:current(),before:JSON.stringify(draft)};if(!effectiveEvent(draft,current()).text)comment.textContent='';};
+ comment.oninput=()=>{if(!editing)return;const e=editing.event,text=comment.innerText.replace(/\r\n?/g,'\n');const placements=draft.placements.filter(p=>p.eventId===e.id);const notes=placements.map(p=>draft.sentences.find(s=>s.id===p.sentenceId));
+  if(notes.length){notes[0].text=text;for(const s of notes.slice(1))s.text='';}
+  else{const id='user:'+e.id;let s=draft.sentences.find(s=>s.id===id);if(!s){s={id,text,originalText:'',sourceIds:[],section:'commentary',userAdded:true};draft.sentences.push(s);}s.text=text;assign(draft,id,e);}
+  draft.reviewedEventIds=(draft.reviewedEventIds??[]).filter(id=>id!==e.id);draft.updatedAt=new Date().toISOString();persist();renderProgress();
+ };
+ comment.onblur=()=>{if(editing&&editing.before!==JSON.stringify(draft)){undo.push(editing.before);redo=[];}editing=null;refresh();};
  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type})),a=el('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);}
  const undoButton=button('撤销',()=>{if(!undo.length)return;redo.push(JSON.stringify(draft));draft=JSON.parse(undo.pop());persist();refresh();render();});
  const redoButton=button('重做',()=>{if(!redo.length)return;undo.push(JSON.stringify(draft));draft=JSON.parse(redo.pop());persist();refresh();render();});
  button('导出整理稿',()=>download((data.slug||data.id)+'.review.json',JSON.stringify(draft,null,2),'application/json'));
  const importInput=el('input');importInput.type='file';importInput.accept='.json';importInput.hidden=true;button('导入',()=>importInput.click());
+ document.getElementById('restore-review').onclick=()=>importInput.click();
  importInput.onchange=async()=>{try{if(!importInput.files[0])return;const next=validateDraft(JSON.parse(await importInput.files[0].text()),data);commit(()=>draft=next);notice('整理稿已导入，原始发布版本未被覆盖。');}catch(e){notice('未导入：'+e.message);}importInput.value='';};
  button('导出注释谱',()=>{try{download((data.slug||data.id)+'.review.sgf',exportSgf(data,draft),'application/x-go-sgf');}catch(e){notice('未导出：'+e.message);}});
  host.append(toolbar,source,heading,assigned,finder,pool,footer,status,importInput);
@@ -36,7 +50,7 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
   const card=el('article',undefined,'review-card'),text=el('textarea');text.value=s.text;text.rows=2;text.setAttribute('aria-label','编辑句子 '+s.id);
   let before;
   text.onfocus=()=>{before=JSON.stringify(draft);};
-  text.oninput=()=>{s.text=text.value;draft.updatedAt=new Date().toISOString();persist();};
+  text.oninput=()=>{s.text=text.value;const affected=new Set(draft.placements.filter(p=>p.sentenceId===s.id).map(p=>p.eventId));draft.reviewedEventIds=(draft.reviewedEventIds??[]).filter(id=>!affected.has(id));draft.updatedAt=new Date().toISOString();persist();renderProgress();};
   text.onchange=()=>{if(before&&before!==JSON.stringify(draft)){undo.push(before);redo=[];undoButton.disabled=false;redoButton.disabled=true;}};card.append(text);
   const tools=el('div',undefined,'review-card-tools');const action=el('button',isAssigned?'退回备选':'放入当前注释');action.type='button';action.onclick=()=>{const value=text.value;commit(()=>{s.text=value;if(isAssigned)detach(draft,s.id);else{ s.excluded=false;assign(draft,s.id,current());}});};tools.append(action);
   const time=el('button',s.sourceTimeUncertain?'本段 ↗':Number.isFinite(s.globalStart)?'约 '+Math.floor(s.globalStart/60)+':'+String(Math.floor(s.globalStart%60)).padStart(2,'0')+' ↗':'原文');time.type='button';time.onclick=()=>{if(Number.isFinite(s.globalStart))seek(s);else notice(s.originalText);};tools.append(time);
@@ -50,15 +64,19 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
   for(const s of candidates.slice(0,limit))pool.append(card(s,false));if(!candidates.length)pool.append(el('p',filter==='unassigned'?'暂无待匹配句子，可切换“全部句子”重新归属。':'没有符合条件的句子。','review-empty'));
   if(candidates.length>limit){const more=el('button','显示更多句子');more.type='button';more.onclick=()=>{limit+=50;renderPool();};pool.append(more);}
  }
- function render(){if(!enabled)return;const e=current();position.value=positionKey(e);side.value=draft.points[positionKey(e)]?.color??e.suggestedColor??e.color??'B';
+ function render(){renderProgress();if(!enabled)return;const e=current();position.value=positionKey(e);side.value=draft.points[positionKey(e)]?.color??e.suggestedColor??e.color??'B';
   title.textContent=e.branch?`${e.branch} · 第${e.step}手的注释`:`实战第${e.displayMove}手的注释`;assigned.replaceChildren();if(e.pointReview==='user_disputed'&&!draft.points[positionKey(e)])assigned.append(el('p','此提示点已被指出有误，请用“改提示点”修正。','review-empty'));const notes=notesAt(draft,e);for(const s of notes)assigned.append(card(s,true));if(!notes.length)assigned.append(el('p','点击下方句子，归入这个局面。','review-empty'));undoButton.disabled=!undo.length;redoButton.disabled=!redo.length;renderPool();
  }
- toggle.onclick=()=>{enabled=!enabled;stop();host.hidden=!enabled;document.body.classList.toggle('edit-mode',enabled);toggle.textContent=enabled?'结束整理':'整理';toggle.setAttribute('aria-pressed',String(enabled));if(enabled)render();refresh();};
- document.getElementById('board').addEventListener('click',ev=>{if(!enabled||!placing)return;const svg=ev.target.closest('svg');if(!svg)return;const p=svg.createSVGPoint();p.x=ev.clientX;p.y=ev.clientY;const local=p.matrixTransform(svg.getScreenCTM().inverse());const x=Math.round((local.x-40)/30),y=Math.round((local.y-40)/30);
+ const dialog=document.getElementById('review-tools-dialog');
+ toggle.onclick=()=>{enabled=true;host.hidden=false;toggle.closest('details').open=false;dialog.showModal();render();};
+ document.getElementById('close-review-tools').onclick=()=>{placing=false;dialog.close();};
+ dialog.addEventListener('close',()=>{if(!placing)enabled=false;toggle.setAttribute('aria-pressed','false');});
+ pointButton.addEventListener('click',()=>{if(placing){dialog.close();enabled=true;notice('点击棋盘修正提示点。');}});
+ document.getElementById('board').addEventListener('click',ev=>{if(!placing)return;const svg=ev.target.closest('svg');if(!svg)return;const p=svg.createSVGPoint();p.x=ev.clientX;p.y=ev.clientY;const local=p.matrixTransform(svg.getScreenCTM().inverse());const x=Math.round((local.x-40)/30),y=Math.round((local.y-40)/30);
   if(x<0||x>18||y<0||y>18||Math.hypot(local.x-40-x*30,local.y-40-y*30)>16)return;
   if(current().board[y*19+x]!=='.'){notice('该处已有棋子，请选择空交叉点。');return;}
-  commit(()=>draft.points[positionKey(current())]={point:[x,y],color:side.value});placing=false;pointButton.textContent='改提示点';pointButton.setAttribute('aria-pressed','false');notice('提示点已改为'+coordinate([x,y]));
+  commit(()=>{draft.points[positionKey(current())]={point:[x,y],color:side.value};draft.reviewedEventIds=(draft.reviewedEventIds??[]).filter(id=>id!==current().id);});placing=false;pointButton.textContent='改提示点';pointButton.setAttribute('aria-pressed','false');notice('提示点已改为'+coordinate([x,y]));
  });
  window.addEventListener('pagehide',()=>{if(mediaUrl)URL.revokeObjectURL(mediaUrl);});
- return{get enabled(){return enabled;},effective:e=>effectiveEvent(draft,e),render,get draft(){return draft;}};
+ return{get enabled(){return enabled;},effective:e=>effectiveEvent(draft,e),render,rememberCurrent:savePosition,resumeIndex(hash){const b=draft.bookmark;if(!b)return -1;const e=data.events.find(e=>e.id===b.eventId);if(!e)return -1;return !hash||hash===b.hash||!b.hash&&hash==='#'+(e.move||e.displayMove)?data.events.indexOf(e):-1;},get draft(){return draft;}};
 }

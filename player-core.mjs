@@ -4,3 +4,28 @@ export function chapterForMove(data,move){const n=Math.max(1,Math.min(data.moveC
 export function curveMoveAtX(x,width,count=183,padding=30){const inner=Math.max(1,width-padding*2);return Math.max(1,Math.min(count,Math.round((x-padding)/inner*count)));}
 export function scoreLabel(score){return score>=0?'黑领先 '+score.toFixed(1)+' 目':'白领先 '+Math.abs(score).toFixed(1)+' 目';}
 
+// Keep source events intact. Only omit silent, already-shown branch prefixes.
+export function repeatedPrefixIndices(events,textOf=e=>e.text){
+ const skipped=new Set();let previous=null;
+ events.forEach((e,i)=>{if(e.kind==='transition'&&!textOf(e)?.trim())skipped.add(i);});
+ for(let i=0;i<events.length;){
+  const e=events[i];if(!e.branch){previous=null;i++;continue;}
+  let end=i+1;while(end<events.length&&events[end].branch===e.branch)end++;
+  const block=events.slice(i,end),steps=block.filter(n=>n.step>0);
+  if(previous&&previous.base===e.displayMove){
+   let matched=0;
+   for(const step of steps){const old=previous.steps.get(step.step);
+    if(!old||old.board!==step.board||old.color!==step.color||old.coordinate!==step.coordinate||textOf(step)?.trim())break;
+    skipped.add(i+block.indexOf(step));matched++;
+   }
+   if(matched&&e.step===0&&!textOf(e)?.trim())skipped.add(i);
+  }
+  previous={base:e.displayMove,steps:new Map(steps.map(s=>[s.step,s]))};i=end;
+ }
+ return skipped;
+}
+export function adjacentEvent(events,index,direction,skipped){
+ let next=index+direction;while(next>=0&&next<events.length&&skipped.has(next))next+=direction;
+ return Math.max(0,Math.min(events.length-1,next));
+}
+

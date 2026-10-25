@@ -1,94 +1,43 @@
-import {formatTime,indexAtTime,chapterForMove,curveMoveAtX,scoreLabel} from './player-core.mjs';
+import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs';
 import {createReviewEditor} from './review-editor.mjs';
 const $=id=>document.getElementById(id);
-const icons={
-play:'<path d="m8 5 11 7-11 7z" fill="currentColor" stroke="none"/>',
-pause:'<path d="M8 5v14M16 5v14" stroke-width="3.4"/>',
-previous:'<path d="M6 5v14m12-14L8 12l10 7z"/>',
-next:'<path d="M18 5v14M6 5l10 7-10 7z"/>',
-replay:'<path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/>',
-sound:'<path d="m11 5-6 4H2v6h3l6 4zM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
-muted:'<path d="m11 5-6 4H2v6h3l6 4zM16 9l6 6m0-6-6 6"/>'
-};
-function icon(name){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+icons[name]+'</svg>';}
-for(const [id,name] of [['play','play'],['previous','previous'],['next','next']])$(id).innerHTML=icon(name);
+document.querySelector('.board-stage').append(document.querySelector('.analysis'));
+document.querySelector('.tools-menu-content').addEventListener('click',event=>{if(event.target.closest('a,button'))document.querySelector('.tools-menu').open=false;});
 const appBase=new URL('./',import.meta.url);
 const routeParts=location.pathname.slice(appBase.pathname.length).split('/').filter(Boolean);
 let language=routeParts.includes('en')||new URL(location.href).searchParams.get('lang')==='en'?'en':'zh';
 function caseUrl(item,lang=language,hash=''){const url=new URL(item.slug+'/'+(lang==='en'?'en/':''),appBase);url.hash=hash;return url;}
 const t=(zh,en)=>language==='en'?en:zh;
-let data,selectedCase,index=0,playing=false,speed=1,offset=0,startedAt=0,editor=null;
-function rebuildTimeline(){let cursor=0;for(const e of data.events){const shown=editor?editor.effective(e):e;const text=language==='en'?shown.textEn:shown.text;e.start=cursor;e.duration=text?Math.min(55,Math.max(1.8,language==='en'?text.split(/\s+/).length/3:text.length/5.5)):.7;cursor+=e.duration+.25;}data.duration=cursor;$('progress').max=String(cursor);}
+let data,selectedCase,index=0,editor=null;
+let skipped=new Set();
+function rebuildTimeline(){skipped=repeatedPrefixIndices(data.events,e=>{const shown=editor?editor.effective(e):e;return language==='en'?shown.textEn:shown.text;});}
 function setLanguage(){
  document.documentElement.lang=language==='en'?'en':'zh-CN';$('language').value=language;
  $('source-button').textContent=t('关于本局 ↗','About this game ↗');
- $('previous').setAttribute('aria-label',t('上一段','Previous segment'));$('next').setAttribute('aria-label',t('下一段','Next segment'));
+ $('previous').setAttribute('aria-label',t('上一步','Previous'));$('next').setAttribute('aria-label',t('下一步','Next'));
  $('key-heading').textContent=t('从关键手看起','Explore key moves');$('key-hint').textContent=t('点击直接跳转','Click to jump');
  $('mode-score').textContent=t('目差','Score');$('mode-winrate').textContent=t('胜率','Win rate');
  $('analysis-hint').textContent=t('点击曲线或手数，查看对应讲解','Click the chart to read a move’s commentary');
  $('sgf-download').textContent=t('下载中文注释谱 ↓','Download English SGF ↓');
  if(selectedCase)$('sgf-download').href=language==='en'?selectedCase.sgf.replace(/\.sgf$/,'.en.sgf'):selectedCase.sgf;
- if(data){rebuildTimeline();renderKeyMoves();render();updatePlayButton();}
+ if(data){rebuildTimeline();renderKeyMoves();render();}
 }
-let epoch=0,timer=0,raf=0,noticeTimer=0,mode='score',resumeAfterSeek=false,seeking=false;
 let selectedTopic=null;
+let mode='score';
 const plot={padding:27,width:1100,top:9,bottom:75,min:0,max:100};
 function current(){return data.events[index];}
+function stop(){}
 function say(message){$('notice').textContent=message;$('notice').hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>{$('notice').hidden=true;},4200);}
-function nowOffset(){
- if(!playing)return offset;
- return Math.min(current().duration,offset+(performance.now()-startedAt)/1000*speed);
+let noticeTimer=0;
+function moveTo(next){
+ index=Math.max(0,Math.min(data.events.length-1,next));
+ if(skipped.has(index))index=adjacentEvent(data.events,index-1,1,skipped);
+ history.replaceState(null,'',caseUrl(selectedCase,language,String(current().move||current().displayMove||0)));
+ editor?.rememberCurrent();render();
 }
-function updateProgress(){
- if(!data)return;
- const t=Math.min(data.duration,current().start+nowOffset());
- if(!seeking)$('progress').value=String(t);
- $('clock').textContent=formatTime(t)+' / '+formatTime(data.duration);
- $('progress').setAttribute('aria-valuetext',formatTime(t)+'，第'+(current().move||1)+'手');
-}
-function tick(){updateProgress();if(playing)raf=requestAnimationFrame(tick);}
-function updatePlayButton(){
- $('play').innerHTML=icon(playing?'pause':'play');
- $('play').setAttribute('aria-label',playing?t('暂停讲解','Pause commentary'):t('自动阅读讲解','Read commentary automatically'));
- document.body.classList.toggle('playing',playing);
-}
-function stop(){
- if(!data)return;
- offset=nowOffset();
- playing=false;epoch++;clearTimeout(timer);cancelAnimationFrame(raf);
- updatePlayButton();updateProgress();
-}
-function finishSegment(token){
- if(token!==epoch||!playing)return;
- offset=current().duration;
- if(index===data.events.length-1){stop();$('progress').value=String(data.duration);$('clock').textContent=formatTime(data.duration)+' / '+formatTime(data.duration);return;}
- timer=setTimeout(()=>{if(token!==epoch||!playing)return;moveTo(index+1,true);},250/speed);
-}
-function play(){
- if(!data||playing)return;
- if(index===data.events.length-1&&offset>=current().duration){index=0;offset=0;render();}
- const e=current();
- if(offset>=e.duration)offset=0;
- const token=++epoch;
- playing=true;startedAt=performance.now();
- clearTimeout(timer);cancelAnimationFrame(raf);
- updatePlayButton();
- timer=setTimeout(()=>finishSegment(token),Math.max(0,e.duration-offset)/speed*1000);
- tick();
-}
-function moveTo(next,autoplay=false,at=0){
- stop();index=Math.max(0,Math.min(data.events.length-1,next));offset=Math.max(0,Math.min(current().duration,at));
- render();updateProgress();if(autoplay)play();
-}
-function jumpMove(move,autoplay=true){
+function jumpMove(move){
  const n=Math.max(1,Math.min(data.moveCount,Math.round(move)));
- selectedTopic=n;
- moveTo(chapterForMove(data,n),autoplay&&!editor?.enabled);
- history.replaceState(null,'',caseUrl(selectedCase,language,String(n)));
-}
-function jumpTime(time,autoplay){
- selectedTopic=null;
- const n=indexAtTime(data.events,time);moveTo(n,autoplay,time-data.events[n].start);
+ selectedTopic=n;moveTo(chapterForMove(data,n));
 }
 function boardSvg(e){
  const N=19,start=40,gap=30;
@@ -126,11 +75,12 @@ function render(){
  $('segment-badge').classList.toggle('variation',isVariation);
  $('segment-label').textContent=isVariation?side+' '+e.coordinate+' · 变化 '+e.step+' / '+e.branchLength:e.move?'第'+e.move+'手 · '+side+' '+e.coordinate:'按讲解顺序';
  let text=language==='en'?e.textEn:e.text;
- if(!text)text=e.kind==='start'?t('跟着讲解顺序，阅读实战和变化。','Follow the commentary through the game and its variations.'):e.kind==='finish'?t('这一盘讲解已结束。','End of this lecture.'):e.kind==='transition'?t(e.label||'切换变化','Switching position'):t('这一手没有单独解说。','No separate comment on this move.');
- $('comment').textContent=text;
- $('comment').scrollTop=0;
+ if(!text)text=e.kind==='start'?t('用上一步、下一步查看实战与变化；点击文字即可修改。','Follow the commentary through the game and its variations.'):e.kind==='finish'?t('这一盘讲解已结束。','End of this lecture.'):e.kind==='transition'?t(e.label||'切换变化','Switching position'):t('这一手没有单独解说。','No separate comment on this move.');
+ if(document.activeElement!==$('comment'))$('comment').textContent=text;
+ $('comment').contentEditable=language==='zh'?'plaintext-only':'false';
+ 
  $('comment').style.color=e.text?'':'#8d958c';
- $('segment-detail').textContent=e.kind==='start'?'点击播放开始；也可以从下方曲线选择一手棋。':isVariation?'对应实战第'+e.move+'手的比较变化。图表始终显示实战曲线。':e.kind==='context'?(e.displayMove===e.move?'这一阶段的局面讲解。':'当前棋盘是第'+e.displayMove+'手，讲解指向第'+e.move+'手。'):e.kind==='finish'?'可以点击目差曲线，重新查看任意一手。':e.kind==='review'?'按讲解顺序回看这手棋。':'';
+ $('segment-detail').textContent=e.kind==='start'?'用上一步、下一步或方向键查看讲解。':isVariation?'对应实战第'+e.move+'手的比较变化。图表始终显示实战曲线。':e.kind==='context'?(e.displayMove===e.move?'这一阶段的局面讲解。':'当前棋盘是第'+e.displayMove+'手，讲解指向第'+e.move+'手。'):e.kind==='finish'?'可以点击目差曲线，重新查看任意一手。':e.kind==='review'?'按讲解顺序回看这手棋。':'';
  $('previous').disabled=index===0;$('next').disabled=index===data.events.length-1;
  if(selectedTopic&&e.move!==selectedTopic&&e.kind==='main')$('segment-detail').textContent='正在播放第'+selectedTopic+'手的完整讲解，先看相关局面。';
  if(language==='en'){
@@ -142,7 +92,7 @@ function render(){
  }
  document.querySelectorAll('#key-moves button').forEach(b=>b.classList.toggle('active',Number(b.dataset.move)===(selectedTopic??e.move)));
  if(e.kind==='pointer'){$('board-context').textContent=t('落点比较','Candidate point');$('segment-badge').textContent=t('落点比较','Candidate point');$('segment-label').textContent=(language==='en'?(e.color==='B'?'Black':'White'):side)+' '+e.coordinate;$('segment-detail').textContent=t('讲解所指的候选落点，棋盘保持在比较前的局面。','The highlighted point is a suggestion; the board remains at the position being discussed.');}
- renderChart();updateProgress();editor?.render();
+ renderChart();editor?.render();
 }
 function renderKeyMoves(){
  $('key-moves').innerHTML=data.keyMoves.map(m=>'<button type="button" data-move="'+m.move+'" aria-label="'+t('查看第'+m.move+'手讲解','Read commentary for move '+m.move)+'"><span class="key-primary"><i class="stone-dot '+(m.color==='B'?'black':'white')+'"></i>'+m.move+' <span>· '+m.coordinate+'</span></span><span class="key-loss">'+(Number.isFinite(m.pointsLoss)&&m.pointsLoss>=.05?'−'+m.pointsLoss.toFixed(1)+t('目',' pts'):t('看这一手','Read move'))+'</span></button>').join('');
@@ -200,14 +150,9 @@ function hoverChart(event){
  tooltip.style.whiteSpace='pre-line';tooltip.hidden=false;
  tooltip.style.left=Math.min(rect.width-tooltip.offsetWidth-2,Math.max(0,event.clientX-rect.left-tooltip.offsetWidth/2))+'px';
 }
-$('play').addEventListener('click',()=>playing?stop():play());
-$('previous').addEventListener('click',()=>{selectedTopic=null;moveTo(index-1,playing);});
-$('next').addEventListener('click',()=>{selectedTopic=null;moveTo(index+1,playing);});
-$('speed').addEventListener('change',()=>{const was=playing;stop();speed=Number($('speed').value);if(was)play();});
-$('language').addEventListener('change',()=>{const was=playing;stop();language=$('language').value;offset=0;history.replaceState(null,'',caseUrl(selectedCase,language,location.hash));setLanguage();if(was)play();});
-$('progress').addEventListener('pointerdown',()=>{resumeAfterSeek=playing;seeking=true;stop();});
-$('progress').addEventListener('input',()=>{$('clock').textContent=formatTime($('progress').value)+' / '+formatTime(data.duration);});
-$('progress').addEventListener('change',()=>{const resume=seeking?resumeAfterSeek:playing;seeking=false;jumpTime(Number($('progress').value),resume);});
+$('previous').addEventListener('click',()=>{selectedTopic=null;moveTo(adjacentEvent(data.events,index,-1,skipped));});
+$('next').addEventListener('click',()=>{selectedTopic=null;moveTo(adjacentEvent(data.events,index,1,skipped));});
+$('language').addEventListener('change',()=>{language=$('language').value;history.replaceState(null,'',caseUrl(selectedCase,language,location.hash));setLanguage();});
 $('chart').addEventListener('click',event=>{if(data)jumpMove(chartMove(event));});
 $('chart').addEventListener('pointermove',event=>{if(data)hoverChart(event);});
 $('chart').addEventListener('pointerleave',()=>{$('chart-tooltip').hidden=true;});
@@ -222,13 +167,12 @@ $('source-button').addEventListener('click',()=>$('source-dialog').showModal());
 $('close-source').addEventListener('click',()=>$('source-dialog').close());
 $('source-dialog').addEventListener('click',event=>{if(event.target===$('source-dialog')){const r=$('source-dialog').getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)$('source-dialog').close();}});
 document.addEventListener('keydown',event=>{
- if(!data||$('source-dialog').open||event.target.closest('input,textarea,select,button,a,[contenteditable],[role=slider]'))return;
- if(event.code==='Space'){event.preventDefault();playing?stop():play();}
- else if(event.key==='ArrowRight'){event.preventDefault();moveTo(index+1,playing);}
- else if(event.key==='ArrowLeft'){event.preventDefault();moveTo(index-1,playing);}
+ if(!data||$('source-dialog').open||$('review-tools-dialog').open||event.target.closest('input,textarea,select,button,a,[contenteditable],[role=slider]'))return;
+ if(event.key==='ArrowRight'){event.preventDefault();moveTo(adjacentEvent(data.events,index,1,skipped));}
+ else if(event.key==='ArrowLeft'){event.preventDefault();moveTo(adjacentEvent(data.events,index,-1,skipped));}
 });
-document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)stop();});
-window.addEventListener('pagehide',()=>{if(data)stop();});
+
+
 new ResizeObserver(()=>renderChart()).observe($('chart-wrap'));
 new ResizeObserver(()=>{if(data)$('board').innerHTML=boardSvg(editor?editor.effective(current()):current());}).observe($('board'));
 window.addEventListener('hashchange',()=>{const match=location.hash.match(/^#(?:move=)?(\d+)$/);if(data&&match){selectedTopic=Number(match[1]);moveTo(chapterForMove(data,selectedTopic),false);}});
@@ -256,17 +200,20 @@ try{
  $('analysis-credit').textContent=data.curve?.length?'实战手数 · KataGo / '+(data.sources.visits||2500)+' visits':'实战手数 · 原话讲解';
  $('analysis-hint').textContent=data.curve?.length?'点击曲线，查看这一手的讲解':'点击手数，查看这一手的讲解';
  for(const [id,url] of [['analysis-source',data.sources.analysis],['game-source',data.sources.game],['lecture-source',data.sources.video],['sgf-download',selected.sgf]]){const link=$(id);link.hidden=!url;if(url)link.href=url;}
- $('progress').max=String(data.duration);
+
  $('coverage').textContent=data.moveCount+'手实战、'+data.annotationCount+'段原话、'+data.variationCount+'条已核对变化。'+data.sources.coverage;
  setLanguage();
  const match=location.hash.match(/^#(?:move=)?(\d+)$/);
- if(match){selectedTopic=Number(match[1]);index=chapterForMove(data,selectedTopic);}
- history.replaceState(null,'',caseUrl(selected,language,match?match[1]:''));render();
+ const resume=editor.resumeIndex(location.hash);
+ if(resume>=0)index=resume;else if(match){selectedTopic=Number(match[1]);index=chapterForMove(data,selectedTopic);}
+ if(skipped.has(index))index=adjacentEvent(data.events,index-1,1,skipped);
+ history.replaceState(null,'',caseUrl(selected,language,String(current().move||current().displayMove||0)));editor.rememberCurrent();render();
+ $('video-link').href=data.sources.video||'#';$('video-link').hidden=!data.sources.video;
 }catch(error){
  $('board').innerHTML='<p class="loading" role="alert">棋局暂时未能打开，请刷新重试。</p>';
  $('comment').textContent='暂时未能载入这盘讲棋。';
  $('segment-detail').textContent='请检查网络后刷新页面。';
- $('play').disabled=true;
+
  console.error('Lecture loading failed',error);
 }
 
