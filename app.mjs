@@ -1,5 +1,5 @@
-import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-review-layout2';
-import {createReviewEditor} from './review-editor.mjs?v=20261025-review-layout2';
+import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-multimark2';
+import {createReviewEditor} from './review-editor.mjs?v=20261025-multimark2';
 const $=id=>document.getElementById(id);
 document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
 document.querySelector('.tools-menu-content').addEventListener('click',event=>{if(event.target.closest('a,button'))document.querySelector('.tools-menu').open=false;});
@@ -24,7 +24,7 @@ function setLanguage(){
 }
 let selectedTopic=null;
 let mode='score';
-const plot={padding:27,width:1100,top:9,bottom:75,min:0,max:100};
+const plot={padding:46,width:1100,top:18,bottom:180,min:0,max:100};
 function current(){return data.events[index];}
 function stop(){}
 function say(message){$('notice').textContent=message;$('notice').hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>{$('notice').hidden=true;},4200);}
@@ -62,6 +62,13 @@ function boardSvg(e){
    if(mark)stones+='<text x="'+x+'" y="'+(y+markFont*.34)+'" fill="'+(color==='b'?'#f7f5e9':'#33413b')+'" font-size="'+markFont+'" text-anchor="middle" font-family="system-ui" font-weight="500">'+mark.number+'</text>';
    else if(e.last&&e.last[0]===col&&e.last[1]===row)stones+='<circle cx="'+x+'" cy="'+y+'" r="5" fill="none" stroke="'+(color==='b'?'#f4f0db':'#335d51')+'" stroke-width="1.5"/>';
  }
+ for(const a of e.annotations??[]){const x=start+a.point[0]*gap,y=start+a.point[1]*gap,stroke=' stroke="#c14e2e" stroke-width="2.4" fill="none"';
+  if(a.shape==='circle')stones+='<circle cx="'+x+'" cy="'+y+'" r="11"'+stroke+'/>';
+  else if(a.shape==='triangle')stones+='<path d="M'+x+' '+(y-12)+'L'+(x+11)+' '+(y+8)+'H'+(x-11)+'Z"'+stroke+'/>';
+  else if(a.shape==='square')stones+='<rect x="'+(x-10)+'" y="'+(y-10)+'" width="20" height="20"'+stroke+'/>';
+  else stones+='<text x="'+x+'" y="'+(y+5)+'" text-anchor="middle" font-size="15" font-weight="700" fill="#bd4c2d" stroke="#fffaf1" stroke-width=".8" paint-order="stroke">'+a.label+'</text>';
+ }
+ if(editor?.marking)for(let n=0;n<361;n++){const x=n%19,y=Math.floor(n/19),name='ABCDEFGHJKLMNOPQRST'[x]+(19-y),color=e.board[n]==='w'?'白棋':e.board[n]==='b'?'黑棋':'空点';stones+='<circle data-mark-point="'+x+','+y+'" role="button" aria-label="标注 '+name+' '+color+'" cx="'+(start+x*gap)+'" cy="'+(start+y*gap)+'" r="14" fill="transparent" style="cursor:crosshair;pointer-events:all"/>';}
  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 620" role="img" aria-label="只读棋盘，实战第'+e.displayMove+'手'+(e.branch?'，变化第'+e.step+'手':'')+'" data-segment="'+e.id+'" data-topic="'+e.move+'" data-position="'+e.displayMove+'"><defs><linearGradient id="wood" x2=".9" y2="1"><stop stop-color="#e8c78d"/><stop offset=".5" stop-color="#e6c38b"/><stop offset="1" stop-color="#dbb579"/></linearGradient><radialGradient id="stone-b" cx="32%" cy="24%" r="80%"><stop stop-color="#565e5e"/><stop offset=".45" stop-color="#242d2f"/><stop offset="1" stop-color="#0d1418"/></radialGradient><radialGradient id="stone-w" cx="34%" cy="26%" r="82%"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#faf9f3"/><stop offset="1" stop-color="#dedbd0"/></radialGradient><pattern id="grain" width="43" height="37" patternUnits="userSpaceOnUse"><path d="M2 0q2 11 0 37M12 0q-2 14 1 37M29 0q3 21 0 37M40 0q-3 17 0 37" fill="none" stroke="#735029" stroke-width=".4" opacity=".06"/></pattern></defs><rect x="10" y="11" width="600" height="600" rx="7" fill="#4d3515" opacity=".08"/><rect x="10" y="8" width="600" height="600" rx="7" fill="url(#wood)"/><rect x="10" y="8" width="600" height="600" rx="7" fill="url(#grain)"/><g stroke="#795d35" stroke-width=".8" fill="none" opacity=".85">'+grid+'</g><g fill="#765d37">'+stars+'</g><g fill="#927345" font-size="11" font-family="system-ui" text-anchor="middle">'+coords+'</g>'+stones+'</svg>';
 }
 function render(){
@@ -102,12 +109,13 @@ function pointX(n){return plot.padding+n/data.moveCount*(plot.width-plot.padding
 function pointY(value){return plot.bottom-(value-plot.min)/(plot.max-plot.min)*(plot.bottom-plot.top);}
 function renderChart(){
  if(!data)return;
- const svg=$('chart');plot.width=Math.max(240,svg.clientWidth||1100);
+ const svg=$('chart');plot.width=Math.max(240,svg.clientWidth||1100);plot.height=Math.max(180,Math.round(svg.clientHeight||210));plot.top=18;plot.bottom=plot.height-30;
  if(!data.curve?.length){
    const n=Math.max(1,current().move||1),x=pointX(n);
    const ticks=[...new Set([1,...Array.from({length:Math.floor(data.moveCount/30)},(_,i)=>(i+1)*30),data.moveCount])];
-   svg.innerHTML='<path class="chart-grid" d="M'+plot.padding+' 52H'+(plot.width-plot.padding)+'"/>'+ticks.map(m=>'<text class="chart-axis-label" text-anchor="middle" x="'+pointX(m)+'" y="94">'+m+'</text>').join('')+data.keyMoves.map(m=>'<circle class="chart-loss" cx="'+pointX(m.move)+'" cy="52" r="3.4" data-move="'+m.move+'"><title>第'+m.move+'手的讲解</title></circle>').join('')+'<text class="chart-axis-label" text-anchor="middle" x="'+plot.width/2+'" y="25">暂无可复用的形势曲线 · 可按手数跳转</text><path class="chart-cursor" d="M'+x+' 37V78"/><circle class="chart-current" cx="'+x+'" cy="52" r="4.2"/>';
-   svg.setAttribute('viewBox','0 0 '+plot.width+' 98');svg.setAttribute('aria-valuenow',String(n));svg.setAttribute('aria-valuetext','第'+n+'手');
+   const center=Math.round(plot.height/2);
+   svg.innerHTML='<path class="chart-grid" d="M'+plot.padding+' '+center+'H'+(plot.width-plot.padding)+'"/>'+ticks.map(m=>'<text class="chart-axis-label" text-anchor="middle" x="'+pointX(m)+'" y="'+(plot.height-6)+'">'+m+'</text>').join('')+data.keyMoves.map(m=>'<circle class="chart-loss" cx="'+pointX(m.move)+'" cy="'+center+'" r="3.4" data-move="'+m.move+'"><title>第'+m.move+'手的讲解</title></circle>').join('')+'<text class="chart-axis-label" text-anchor="middle" x="'+plot.width/2+'" y="35">暂无可复用的形势曲线 · 可按手数跳转</text><path class="chart-cursor" d="M'+x+' '+(center-20)+'V'+(plot.bottom+6)+'"/><circle class="chart-current" cx="'+x+'" cy="'+center+'" r="4.2"/>';
+   svg.setAttribute('viewBox','0 0 '+plot.width+' '+plot.height);svg.setAttribute('aria-valuenow',String(n));svg.setAttribute('aria-valuetext','第'+n+'手');
    $('chart-heading').textContent='实战手数';$('evaluation').textContent='第'+n+'手';
    document.querySelector('.chart-modes').hidden=true;
    return;
@@ -121,17 +129,16 @@ function renderChart(){
  const zero=pointY(mode==='score'?0:50),n=Math.max(1,current().move||1),active=data.curve[n-1];
  const currentX=pointX(n),currentY=pointY(values[n-1]);
  let markup='<defs><linearGradient id="curve-fill" x2="0" y2="1"><stop stop-color="#2d6662" stop-opacity=".15"/><stop offset="1" stop-color="#2d6662" stop-opacity=".02"/></linearGradient></defs>';
- markup+='<path class="chart-grid" d="M'+plot.padding+' '+zero+'H'+(plot.width-plot.padding)+'"/>';
+ const firstTick=Math.ceil(plot.min/10)*10,tickValues=mode==='score'?Array.from({length:Math.floor((plot.max-firstTick)/10)+1},(_,i)=>firstTick+i*10):[0,25,50,75,100];
+ for(const value of tickValues){const y=pointY(value),label=mode==='score'?(value===0?'0':value>0?'黑+'+value:'白+'+Math.abs(value)):value+'%';markup+='<path class="chart-grid" d="M'+plot.padding+' '+y+'H'+(plot.width-plot.padding)+'"/><text class="chart-axis-label" x="0" y="'+(y+4)+'">'+label+'</text>';}
  markup+='<path d="'+d+'L'+coords.at(-1)[0]+' '+zero+'L'+coords[0][0]+' '+zero+'Z" fill="url(#curve-fill)"/><path class="chart-line" d="'+d+'"/>';
- for(const move of [...new Set([1,...Array.from({length:Math.floor(data.moveCount/30)},(_,i)=>(i+1)*30),data.moveCount])])markup+='<text class="chart-axis-label" text-anchor="middle" x="'+pointX(move)+'" y="94">'+move+'</text>';
- const topLabel=mode==='score'?'黑+'+plot.max:'100%',lowLabel=mode==='score'?'0':'50%';
- markup+='<text class="chart-axis-label" x="0" y="12">'+topLabel+'</text><text class="chart-axis-label" x="0" y="'+Math.min(78,zero+3)+'">'+lowLabel+'</text>';
+ for(const move of [...new Set([1,...Array.from({length:Math.floor(data.moveCount/30)},(_,i)=>(i+1)*30),data.moveCount])])markup+='<text class="chart-axis-label" text-anchor="middle" x="'+pointX(move)+'" y="'+(plot.height-6)+'">'+move+'</text>';
  for(const m of data.keyMoves){
    const p=data.curve[m.move-1],v=mode==='score'?p.black_score_lead_points:p.black_winrate_percent;
    markup+='<circle class="chart-loss" cx="'+pointX(m.move)+'" cy="'+pointY(v)+'" r="3.4" data-move="'+m.move+'"><title>'+t('第'+m.move+'手','Move '+m.move)+' '+m.coordinate+(Number.isFinite(m.pointsLoss)?t('，损失'+m.pointsLoss+'目',', loss '+m.pointsLoss+' pts'):'')+'</title></circle>';
  }
- markup+='<path class="chart-cursor" d="M'+currentX+' 4V81"/><circle class="chart-current" cx="'+currentX+'" cy="'+currentY+'" r="4.2"/>';
- svg.innerHTML=markup;svg.setAttribute('viewBox','0 0 '+plot.width+' 98');
+ markup+='<path class="chart-cursor" d="M'+currentX+' 8V'+(plot.bottom+6)+'"/><circle class="chart-current" cx="'+currentX+'" cy="'+currentY+'" r="4.2"/>';
+ svg.innerHTML=markup;svg.setAttribute('viewBox','0 0 '+plot.width+' '+plot.height);
  svg.setAttribute('aria-valuenow',String(n));svg.setAttribute('aria-valuetext','第'+n+'手，'+(mode==='score'?scoreLabel(active.black_score_lead_points):'黑方胜率'+active.black_winrate_percent.toFixed(1)+'%'));
  $('chart-heading').textContent=mode==='score'?t('整局目差','Game score lead'):t('整局胜率','Game win rate');
  $('evaluation').textContent=current().move?(mode==='score'?t(scoreLabel(active.black_score_lead_points),(active.black_score_lead_points>=0?'Black +':'White +')+Math.abs(active.black_score_lead_points).toFixed(1)+' pts'):t('黑方 ','Black ')+active.black_winrate_percent.toFixed(1)+'%'):t('黑方视角','Black’s perspective');

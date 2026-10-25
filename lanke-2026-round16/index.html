@@ -8,7 +8,7 @@
 <meta name="description" content="逐步审阅棋局与变化，直接修改讲解，自动保存修改与上次位置。">
 <title>听棋 · 申真谞与杨楷文</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=20261025-review-layout2">
+<link rel="stylesheet" href="styles.css?v=20261025-multimark2">
 </head>
 <body>
 <div class="app">
@@ -21,6 +21,7 @@
     <button id="review-toggle" type="button" aria-pressed="false">备选原话与落点修正</button>
     <button id="backup-review" type="button" title="保存一份修改备份，换电脑时可恢复">备份修改</button>
     <button id="restore-review" type="button">恢复修改备份</button>
+    <button id="candidate-export" type="button">导出训练候选</button>
     <button id="source-button" type="button">棋谱与分析来源</button>
   </div></details>
 </header>
@@ -59,7 +60,7 @@
   <p class="fine-print">原话与手数对应仍供人工审阅。讲者提到的AI数值保留在原文中，与图表的数据分别注明来源。</p>
 </dialog>
 <div id="notice" class="notice" role="status" hidden></div>
-<script type="module" src="app.mjs?v=20261025-review-layout2"></script>
+<script type="module" src="app.mjs?v=20261025-multimark2"></script>
 </body>
 </html>
 

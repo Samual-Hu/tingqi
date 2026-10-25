@@ -60,3 +60,14 @@ html,body{height:auto;overflow:auto;}
 .lecture-panel .analysis-foot{font-size:10px;}
 .board-host svg,.comment{animation:none;transition:none;}
 @media(max-width:950px){.board-host,.board-foot{width:min(100%,650px);}.lecture-panel{min-height:0;}.lecture-panel>.analysis{margin-top:24px;}}
+.annotation-tools{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:12px 0;font-size:12px;}
+.annotation-tools[hidden],.annotation-list[hidden]{display:none;}
+.annotation-tools button{border:1px solid var(--line);padding:5px 9px;border-radius:5px;}
+.annotation-tools button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent);}
+.annotation-tools>span{flex-basis:100%;color:var(--accent);line-height:1.7;}
+.annotation-list{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 14px;font-size:12px;}
+.annotation-chip{display:inline-flex;gap:8px;align-items:center;border:1px solid #dfc6ae;border-radius:5px;background:#f8eddf;padding:5px 8px;}
+.annotation-chip button{font-size:17px;line-height:1;padding:0 2px;}
+.lecture-panel .chart-wrap{height:clamp(185px,22vh,250px);}
+.lecture-panel>.analysis{min-height:0;padding-top:28px;}
+.chart-axis-label{font-size:11px;}.chart-line{stroke-width:2;}
