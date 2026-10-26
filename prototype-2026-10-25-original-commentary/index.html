@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<base href="../">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f1e9">
+<meta name="description" content="逐步审阅棋局与变化，直接修改讲解，自动保存修改与上次位置。">
+<title>听棋 · 申真谞与杨楷文</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=20261025-layout1">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <a class="brand" href="./" aria-label="听棋首页"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="12" r="8" fill="currentColor"/><circle cx="22" cy="21" r="8" fill="#faf8f3" stroke="currentColor" stroke-width="1.4"/></svg><span>听棋</span></a>
+  <label class="case-picker"><span class="sr-only">选择讲棋案例</span><select id="case-select" aria-label="选择讲棋案例"><option>正在读取案例…</option></select></label>
+  <select id="language" class="language-picker" aria-label="讲解语言 / Language"><option value="zh">中文</option><option value="en">English</option></select>
+  <details class="tools-menu"><summary aria-label="更多工具">⋯</summary><div class="tools-menu-content">
+    <a id="video-link" target="_blank" rel="noopener">原视频 ↗</a>
+    <button id="review-toggle" type="button" aria-pressed="false">备选原话与落点修正</button>
+    <button id="backup-review" type="button" title="保存一份修改备份，换电脑时可恢复">备份修改</button>
+    <button id="restore-review" type="button">恢复修改备份</button>
+    <button id="candidate-export" type="button">导出训练候选</button>
+    <button id="source-button" type="button">棋谱与分析来源</button>
+  </div></details>
+</header>
+<main class="workspace" aria-label="棋谱审阅">
+  <section class="board-stage" aria-label="只读棋盘">
+    <div id="board" class="board-host"><p class="loading" role="status">正在打开棋局…</p></div>
+    <div class="board-foot"><span id="board-context">实战</span><span id="board-move">0 / 183</span></div>
+  </section>
+  <aside class="lecture-panel">
+    <div class="game-heading"><p class="eyebrow"><span id="game-event">正在读取</span> <span id="game-date"></span></p>
+      <h1><span><i class="stone-dot black"></i><span id="black-name">执黑</span></span><em>对</em><span><i class="stone-dot white"></i><span id="white-name">执白</span></span></h1>
+      <p id="game-result" class="game-result"></p>
+    </div>
+    <section class="transcript" aria-label="当前讲解">
+      <div class="caption-top"><span id="segment-badge" class="badge">准备开始</span><span id="segment-label" class="segment-label">按讲解顺序</span></div>
+      <nav class="review-navigation" aria-label="手动切换讲解"><button id="previous" type="button" aria-label="上一步">← 上一步</button><button id="next" type="button" aria-label="下一步">下一步 →</button><span id="review-progress" class="review-progress" role="status"></span></nav>
+      <p id="comment" class="comment" aria-live="polite" contenteditable="plaintext-only" role="textbox" aria-label="直接编辑当前注释" aria-multiline="true" spellcheck="false">从实战到变化，跟着讲解一路看下去。</p>
+      <p id="segment-detail" class="segment-detail"></p>
+    </section>
+    <section class="key-section" aria-label="关键手快捷入口"><div class="section-heading"><h2 id="key-heading">从关键手看起</h2><span id="key-hint">点击直接跳转</span></div><div id="key-moves" class="key-grid"></div></section>
+  </aside>
+</main>
+<section class="analysis" aria-label="全局形势与跳转">
+  <div class="analysis-heading"><div><h2 id="chart-heading">整局目差</h2><span id="evaluation">黑方视角</span></div><div class="chart-modes" role="group" aria-label="曲线类型"><button id="mode-score" type="button" aria-pressed="true">目差</button><button id="mode-winrate" type="button" aria-pressed="false">胜率</button></div></div>
+  <div id="chart-wrap" class="chart-wrap"><svg id="chart" viewBox="0 0 1100 98" preserveAspectRatio="none" tabindex="0" role="slider" aria-label="形势曲线，点击或左右键选择实战手数" aria-valuemin="1" aria-valuemax="183" aria-valuenow="1"></svg><div id="chart-tooltip" class="chart-tooltip" hidden></div></div>
+  <div class="analysis-foot"><span id="analysis-hint">点击曲线，听这一手的讲解</span><span id="analysis-credit">实战手数</span></div>
+</section>
+</div>
+<dialog id="review-tools-dialog"><div class="dialog-top"><h2>备选原话与落点修正</h2><button id="close-review-tools" type="button" aria-label="关闭辅助工具">×</button></div><section id="review-editor" aria-label="人工配句与注释编辑" hidden></section></dialog>
+<dialog id="source-dialog" aria-labelledby="source-title">
+  <div class="dialog-top"><h2 id="source-title">关于这盘讲棋</h2><button id="close-source" class="icon-button" type="button" aria-label="关闭">×</button></div>
+  <p>讲解文字整理自明玥谈棋，按讲解顺序播放实战与变化。棋盘只用于观看。</p>
+  <p>当前使用中英文本讲解，暂停合成配音。开场和收尾不进入棋局注释；棋手姓名在注释中改为黑白双方，原始转录和修改记录另存备查。英文为原注释的翻译，仍待人工审阅。</p>
+  <dl><div><dt>当前内容</dt><dd id="coverage"></dd></div><div><dt>形势分析</dt><dd id="analysis-description"></dd></div></dl>
+  <p class="source-links"><a id="analysis-source" target="_blank" rel="noopener">分析来源 ↗</a><a id="game-source" target="_blank" rel="noopener">实战棋谱 ↗</a><a id="lecture-source" target="_blank" rel="noopener">讲解来源 ↗</a><a id="sgf-download" download>下载注释谱 ↓</a></p>
+  <p class="fine-print">原话与手数对应仍供人工审阅。讲者提到的AI数值保留在原文中，与图表的数据分别注明来源。</p>
+</dialog>
+<div id="notice" class="notice" role="status" hidden></div>
+<script type="module" src="app.mjs?v=20261025-layout1"></script>
+</body>
+</html>

@@ -71,3 +71,257 @@ html,body{height:auto;overflow:auto;}
 .lecture-panel .chart-wrap{height:clamp(185px,22vh,250px);}
 .lecture-panel>.analysis{min-height:0;padding-top:28px;}
 .chart-axis-label{font-size:11px;}.chart-line{stroke-width:2;}
+
+/* Variation tree & interactive branch editor */
+#variation-tree {
+  margin: 14px 0 10px;
+  padding: 12px 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tree-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tree-title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.tree-title-group strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.tree-hint {
+  font-size: 11px;
+  color: #727a72;
+}
+.tree-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.tree-actions button {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.tree-actions button:hover:not(:disabled) {
+  background: #dce5dc;
+  border-color: #adb9ad;
+}
+.tree-actions button[aria-pressed="true"] {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+.tree-actions button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.tree-actions .tree-btn-delete {
+  background: #faece7;
+  border-color: #e5cbbe;
+  color: #a84832;
+}
+.tree-actions .tree-btn-delete:hover:not(:disabled) {
+  background: #f4dcd3;
+  border-color: #cb9c8b;
+}
+.tree-status {
+  margin: 0;
+  font-size: 11px;
+  color: var(--accent);
+  background: #edf3ed;
+  padding: 6px 10px;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+.tree-status:empty {
+  display: none;
+}
+.tree-diagram {
+  height: 195px;
+  max-height: 230px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fcfbf8;
+  padding: 4px;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #ccd2c7 transparent;
+}
+.tree-diagram svg {
+  display: block;
+}
+.tree-diagram [data-tree-node] {
+  cursor: pointer;
+}
+.tree-diagram [data-tree-node]:hover circle.node-stone {
+  filter: drop-shadow(0 1px 4px rgba(45, 102, 98, 0.45));
+}
+.tree-related {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.tree-related button {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 11px;
+}
+.tree-orphans {
+  border-top: 1px dashed var(--line);
+  padding-top: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.tree-orphans summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--loss);
+}
+
+/* Custom Right-Click Context Menu for Board & Tree */
+.tingqi-context-menu {
+  position: fixed;
+  z-index: 9999;
+  background: #ffffff;
+  border: 1px solid #c8cec4;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(30, 45, 38, 0.22), 0 2px 6px rgba(0,0,0,0.06);
+  padding: 6px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: inherit;
+  font-size: 12px;
+  animation: menu-fade-in 0.1s ease-out;
+}
+@keyframes menu-fade-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+.tingqi-context-menu .menu-header {
+  padding: 6px 10px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tingqi-context-menu button {
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: var(--ink);
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.1s;
+}
+.tingqi-context-menu button:hover {
+  background: #edf2ed;
+}
+.tingqi-context-menu button.delete-btn {
+  color: #c0392b;
+  font-weight: 550;
+}
+.tingqi-context-menu button.delete-btn:hover {
+  background: #faece7;
+}
+
+/* Keep the three review panels beside the board within one desktop viewport. */
+.game-heading{display:none;}
+.tree-hint{display:none;}
+.tree-title-group strong{white-space:nowrap;}
+.tree-related:empty{display:none;}
+@media(min-width:951px){
+  html,body{height:100%;overflow:hidden;}
+  .app{height:100dvh;min-height:0;display:grid;grid-template-rows:48px minmax(0,1fr);}
+  .topbar{height:auto;margin:0 20px;gap:16px;min-width:0;}
+  .workspace{
+    --board-size:min(calc(100dvh - 92px),calc(100vw - 520px));
+    --tree-height:clamp(140px,calc(var(--board-size)*.28),270px);
+    --analysis-height:clamp(170px,calc(var(--board-size)*.30),300px);
+    grid-template-columns:var(--board-size) minmax(0,1fr);
+    grid-template-rows:minmax(0,1fr);
+    align-items:start;gap:24px;padding:12px 20px;min-height:0;
+  }
+  .board-stage{position:static;top:auto;min-width:0;min-height:0;padding:0;align-items:stretch;}
+  .board-host{width:100%;height:auto;aspect-ratio:1;}
+  .board-host>svg{width:100%;height:100%;max-width:none;}
+  .board-foot{position:static;transform:none;width:100%;padding:4px 10px;font-size:11px;line-height:16px;}
+  .lecture-panel{
+    display:grid;grid-template-rows:minmax(0,1fr) var(--tree-height) var(--analysis-height);
+    width:100%;height:var(--board-size);min-width:0;min-height:0;padding:0;gap:12px;
+  }
+  .transcript{display:flex;flex-direction:column;min-width:0;min-height:0;flex:none;margin:0;padding:0;border:0;}
+  .caption-top{flex:none;gap:10px;}
+  .review-navigation{flex:none;margin-top:8px;gap:8px;}
+  .review-navigation button{padding:7px 12px;font-size:13px;}
+  .review-progress{font-size:10px;}
+  .comment,.comment[contenteditable]{
+    flex:1;min-height:0;margin:12px 0 2px;padding:2px;
+    font-size:clamp(17px,calc(var(--board-size)*.029),26px);line-height:1.65;
+    overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;
+  }
+  .annotation-tools{flex:none;margin:6px 0;gap:5px;}
+  .annotation-list{flex:none;margin:4px 0;}
+  #variation-tree{min-height:0;min-width:0;height:100%;margin:0;padding:9px 10px;gap:6px;overflow:hidden;}
+  .tree-heading{flex:none;gap:6px;}
+  .tree-title-group{gap:0;}
+  .tree-title-group strong{font-size:12px;}
+  .tree-actions{gap:4px;}
+  .tree-actions button{padding:4px 7px;font-size:11px;}
+  .tree-delete summary{font-size:11px;white-space:nowrap;cursor:pointer;}
+  .tree-diagram{flex:1;min-height:0;height:auto;max-height:none;overscroll-behavior:contain;}
+  .tree-status{flex:none;padding:3px 6px;font-size:10px;}
+  .tree-related{flex:none;font-size:10px;}
+  .tree-orphans{flex:none;max-height:40%;overflow:auto;}
+  .lecture-panel>.analysis{
+    display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+    width:100%;height:100%;min-height:0;margin:0;padding:0;gap:5px;
+  }
+  .analysis-heading{margin:0;gap:8px;}
+  .analysis-heading>div:first-child{gap:10px;}
+  .lecture-panel .chart-wrap{height:100%;min-height:0;}
+  .analysis-foot{margin:0;line-height:14px;gap:10px;}
+  .analysis-foot span:last-child{white-space:nowrap;}
+}
+@media(min-width:951px) and (max-width:1100px){
+  .workspace{--tree-height:125px;--analysis-height:145px;gap:18px;}
+  .tree-actions button{padding:3px 4px;}
+  .tree-title-group{display:none;}
+  .comment,.comment[contenteditable]{font-size:17px;}
+}
+
+

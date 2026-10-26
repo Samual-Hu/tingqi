@@ -1,7 +1,17 @@
 {
   "version": 1,
-  "defaultCase": "shin-yang-2026-10-09",
+  "defaultCase": "prototype-2026-10-25",
   "cases": [
+    {
+      "id": "prototype-2026-10-25",
+      "slug": "prototype-2026-10-25-original-commentary",
+      "title": "申真谞 · 卞相壹｜AI原创讲解原型 · 最高棋士战",
+      "data": "data/cases/prototype-2026-10-25.json",
+      "sgf": "data/cases/prototype-2026-10-25.sgf",
+      "languages": [
+        "zh"
+      ]
+    },
     {
       "id": "youtube_5fxA9bEEP-Q",
       "slug": "lg-2026-round24-guzihao-nahyun",

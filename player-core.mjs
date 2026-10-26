@@ -4,28 +4,88 @@ export function chapterForMove(data,move){const n=Math.max(1,Math.min(data.moveC
 export function curveMoveAtX(x,width,count=183,padding=30){const inner=Math.max(1,width-padding*2);return Math.max(1,Math.min(count,Math.round((x-padding)/inner*count)));}
 export function scoreLabel(score){return score>=0?'黑领先 '+score.toFixed(1)+' 目':'白领先 '+Math.abs(score).toFixed(1)+' 目';}
 
-// Keep source events intact. Only omit silent, already-shown branch prefixes.
+// Keep source events intact. Only omit silent, already-shown branch prefixes or dead-end duplicate attempts.
 export function repeatedPrefixIndices(events,textOf=e=>e.text){
- const skipped=new Set();let previous=null;
+ const skipped=new Set();
  events.forEach((e,i)=>{if(e.kind==='transition'&&!textOf(e)?.trim())skipped.add(i);});
- for(let i=0;i<events.length;){
-  const e=events[i];if(!e.branch){previous=null;i++;continue;}
-  let end=i+1;while(end<events.length&&events[end].branch===e.branch)end++;
-  const block=events.slice(i,end),steps=block.filter(n=>n.step>0);
-  if(previous&&previous.base===e.displayMove){
-   let matched=0;
-   for(const step of steps){const old=previous.steps.get(step.step);
-    if(!old||old.board!==step.board||old.color!==step.color||old.coordinate!==step.coordinate||textOf(step)?.trim())break;
-    skipped.add(i+block.indexOf(step));matched++;
-   }
-   if(matched&&e.step===0&&!textOf(e)?.trim())skipped.add(i);
+
+ const segments=[];
+ let curSeg=null;
+ events.forEach((e,i)=>{
+  if(!e.branch){
+   if(curSeg){segments.push(curSeg);curSeg=null;}
+   return;
   }
-  previous={base:e.displayMove,steps:new Map(steps.map(s=>[s.step,s]))};i=end;
+  if(e.step===0||(curSeg&&curSeg.branch!==e.branch)){
+   if(curSeg)segments.push(curSeg);
+   curSeg={branch:e.branch,displayMove:e.displayMove,events:[{e,index:i}]};
+  }else{
+   if(!curSeg)curSeg={branch:e.branch,displayMove:e.displayMove,events:[]};
+   curSeg.events.push({e,index:i});
+  }
+ });
+ if(curSeg)segments.push(curSeg);
+
+ for(let s=1;s<segments.length;s++){
+  const prev=segments[s-1],curr=segments[s];
+  if(prev.branch===curr.branch&&prev.displayMove===curr.displayMove){
+   const prevSteps=prev.events.filter(x=>x.e.step>0);
+   const currSteps=curr.events.filter(x=>x.e.step>0);
+   let matchCount=0;
+   while(matchCount<prevSteps.length&&matchCount<currSteps.length&&prevSteps[matchCount].e.board===currSteps[matchCount].e.board&&prevSteps[matchCount].e.color===currSteps[matchCount].e.color&&prevSteps[matchCount].e.coordinate===currSteps[matchCount].e.coordinate){
+    matchCount++;
+   }
+   if(matchCount>0){
+    if(currSteps.length>prevSteps.length){
+     const firstCurrText=currSteps.find(x=>textOf(x.e)?.trim())?.e.step??(matchCount+1);
+     prevSteps.forEach(x=>{
+      if(x.e.step>=firstCurrText&&!textOf(x.e)?.trim())skipped.add(x.index);
+     });
+     curr.events.forEach(x=>{
+      if(x.e.step===0&&!textOf(x.e)?.trim())skipped.add(x.index);
+      else if(x.e.step>0&&x.e.step<firstCurrText&&!textOf(x.e)?.trim())skipped.add(x.index);
+     });
+    }else{
+     curr.events.forEach(x=>{
+      if(x.e.step===0&&!textOf(x.e)?.trim())skipped.add(x.index);
+      else if(x.e.step>0&&x.e.step<=matchCount&&!textOf(x.e)?.trim())skipped.add(x.index);
+     });
+    }
+   }
+  }
  }
+
+ const seenBoardsByMove=new Map(),seenBranchesByMove=new Map();
+ segments.forEach(seg=>{
+  const moveKey=String(seg.displayMove);
+  if(!seenBoardsByMove.has(moveKey)){
+   seenBoardsByMove.set(moveKey,new Set());
+   seenBranchesByMove.set(moveKey,new Set());
+  }
+  const seenBoards=seenBoardsByMove.get(moveKey);
+  const seenBranches=seenBranchesByMove.get(moveKey);
+  const steps=seg.events.filter(x=>x.e.step>0);
+  const firstCommentedStep=steps.find(x=>textOf(x.e)?.trim())?.e.step;
+  const hasPriorBranches=seenBranches.size>0||seenBoards.size>0;
+
+  steps.forEach(x=>{
+   const isSilent=!textOf(x.e)?.trim();
+   if(isSilent){
+    if(seenBoards.has(x.e.board)){
+     skipped.add(x.index);
+    }else if(firstCommentedStep&&x.e.step<firstCommentedStep&&hasPriorBranches){
+     skipped.add(x.index);
+    }
+   }
+   seenBoards.add(x.e.board);
+  });
+  if(seg.branch)seenBranches.add(seg.branch);
+ });
+
  return skipped;
 }
+
 export function adjacentEvent(events,index,direction,skipped){
  let next=index+direction;while(next>=0&&next<events.length&&skipped.has(next))next+=direction;
  return Math.max(0,Math.min(events.length-1,next));
 }
-
