@@ -3,21 +3,21 @@
   "defaultCase": "prototype-2026-10-25",
   "cases": [
     {
-      "id": "prototype-2026-10-25",
-      "slug": "prototype-2026-10-25-original-commentary",
-      "title": "申真谞 · 卞相壹｜AI原创讲解原型 · 最高棋士战",
-      "data": "data/cases/prototype-2026-10-25.json",
-      "sgf": "data/cases/prototype-2026-10-25.sgf",
+      "id": "youtube_5fxA9bEEP-Q",
+      "slug": "lg-2026-round24-guzihao-nahyun",
+      "title": "辜梓豪 · 罗玄｜第31届LG杯24强",
+      "data": "data/cases/youtube_5fxA9bEEP-Q.json",
+      "sgf": "data/cases/youtube_5fxA9bEEP-Q.sgf",
       "languages": [
         "zh"
       ]
     },
     {
-      "id": "youtube_5fxA9bEEP-Q",
-      "slug": "lg-2026-round24-guzihao-nahyun",
-      "title": "辜梓豪 · 罗玄｜第31届LG杯24强【残次·待重构变化图】",
-      "data": "data/cases/youtube_5fxA9bEEP-Q.json",
-      "sgf": "data/cases/youtube_5fxA9bEEP-Q.sgf",
+      "id": "prototype-2026-10-25",
+      "slug": "prototype-2026-10-25-original-commentary",
+      "title": "申真谞 · 卞相壹｜AI原创讲解原型 · 最高棋士战",
+      "data": "data/cases/prototype-2026-10-25.json",
+      "sgf": "data/cases/prototype-2026-10-25.sgf",
       "languages": [
         "zh"
       ]
