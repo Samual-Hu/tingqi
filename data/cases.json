@@ -68,14 +68,16 @@
     },
     {
       "id": "youtube_ExR8qh0kHmY",
-      "title": "李志贤 · 申真谞｜烂柯杯半决赛",
+      "title": "李志贤 · 申真谞｜烂柯杯半决赛【已人工审核】",
       "data": "data/cases/youtube_ExR8qh0kHmY.json",
       "sgf": "data/cases/youtube_ExR8qh0kHmY.sgf",
       "slug": "lanke-2026-semifinal",
       "languages": [
         "zh",
         "en"
-      ]
+      ],
+      "humanReview": "approved",
+      "reviewSnapshotSha256": "ea2e365aaf1055255ae35dfd17a1e19c8f3a7b339ebab2a62e3f4874e629aa09"
     },
     {
       "id": "shin-yang-2026-10-09",
