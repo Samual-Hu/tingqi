@@ -5,12 +5,14 @@
     {
       "id": "youtube_5fxA9bEEP-Q",
       "slug": "lg-2026-round24-guzihao-nahyun",
-      "title": "辜梓豪 · 罗玄｜第31届LG杯24强",
+      "title": "辜梓豪 · 罗玄｜第31届LG杯24强【已人工审核】",
       "data": "data/cases/youtube_5fxA9bEEP-Q.json",
       "sgf": "data/cases/youtube_5fxA9bEEP-Q.sgf",
       "languages": [
         "zh"
-      ]
+      ],
+      "humanReview": "approved",
+      "reviewSnapshotSha256": "0696a4e90a77d076c20f4e37a2f17332af064128c45c27c22c1523b860c16ef9"
     },
     {
       "id": "prototype-2026-10-25",

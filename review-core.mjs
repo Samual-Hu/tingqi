@@ -47,11 +47,19 @@ export function effectiveEvent(d,e){
 }
 // SGF review selects a position, which may have several source utterances/events.
 export function effectivePositionEvent(d,e){
- const result=effectiveEvent(d,e),keys=new Set(e.reviewPositionKeys??[positionKey(e)]),placed=d.placements.filter(p=>keys.has(p.position)),byId=new Map(d.sentences.map(s=>[s.id,s])),notes=placed.map(p=>byId.get(p.sentenceId)).filter(Boolean),eventIds=new Set(placed.map(p=>p.eventId));
+ const result=effectiveEvent(d,e),keys=new Set(e.reviewPositionKeys??[positionKey(e)]),occurrence=e.reviewEventIds&&new Set(e.reviewEventIds),placed=d.placements.filter(p=>keys.has(p.position)&&(!occurrence||occurrence.has(p.eventId))),byId=new Map(d.sentences.map(s=>[s.id,s])),notes=placed.map(p=>byId.get(p.sentenceId)).filter(Boolean),eventIds=new Set(placed.map(p=>p.eventId));
  result.text=notes.map(s=>s.text).join('');
  result.textEn=notes.map(s=>s.text===(s.baselineText??s.originalText)?s.textEn??'':'').join('');
  result.annotations=(d.annotations??[]).filter(a=>eventIds.has(a.eventId)||a.eventId===e.id).map(a=>({...a,anchorStatus:resolveAnchor(a,result.text)?'linked':a.anchor?'needs_review':'unlinked'}));
  return result;
+}
+// A later return to the same board is a new spoken occurrence, not an early
+// append to the first visit. Only adjacent clauses belong in one screen.
+export function lectureOccurrence(events,e){
+ const index=events.findIndex(x=>x.id===e.id);if(index<0)return[e.id];
+ const same=x=>x.kind!=='transition'&&positionKey(x)===positionKey(e)&&x.board===e.board&&JSON.stringify(x.suggestedPoint??null)===JSON.stringify(e.suggestedPoint??null);
+ let start=index,end=index;while(start>0&&same(events[start-1]))start--;while(end+1<events.length&&same(events[end+1]))end++;
+ return events.slice(start,end+1).map(x=>x.id);
 }
 export function resolveAnchor(annotation,text){
  const a=annotation.anchor;if(!a)return null;

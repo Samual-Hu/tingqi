@@ -18,7 +18,8 @@ export function migrateReviewDraft(oldData,data,saved){
  for(const e of data.events){const k=boardKey(e);if(!newByBoard.has(k)||!newByBoard.get(k).text&&e.text)newByBoard.set(k,e);}
  const changedPositions=new Set();
  for(const e of oldData.events){const notes=notesAt(old,e);if(notes.map(s=>s.text).join('')!==notes.map(s=>oldWords.get(s.id)??'').join(''))changedPositions.add(positionKey(e));}
- const destination=eventId=>{const e=oldEvents.get(eventId);return e&&newByBoard.get(boardKey(e));};
+ const redirects=data.reviewEventRedirects?.[old.baseVersion]??{};
+ const destination=eventId=>{const redirected=redirects[eventId];if(redirected)return data.events.find(e=>e.id===redirected);const e=oldEvents.get(eventId);return e&&newByBoard.get(boardKey(e));};
  for(const position of changedPositions){
   const event=oldData.events.find(e=>positionKey(e)===position),dest=event&&destination(event.id),notes=event?notesAt(old,event):[];
   if(!dest||notes.some(s=>!s.userAdded&&(sources.get(sourceKey(s))??[]).length!==1)){conflicts.push('position:'+position);continue;}
@@ -49,7 +50,7 @@ export function migrateReviewDraft(oldData,data,saved){
 export async function migrateStoredReview(storage,data,{notice=()=>{}}={}){
  const canonical='tingqi-review-v1:'+data.id,destination=canonical+':version:'+baseVersion(data);
  if(storage.getItem(destination))return;
- for(const from of data.reviewMigration?.from??[]){
+ for(const from of [...(data.reviewMigration?.from??[])].reverse()){
   const raw=storage.getItem(canonical+':version:'+from.baseVersion)||storage.getItem(canonical);if(!raw)continue;
   let saved;try{saved=JSON.parse(raw);}catch{continue;}if(saved.baseVersion!==from.baseVersion)continue;
   try{

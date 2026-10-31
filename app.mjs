@@ -1,7 +1,8 @@
 import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261031-return1';
 import {loadPublishedReview} from './review-published.mjs?v=20261031-return1';
-import {createReviewEditor} from './review-editor.mjs?v=20261031-return1';
-import {migrateStoredReview} from './review-migration.mjs?v=20261031-opening3';
+import {prepareLocalReview} from './review-local.mjs?v=20261031-local1';
+import {createReviewEditor} from './review-editor.mjs?v=20261031-flow1';
+import {migrateStoredReview} from './review-migration.mjs?v=20261031-forward1';
 const $=id=>document.getElementById(id);
 document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
 document.querySelector('.tools-menu-content').addEventListener('click',event=>{if(event.target.closest('a,button'))document.querySelector('.tools-menu').open=false;});
@@ -14,7 +15,7 @@ let data,selectedCase,index=0,editor=null;
 let skipped=new Set();
 const reviewPositionKey=e=>(e.branch&&e.step?[e.branch,e.step]:[null,e.displayMove??e.move??0]).join(':')+JSON.stringify(e.suggestedPoint??null);
 function rebuildTimeline(){
- skipped=repeatedPrefixIndices(data.events,e=>{const shown=editor?editor.effective(e):e;return language==='en'?shown.textEn:shown.text;});
+ skipped=repeatedPrefixIndices(data.events,e=>{const shown=editor?editor.lectureText(e):e;return language==='en'?shown.textEn:shown.text;});
  for(let i=1;i<data.events.length;i++)if(reviewPositionKey(data.events[i])===reviewPositionKey(data.events[i-1]))skipped.add(i);
 }
 function setLanguage(){
@@ -198,7 +199,7 @@ try{
  const response=await fetch(selected.data,{cache:'no-store'});if(!response.ok)throw new Error('data');
  data=await response.json();
  await migrateStoredReview(localStorage,data,{notice:say});
- try{await loadPublishedReview(localStorage,data,{notice:say});}catch(e){say(e.message);}
+ try{if(['127.0.0.1','localhost'].includes(location.hostname))await prepareLocalReview(localStorage,data);else await loadPublishedReview(localStorage,data,{notice:say});}catch(e){say(e.message);}
  const hasEnglish=selected.languages?.includes('en')??data.translation?.status==='complete';
  $('language').hidden=!hasEnglish;if(!hasEnglish)language='zh';
  editor=createReviewEditor({data,current,navigate:i=>moveTo(i,false),stop,refresh:()=>{rebuildTimeline();render();},notice:say});

@@ -24496,22 +24496,22 @@
       "contentVersion": 3
     },
     {
-      "id": "e0378",
-      "kind": "review",
-      "move": 112,
-      "displayMove": 112,
-      "color": "W",
-      "coordinate": "P8",
-      "board": "....................bwbww...............b.bb.w...w........bb.b.bw.....b..b..b.b.bww.............bwbbwb.............ww.w.w................w..............................b....b...b................b..........www...b..........bw..w...bwbb.bbbb....wwb..www..ww.www.b.bb......bbbw..bw....w.....wwwbbww.w.b........wbwwbbbwwbb.b.....wb...bbw.wwbwb...........w....w.....",
+      "id": "e0378-forward-113",
+      "kind": "context",
+      "move": 113,
+      "displayMove": 113,
+      "color": "B",
+      "coordinate": "S6",
+      "board": "....................bwbww...............b.bb.w...w........bb.b.bw.....b..b..b.b.bww.............bwbbwb.............ww.w.w................w..............................b....b...b................b..........www...b..........bw..w...bwbb.bbbb....wwb..www..ww.www.b.bbb.....bbbw..bw....w.....wwwbbww.w.b........wbwwbbbwwbb.b.....wb...bbw.wwbwb...........w....w.....",
       "last": [
-        14,
-        11
+        17,
+        13
       ],
       "text": "同时白棋虽然提了一个龟甲的形状，",
       "branch": null,
       "step": null,
       "branchLength": null,
-      "label": "回顾",
+      "label": "局面讲解",
       "duration": 2.909,
       "sources": [
         "chunk-005:u0009"
@@ -24520,7 +24520,9 @@
       "textEn": "",
       "textVerbatim": "同时白棋虽然提了一个龟甲的形状，",
       "textEdits": [],
-      "contentVersion": 3
+      "contentVersion": 3,
+      "sourceMove": 112,
+      "sourceKind": "review"
     },
     {
       "id": "e0379",
@@ -30772,22 +30774,22 @@
       "contentVersion": 3
     },
     {
-      "id": "e0507",
-      "kind": "review",
-      "move": 38,
-      "displayMove": 38,
-      "color": "W",
-      "coordinate": "G15",
-      "board": "....................bw.ww...............bw.b..............bbwb.bw.....b..b..b.bwbww.............bwbbwb.............ww.w..................w...................................b...............................w............................................................................w.....w.........b....................b.........................................",
+      "id": "e0507-forward-171",
+      "kind": "context",
+      "move": 171,
+      "displayMove": 171,
+      "color": "B",
+      "coordinate": "C12",
+      "board": "....................bwbww..........bb...b.bb.w...w.bbbww..bb.b.bw....wbwwb..b.b.bww......w..b...bwbbwb.....w.www...ww.www......b.bw....b.www...b....b.b.....bwbbb.bbb...b....b.bwbw.wbwwww........bwwbwwwb.b.www...b.bwbb..b..bw..w...bwbbwbbbb....wwb..www..ww.www.b.bbb.....bbbw..bw....w.....wwwbbww.w.b........wbwwbbbwwbb.b.....wb...bbw.wwbwb...........w....w.....",
       "last": [
-        6,
-        4
+        2,
+        7
       ],
       "text": "在此处随手一挡之后，",
       "branch": null,
       "step": null,
       "branchLength": null,
-      "label": "回顾",
+      "label": "终局总结",
       "duration": 1.818,
       "sources": [
         "chunk-006:u0027"
@@ -30796,25 +30798,27 @@
       "textEn": "",
       "textVerbatim": "在此处随手一挡之后，",
       "textEdits": [],
-      "contentVersion": 3
+      "contentVersion": 3,
+      "sourceMove": 38,
+      "sourceKind": "review"
     },
     {
-      "id": "e0508",
-      "kind": "review",
-      "move": 39,
-      "displayMove": 39,
+      "id": "e0508-forward-171",
+      "kind": "context",
+      "move": 171,
+      "displayMove": 171,
       "color": "B",
-      "coordinate": "E17",
-      "board": "....................bw.ww...............bwbb..............bbwb.bw.....b..b..b.bwbww.............bwbbwb.............ww.w..................w...................................b...............................w............................................................................w.....w.........b....................b.........................................",
+      "coordinate": "C12",
+      "board": "....................bwbww..........bb...b.bb.w...w.bbbww..bb.b.bw....wbwwb..b.b.bww......w..b...bwbbwb.....w.www...ww.www......b.bw....b.www...b....b.b.....bwbbb.bbb...b....b.bwbw.wbwwww........bwwbwwwb.b.www...b.bwbb..b..bw..w...bwbbwbbbb....wwb..www..ww.www.b.bbb.....bbbw..bw....w.....wwwbbww.w.b........wbwwbbbwwbb.b.....wb...bbw.wwbwb...........w....w.....",
       "last": [
-        4,
-        2
+        2,
+        7
       ],
       "text": "被黑棋打吃，白棋才突然发现这几颗子粘不回去，",
       "branch": null,
       "step": null,
       "branchLength": null,
-      "label": "回顾",
+      "label": "终局总结",
       "duration": 4,
       "sources": [
         "chunk-006:u0028"
@@ -30823,25 +30827,27 @@
       "textEn": "",
       "textVerbatim": "被黑棋打吃，白棋才突然发现这几颗子粘不回去，",
       "textEdits": [],
-      "contentVersion": 3
+      "contentVersion": 3,
+      "sourceMove": 39,
+      "sourceKind": "review"
     },
     {
-      "id": "e0509",
-      "kind": "review",
-      "move": 41,
-      "displayMove": 41,
+      "id": "e0509-forward-171",
+      "kind": "context",
+      "move": 171,
+      "displayMove": 171,
       "color": "B",
-      "coordinate": "D18",
-      "board": "....................bwbww...............b.bb.w............bb.b.bw.....b..b..b.b.bww.............bwbbwb.............ww.w..................w...................................b...............................w............................................................................w.....w.........b....................b.........................................",
+      "coordinate": "C12",
+      "board": "....................bwbww..........bb...b.bb.w...w.bbbww..bb.b.bw....wbwwb..b.b.bww......w..b...bwbbwb.....w.www...ww.www......b.bw....b.www...b....b.b.....bwbbb.bbb...b....b.bwbw.wbwwww........bwwbwwwb.b.www...b.bwbb..b..bw..w...bwbbwbbbb....wwb..www..ww.www.b.bbb.....bbbw..bw....w.....wwwbbww.w.b........wbwwbbbwwbb.b.....wb...bbw.wwbwb...........w....w.....",
       "last": [
-        3,
-        1
+        2,
+        7
       ],
       "text": "而左上一番交锋下来，黑棋已经占据了优势，乃至是胜势的局面。",
       "branch": null,
       "step": null,
       "branchLength": null,
-      "label": "回顾",
+      "label": "终局总结",
       "duration": 5.273,
       "sources": [
         "chunk-006:u0029"
@@ -30850,7 +30856,9 @@
       "textEn": "",
       "textVerbatim": "而左上一番交锋下来，黑棋已经占据了优势，乃至是胜势的局面。",
       "textEdits": [],
-      "contentVersion": 3
+      "contentVersion": 3,
+      "sourceMove": 41,
+      "sourceKind": "review"
     },
     {
       "id": "e0510",
@@ -32305,7 +32313,7 @@
     }
   ],
   "duration": 1270.6,
-  "humanReview": "pending",
+  "humanReview": "approved",
   "trainingEligible": false,
   "sources": {
     "game": "https://igo-kifu.com/kifu/107803",
@@ -32346,14 +32354,26 @@
       {
         "baseVersion": "265c9071",
         "url": "data/review-bases/youtube_5fxA9bEEP-Q.265c9071.json"
+      },
+      {
+        "baseVersion": "83b8e911",
+        "url": "data/review-bases/youtube_5fxA9bEEP-Q.83b8e911.json"
       }
     ],
     "mainlineUnchanged": true
   },
   "publishedReview": {
-    "url": "data/review-snapshots/youtube_5fxA9bEEP-Q.20261031T105538069Z.json",
-    "sha256": "6ab1216f4630ac2e6f381bdd1a72cad051ce2303985667afbb6d090527096d5d",
-    "baseVersion": "83b8e911",
-    "revision": "20261031T105538069Z"
+    "url": "data/review-snapshots/youtube_5fxA9bEEP-Q.reviewed-20261031.0696a4e90a77.json",
+    "sha256": "0696a4e90a77d076c20f4e37a2f17332af064128c45c27c22c1523b860c16ef9",
+    "baseVersion": "511df439",
+    "revision": "reviewed-20261031-0696a4e90a77"
+  },
+  "reviewEventRedirects": {
+    "83b8e911": {
+      "e0378": "e0378-forward-113",
+      "e0507": "e0507-forward-171",
+      "e0508": "e0508-forward-171",
+      "e0509": "e0509-forward-171"
+    }
   }
 }
