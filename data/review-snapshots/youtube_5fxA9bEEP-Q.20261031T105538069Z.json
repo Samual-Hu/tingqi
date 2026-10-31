@@ -1,0 +1,5094 @@
+{
+  "version": 1,
+  "caseId": "youtube_5fxA9bEEP-Q",
+  "baseVersion": "83b8e911",
+  "sentences": [
+    {
+      "id": "note:e0005",
+      "text": "双方以错小目对二连星开局，",
+      "originalText": "双方以错小目对二连星开局，",
+      "textEn": "",
+      "baselineText": "双方以错小目对二连星开局，",
+      "sourceIds": [
+        "chunk-001:u0005"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0006",
+      "text": "黑棋守角，",
+      "originalText": "黑棋守角，",
+      "textEn": "",
+      "baselineText": "黑棋守角，",
+      "sourceIds": [
+        "chunk-001:u0006"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0007",
+      "text": "白棋挂，",
+      "originalText": "白棋挂，",
+      "textEn": "",
+      "baselineText": "白棋挂，",
+      "sourceIds": [
+        "chunk-001:u0007"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0008",
+      "text": "黑棋飞，",
+      "originalText": "黑棋飞，",
+      "textEn": "",
+      "baselineText": "黑棋飞，",
+      "sourceIds": [
+        "chunk-001:u0008"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0009",
+      "text": "白棋从边上拆。",
+      "originalText": "白棋从边上拆。",
+      "textEn": "",
+      "baselineText": "白棋从边上拆。",
+      "sourceIds": [
+        "chunk-001:u0009"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0010",
+      "text": "得到先手，黑棋在左上点角。",
+      "originalText": "得到先手，黑棋在左上点角。",
+      "textEn": "",
+      "baselineText": "得到先手，黑棋在左上点角。",
+      "sourceIds": [
+        "chunk-001:u0010",
+        "chunk-001:u0011"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0017",
+      "text": "局部是经典定式，",
+      "originalText": "局部是经典定式，",
+      "textEn": "",
+      "baselineText": "局部是经典定式，",
+      "sourceIds": [
+        "chunk-001:u0012"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0018",
+      "text": "白棋马上在角部扳完之后",
+      "originalText": "白棋马上在角部扳完之后",
+      "textEn": "",
+      "baselineText": "白棋马上在角部扳完之后",
+      "sourceIds": [
+        {
+          "id": "chunk-001:u0013",
+          "quote": "白棋马上在角部扳完之后"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0020",
+      "text": "断定型，",
+      "originalText": "断定型，",
+      "textEn": "",
+      "baselineText": "断定型，",
+      "sourceIds": [
+        {
+          "id": "chunk-001:u0013",
+          "quote": "断定型，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0021",
+      "text": "黑棋断打，",
+      "originalText": "黑棋断打，",
+      "textEn": "",
+      "baselineText": "黑棋断打，",
+      "sourceIds": [
+        "chunk-001:u0014"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0022",
+      "text": "白棋长出，",
+      "originalText": "白棋长出，",
+      "textEn": "",
+      "baselineText": "白棋长出，",
+      "sourceIds": [
+        "chunk-001:u0015"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0023",
+      "text": "然后黑棋再吃。",
+      "originalText": "然后黑棋再吃。",
+      "textEn": "",
+      "baselineText": "然后黑棋再吃。",
+      "sourceIds": [
+        "chunk-001:u0016"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0025",
+      "text": "下一招，",
+      "originalText": "下一招，",
+      "textEn": "",
+      "baselineText": "下一招，",
+      "sourceIds": [
+        "chunk-001:u0017"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0026",
+      "text": "白棋打吃的时候，",
+      "originalText": "白棋打吃的时候，",
+      "textEn": "",
+      "baselineText": "白棋打吃的时候，",
+      "sourceIds": [
+        "chunk-001:u0018"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0027",
+      "text": "黑棋长出作战。",
+      "originalText": "辜梓豪长出作战。",
+      "textEn": "",
+      "baselineText": "黑棋长出作战。",
+      "sourceIds": [
+        "chunk-001:u0019"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0028",
+      "text": "白棋在下方飞起，",
+      "originalText": "白棋在下方飞起，",
+      "textEn": "",
+      "baselineText": "白棋在下方飞起，",
+      "sourceIds": [
+        "chunk-001:u0020"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0029",
+      "text": "都是AI推荐的定式。",
+      "originalText": "都是AI推荐的定式。",
+      "textEn": "",
+      "baselineText": "都是AI推荐的定式。",
+      "sourceIds": [
+        "chunk-001:u0021"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0030",
+      "text": "黑棋在中央跳走畅，",
+      "originalText": "黑棋在中央跳走畅，",
+      "textEn": "",
+      "baselineText": "黑棋在中央跳走畅，",
+      "sourceIds": [
+        "chunk-001:u0022"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0031",
+      "text": "白棋从上方拆，",
+      "originalText": "白棋从上方拆，",
+      "textEn": "",
+      "baselineText": "白棋从上方拆，",
+      "sourceIds": [
+        "chunk-001:u0023"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0032",
+      "text": "黑棋再从下方逼住。",
+      "originalText": "黑棋再从下方逼住。",
+      "textEn": "",
+      "baselineText": "黑棋再从下方逼住。",
+      "sourceIds": [
+        "chunk-001:u0024"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0033",
+      "text": "白棋接下来在上方刺的时候，",
+      "originalText": "白棋接下来在上方刺的时候，",
+      "textEn": "",
+      "baselineText": "白棋接下来在上方刺的时候，",
+      "sourceIds": [
+        "chunk-001:u0025"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0034",
+      "text": "黑棋冲，",
+      "originalText": "黑棋冲，",
+      "textEn": "",
+      "baselineText": "黑棋冲，",
+      "sourceIds": [
+        "chunk-001:u0026"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0035",
+      "text": "同样是局部最犀利的下法。",
+      "originalText": "同样是局部最犀利的下法。",
+      "textEn": "",
+      "baselineText": "同样是局部最犀利的下法。",
+      "sourceIds": [
+        "chunk-001:u0027"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0036",
+      "text": "白棋在上方虎先手，",
+      "originalText": "白棋在上方虎先手，",
+      "textEn": "",
+      "baselineText": "白棋在上方虎先手，",
+      "sourceIds": [
+        "chunk-001:u0028"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0037",
+      "text": "黑棋提吃做活，",
+      "originalText": "黑棋提吃做活，",
+      "textEn": "",
+      "baselineText": "黑棋提吃做活，",
+      "sourceIds": [
+        "chunk-001:u0029"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0038",
+      "text": "白棋再冲反击。",
+      "originalText": "白棋再冲反击。",
+      "textEn": "",
+      "baselineText": "白棋再冲反击。",
+      "sourceIds": [
+        "chunk-001:u0030"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0040",
+      "text": "接下来，",
+      "originalText": "接下来，",
+      "textEn": "",
+      "baselineText": "接下来，",
+      "sourceIds": [
+        "chunk-001:u0031"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0041",
+      "text": "黑棋从上方一冲。",
+      "originalText": "黑棋从上方一冲。",
+      "textEn": "",
+      "baselineText": "黑棋从上方一冲。",
+      "sourceIds": [
+        "chunk-001:u0032"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0043",
+      "text": "此时，白棋的最佳应对，",
+      "originalText": "此时，白棋的最佳应对，",
+      "textEn": "",
+      "baselineText": "此时，白棋的最佳应对，",
+      "sourceIds": [
+        "chunk-001:u0033"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0044",
+      "text": "是要在上方并一手，",
+      "originalText": "是要在上方并一手，",
+      "textEn": "",
+      "baselineText": "是要在上方并一手，",
+      "sourceIds": [
+        "chunk-001:u0034"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0045",
+      "text": "提防住黑棋在这一带靠等等的手段。如此，双方将形成黑棋得地、白棋取势的格局。",
+      "originalText": "提防住黑棋在这一带靠等等的手段。如此，双方将形成黑棋得地、白棋取势的格局。",
+      "textEn": "",
+      "baselineText": "提防住黑棋在这一带靠等等的手段。如此，双方将形成黑棋得地、白棋取势的格局。",
+      "sourceIds": [
+        "chunk-001:u0035",
+        "chunk-001:u0036",
+        "chunk-001:u0037"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0046",
+      "text": "下一招棋，黑棋在上方尖，",
+      "originalText": "下一招棋，黑棋在上方尖，",
+      "textEn": "",
+      "baselineText": "下一招棋，黑棋在上方尖，",
+      "sourceIds": [
+        "chunk-001:u0038",
+        "chunk-001:u0039"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0047",
+      "text": "白棋爬，",
+      "originalText": "白棋爬，",
+      "textEn": "",
+      "baselineText": "白棋爬，",
+      "sourceIds": [
+        "chunk-001:u0040"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0048",
+      "text": "黑棋打完之后",
+      "originalText": "黑棋打完之后",
+      "textEn": "",
+      "baselineText": "黑棋打完之后",
+      "sourceIds": [
+        {
+          "id": "chunk-001:u0041",
+          "quote": "黑棋打完之后"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0050",
+      "text": "长出，",
+      "originalText": "长出，",
+      "textEn": "",
+      "baselineText": "长出，",
+      "sourceIds": [
+        {
+          "id": "chunk-001:u0041",
+          "quote": "长出，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0051",
+      "text": "白棋就是拐下弃子，",
+      "originalText": "白棋就是拐下弃子，",
+      "textEn": "",
+      "baselineText": "白棋就是拐下弃子，",
+      "sourceIds": [
+        "chunk-001:u0042"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0052",
+      "text": "\n",
+      "originalText": "黑棋扳收气，",
+      "textEn": "",
+      "baselineText": "黑棋扳收气，",
+      "sourceIds": [
+        "chunk-001:u0043"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0053",
+      "text": "\n",
+      "originalText": "白棋顶先手，",
+      "textEn": "",
+      "baselineText": "白棋顶先手，",
+      "sourceIds": [
+        "chunk-001:u0044"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0056",
+      "text": "黑棋再收气的时候，",
+      "originalText": "黑棋再收气的时候，",
+      "textEn": "",
+      "baselineText": "黑棋再收气的时候，",
+      "sourceIds": [
+        "chunk-001:u0045"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0057",
+      "text": "白棋从下方一带小飞守角，",
+      "originalText": "白棋从下方一带小飞守角，",
+      "textEn": "",
+      "baselineText": "白棋从下方一带小飞守角，",
+      "sourceIds": [
+        "chunk-001:u0046"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0058",
+      "text": "这样的话，上方一带的收气都是先手，白棋外围很厚实，但是角部，黑棋所得实地也不菲，双方还是两分的一个形势。",
+      "originalText": "这样的话，上方一带的收气都是先手，白棋外围很厚实，但是角部，黑棋所得实地也不菲，双方还是两分的一个形势。",
+      "textEn": "",
+      "baselineText": "这样的话，上方一带的收气都是先手，白棋外围很厚实，但是角部，黑棋所得实地也不菲，双方还是两分的一个形势。",
+      "sourceIds": [
+        "chunk-001:u0047",
+        "chunk-001:u0048",
+        "chunk-001:u0049",
+        "chunk-001:u0050"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0061",
+      "text": "而实战当中，此处白棋没有并，",
+      "originalText": "而实战当中，此处白棋没有并，",
+      "textEn": "",
+      "baselineText": "而实战当中，此处白棋没有并，",
+      "sourceIds": [
+        "chunk-001:u0051"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0062",
+      "text": "选择了在下方直接收气。",
+      "originalText": "选择了在下方直接收气。",
+      "textEn": "",
+      "baselineText": "选择了在下方直接收气。",
+      "sourceIds": [
+        "chunk-001:u0052"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0063",
+      "text": "这给了黑棋施展手段的一个机会。",
+      "originalText": "这给了黑棋施展手段的一个机会。",
+      "textEn": "",
+      "baselineText": "这给了黑棋施展手段的一个机会。",
+      "sourceIds": [
+        "chunk-001:u0053"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0065",
+      "text": "现在局部黑棋的最强应对，",
+      "originalText": "现在局部黑棋的最强应对，",
+      "textEn": "",
+      "baselineText": "现在局部黑棋的最强应对，",
+      "sourceIds": [
+        "chunk-001:u0054"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0066",
+      "text": "是在此靠一手，",
+      "originalText": "是在此靠一手，",
+      "textEn": "",
+      "baselineText": "是在此靠一手，",
+      "sourceIds": [
+        "chunk-001:u0055"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0067",
+      "text": "考验白棋的应手。",
+      "originalText": "考验白棋的应手。",
+      "textEn": "",
+      "baselineText": "考验白棋的应手。",
+      "sourceIds": [
+        "chunk-001:u0056"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0068",
+      "text": "如果白棋选择直接冲的话，",
+      "originalText": "如果白棋选择直接冲的话，",
+      "textEn": "",
+      "baselineText": "如果白棋选择直接冲的话，",
+      "sourceIds": [
+        "chunk-001:u0057"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0069",
+      "text": "黑棋再打吃，",
+      "originalText": "黑棋再打吃，",
+      "textEn": "",
+      "baselineText": "黑棋再打吃，",
+      "sourceIds": [
+        "chunk-001:u0058"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0070",
+      "text": "白棋粘住，",
+      "originalText": "白棋粘住，",
+      "textEn": "",
+      "baselineText": "白棋粘住，",
+      "sourceIds": [
+        "chunk-001:u0059"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0071",
+      "text": "黑棋拐出。",
+      "originalText": "黑棋拐出。",
+      "textEn": "",
+      "baselineText": "黑棋拐出。",
+      "sourceIds": [
+        "chunk-001:u0060"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0072",
+      "text": "这样，白棋从上方断，",
+      "originalText": "这样，白棋从上方断，",
+      "textEn": "",
+      "baselineText": "这样，白棋从上方断，",
+      "sourceIds": [
+        "chunk-001:u0061"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0073",
+      "text": "黑棋的粘是先手，",
+      "originalText": "黑棋的粘是先手，",
+      "textEn": "",
+      "baselineText": "黑棋的粘是先手，",
+      "sourceIds": [
+        "chunk-001:u0062"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0074",
+      "text": "白棋再粘，",
+      "originalText": "白棋再粘，",
+      "textEn": "",
+      "baselineText": "白棋再粘，",
+      "sourceIds": [
+        "chunk-001:u0063"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0075",
+      "text": "黑棋打完之后，",
+      "originalText": "黑棋打完之后，",
+      "textEn": "",
+      "baselineText": "黑棋打完之后，",
+      "sourceIds": [
+        {
+          "id": "chunk-001:u0064",
+          "quote": "黑棋打完之后，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0077",
+      "text": "从上方一粘。",
+      "originalText": "从上方一粘。",
+      "textEn": "",
+      "baselineText": "从上方一粘。",
+      "sourceIds": [
+        {
+          "id": "chunk-001:u0064",
+          "quote": "从上方一粘。"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0078",
+      "text": "如此白棋拐下，",
+      "originalText": "如此白棋拐下，",
+      "textEn": "",
+      "baselineText": "如此白棋拐下，",
+      "sourceIds": [
+        "chunk-001:u0065"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0079",
+      "text": "黑棋还是要去收气。但是我们看到，",
+      "originalText": "黑棋还是要去收气。但是我们看到，",
+      "textEn": "",
+      "baselineText": "黑棋还是要去收气。但是我们看到，",
+      "sourceIds": [
+        "chunk-001:u0066",
+        "chunk-001:u0067"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0080",
+      "text": "此时外围由于黑棋先将白棋切断，现在白棋有两边难以兼顾之感。",
+      "originalText": "此时外围由于黑棋先将白棋切断，现在白棋有两边难以兼顾之感。",
+      "textEn": "",
+      "baselineText": "此时外围由于黑棋先将白棋切断，现在白棋有两边难以兼顾之感。",
+      "sourceIds": [
+        "chunk-001:u0068",
+        "chunk-001:u0069"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0081",
+      "text": "如果在这一带夹，吃住黑棋的三颗子，",
+      "originalText": "如果在这一带夹，吃住黑棋的三颗子，",
+      "textEn": "",
+      "baselineText": "如果在这一带夹，吃住黑棋的三颗子，",
+      "sourceIds": [
+        "chunk-001:u0070"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0083",
+      "text": "那么外围随时有点刺完之后，长、靠、尖等等的先手借用，",
+      "originalText": "那么外围随时有点刺完之后，长、靠、尖等等的先手借用，",
+      "textEn": "",
+      "baselineText": "那么外围随时有点刺完之后，长、靠、尖等等的先手借用，",
+      "sourceIds": [
+        "chunk-001:u0071"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0099",
+      "text": "而留下这些借用之后，黑棋可以回到左边拆一手。",
+      "originalText": "而留下这些借用之后，黑棋可以回到左边拆一手。",
+      "textEn": "",
+      "baselineText": "而留下这些借用之后，黑棋可以回到左边拆一手。",
+      "sourceIds": [
+        "chunk-001:u0072"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0100",
+      "text": "这和白棋先守角相比，差别是巨大的。所以这个图，白棋并不满意。",
+      "originalText": "这和白棋先守角相比，差别是巨大的。所以这个图，白棋并不满意。",
+      "textEn": "",
+      "baselineText": "这和白棋先守角相比，差别是巨大的。所以这个图，白棋并不满意。",
+      "sourceIds": [
+        "chunk-001:u0073",
+        "chunk-001:u0074"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0115",
+      "text": "但此时如果白棋回来守角的话",
+      "originalText": "但此时如果白棋回来守角的话",
+      "textEn": "",
+      "baselineText": "但此时如果白棋回来守角的话",
+      "sourceIds": [
+        "chunk-001:u0075"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0116",
+      "text": "黑棋就可以在上方跳出，",
+      "originalText": "黑棋就可以在上方跳出，",
+      "textEn": "",
+      "baselineText": "黑棋就可以在上方跳出，",
+      "sourceIds": [
+        "chunk-001:u0076"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0117",
+      "text": "白棋如果冲断，",
+      "originalText": "白棋如果冲断，",
+      "textEn": "",
+      "baselineText": "白棋如果冲断，",
+      "sourceIds": [
+        "chunk-001:u0077"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0120",
+      "text": "黑棋弯出作战，",
+      "originalText": "黑棋弯出作战，",
+      "textEn": "",
+      "baselineText": "黑棋弯出作战，",
+      "sourceIds": [
+        "chunk-001:u0078"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0121",
+      "text": "这样我们看到，白棋被分断之后，外围并不够厚实，而角部黑棋拿到实地，当然也是成功的。",
+      "originalText": "这样我们看到，白棋被分断之后，外围并不够厚实，而角部黑棋拿到实地，当然也是成功的。",
+      "textEn": "",
+      "baselineText": "这样我们看到，白棋被分断之后，外围并不够厚实，而角部黑棋拿到实地，当然也是成功的。",
+      "sourceIds": [
+        "chunk-001:u0079",
+        "chunk-001:u0080"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0124",
+      "text": "所以在这个地方，白棋直接去冲并不好。",
+      "originalText": "所以在这个地方，白棋直接去冲并不好。",
+      "textEn": "",
+      "baselineText": "所以在这个地方，白棋直接去冲并不好。",
+      "sourceIds": [
+        "chunk-001:u0081"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0141",
+      "text": "那么如果白棋现在选择直接在中央冲出如何呢？",
+      "originalText": "那么如果白棋现在选择直接在中央冲出如何呢？",
+      "textEn": "",
+      "baselineText": "那么如果白棋现在选择直接在中央冲出如何呢？",
+      "sourceIds": [
+        "chunk-001:u0082"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0142",
+      "text": "黑棋可以打完之后，",
+      "originalText": "黑棋可以打完之后，",
+      "textEn": "",
+      "baselineText": "黑棋可以打完之后，",
+      "sourceIds": [
+        "chunk-002:u0001"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0144",
+      "text": "在上方双住。",
+      "originalText": "在上方双住。",
+      "textEn": "",
+      "baselineText": "在上方双住。",
+      "sourceIds": [
+        "chunk-002:u0002"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0145",
+      "text": "白棋再贴下的时候，",
+      "originalText": "白棋再贴下的时候，",
+      "textEn": "",
+      "baselineText": "白棋再贴下的时候，",
+      "sourceIds": [
+        "chunk-002:u0003"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0146",
+      "text": "黑棋可以从二路扳",
+      "originalText": "黑棋可以从二路扳",
+      "textEn": "",
+      "baselineText": "黑棋可以从二路扳",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0004",
+          "quote": "黑棋可以从二路扳"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0148",
+      "text": "粘。",
+      "originalText": "粘。",
+      "textEn": "",
+      "baselineText": "粘。",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0004",
+          "quote": "粘。"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0149",
+      "text": "此时新的问题又出现了，外围一带白棋留下了诸多的断点和借用，而上方的收气，白棋依旧是杀不过黑棋。",
+      "originalText": "此时新的问题又出现了，外围一带白棋留下了诸多的断点和借用，而上方的收气，白棋依旧是杀不过黑棋。",
+      "textEn": "",
+      "baselineText": "此时新的问题又出现了，外围一带白棋留下了诸多的断点和借用，而上方的收气，白棋依旧是杀不过黑棋。",
+      "sourceIds": [
+        "chunk-002:u0005"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0150",
+      "text": "接下来，如果白棋在上方虎的话，有些过于用强，",
+      "originalText": "接下来，如果白棋在上方虎的话，有些过于用强，",
+      "textEn": "",
+      "baselineText": "接下来，如果白棋在上方虎的话，有些过于用强，",
+      "sourceIds": [
+        "chunk-002:u0006"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0151",
+      "text": "黑棋可以在此断一手，一来防住白棋在这一带收气的手段，黑棋的粘有先手，同时我们看到白棋外围也需要补棋，",
+      "originalText": "黑棋可以在此断一手，一来防住白棋在这一带收气的手段，黑棋的粘有先手，同时我们看到白棋外围也需要补棋，",
+      "textEn": "",
+      "baselineText": "黑棋可以在此断一手，一来防住白棋在这一带收气的手段，黑棋的粘有先手，同时我们看到白棋外围也需要补棋，",
+      "sourceIds": [
+        "chunk-002:u0007"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0152",
+      "text": "如果断打，",
+      "originalText": "如果断打，",
+      "textEn": "",
+      "baselineText": "如果断打，",
+      "sourceIds": [
+        "chunk-002:u0008"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0153",
+      "text": "黑棋可以长出，上方一带还有尖的先手，角部的收气，黑棋依然可以吃住白棋，只要白棋被分段的话，外势留下缺陷，黑棋里外都走到，总是满意的。",
+      "originalText": "黑棋可以长出，上方一带还有尖的先手，角部的收气，黑棋依然可以吃住白棋，只要白棋被分段的话，外势留下缺陷，黑棋里外都走到，总是满意的。",
+      "textEn": "",
+      "baselineText": "黑棋可以长出，上方一带还有尖的先手，角部的收气，黑棋依然可以吃住白棋，只要白棋被分段的话，外势留下缺陷，黑棋里外都走到，总是满意的。",
+      "sourceIds": [
+        "chunk-002:u0009"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0164",
+      "text": "所以白棋在上方的虎并不好，",
+      "originalText": "所以白棋在上方的虎并不好，",
+      "textEn": "",
+      "baselineText": "所以白棋在上方的虎并不好，",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0010",
+          "quote": "所以白棋在上方的虎并不好，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0178",
+      "text": "这个时候白棋的最佳应对还是要走厚外围，直接粘住，",
+      "originalText": "这个时候白棋的最佳应对还是要走厚外围，直接粘住，",
+      "textEn": "",
+      "baselineText": "这个时候白棋的最佳应对还是要走厚外围，直接粘住，",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0010",
+          "quote": "这个时候白棋的最佳应对还是要走厚外围，直接粘住，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0179",
+      "text": "当然，此时也给黑棋在上方留下了夹的手段。",
+      "originalText": "当然，此时也给黑棋在上方留下了夹的手段。",
+      "textEn": "",
+      "baselineText": "当然，此时也给黑棋在上方留下了夹的手段。",
+      "sourceIds": [
+        "chunk-002:u0011"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0180",
+      "text": "白棋不能立下强行阻渡，",
+      "originalText": "白棋不能立下强行阻渡，",
+      "textEn": "",
+      "baselineText": "白棋不能立下强行阻渡，",
+      "sourceIds": [
+        "chunk-002:u0012"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0181",
+      "text": "否则黑棋在此跳先手，白棋不管怎么补棋，黑棋再回到上方收气的话，那么外围还是被黑棋便宜了。",
+      "originalText": "否则黑棋在此跳先手，白棋不管怎么补棋，黑棋再回到上方收气的话，那么外围还是被黑棋便宜了。",
+      "textEn": "",
+      "baselineText": "否则黑棋在此跳先手，白棋不管怎么补棋，黑棋再回到上方收气的话，那么外围还是被黑棋便宜了。",
+      "sourceIds": [
+        "chunk-002:u0013"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0194",
+      "text": "所以白棋大致要虎，",
+      "originalText": "所以白棋大致要虎，",
+      "textEn": "",
+      "baselineText": "所以白棋大致要虎，",
+      "sourceIds": [
+        "chunk-002:u0014"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0195",
+      "text": "黑棋打吃，",
+      "originalText": "黑棋打吃，",
+      "textEn": "",
+      "baselineText": "黑棋打吃，",
+      "sourceIds": [
+        "chunk-002:u0015"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0196",
+      "text": "白棋粘住，",
+      "originalText": "白棋粘住，",
+      "textEn": "",
+      "baselineText": "白棋粘住，",
+      "sourceIds": [
+        "chunk-002:u0016"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0197",
+      "text": "黑棋再长出，",
+      "originalText": "黑棋再长出，",
+      "textEn": "",
+      "baselineText": "黑棋再长出，",
+      "sourceIds": [
+        "chunk-002:u0017"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0198",
+      "text": "然后白棋在此跳，",
+      "originalText": "然后白棋在此跳，",
+      "textEn": "",
+      "baselineText": "然后白棋在此跳，",
+      "sourceIds": [
+        "chunk-002:u0018"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0199",
+      "text": "黑棋可以从上方飞回去，守角的这颗子发挥作用。",
+      "originalText": "黑棋可以从上方飞回去，守角的这颗子发挥作用。",
+      "textEn": "",
+      "baselineText": "黑棋可以从上方飞回去，守角的这颗子发挥作用。",
+      "sourceIds": [
+        "chunk-002:u0019"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0200",
+      "text": "白棋冲，",
+      "originalText": "白棋冲，",
+      "textEn": "",
+      "baselineText": "白棋冲，",
+      "sourceIds": [
+        "chunk-002:u0020"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0201",
+      "text": "黑棋就退，",
+      "originalText": "黑棋就退，",
+      "textEn": "",
+      "baselineText": "黑棋就退，",
+      "sourceIds": [
+        "chunk-002:u0021"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0202",
+      "text": "这个地方冲的话",
+      "originalText": "这个地方冲的话",
+      "textEn": "",
+      "baselineText": "这个地方冲的话",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0022",
+          "quote": "这个地方冲的话"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0203",
+      "text": "应住就可以，",
+      "originalText": "应住就可以，",
+      "textEn": "",
+      "baselineText": "应住就可以，",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0022",
+          "quote": "应住就可以，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0204",
+      "text": "再冲，",
+      "originalText": "再冲，",
+      "textEn": "",
+      "baselineText": "再冲，",
+      "sourceIds": [
+        "chunk-002:u0023"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0205",
+      "text": "黑棋挡住，",
+      "originalText": "黑棋挡住，",
+      "textEn": "",
+      "baselineText": "黑棋挡住，",
+      "sourceIds": [
+        "chunk-002:u0024"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0206",
+      "text": "断，",
+      "originalText": "断，",
+      "textEn": "",
+      "baselineText": "断，",
+      "sourceIds": [
+        "chunk-002:u0025"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0207",
+      "text": "黑棋在上方一退，由于此处还有冲断的手段，白棋外围也留下了缺陷，",
+      "originalText": "黑棋在上方一退，由于此处还有冲断的手段，白棋外围也留下了缺陷，",
+      "textEn": "",
+      "baselineText": "黑棋在上方一退，由于此处还有冲断的手段，白棋外围也留下了缺陷，",
+      "sourceIds": [
+        "chunk-002:u0026"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0208",
+      "text": "下一手棋，白棋自补是本手，",
+      "originalText": "下一手棋，白棋自补是本手，",
+      "textEn": "",
+      "baselineText": "下一手棋，白棋自补是本手，",
+      "sourceIds": [
+        "chunk-002:u0027"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0209",
+      "text": "黑棋再回到边上拆，这样我们看到黑棋左边能够走到的话，也没有不满，当然上方一带的折冲，双方还是均可以接受的一个局面，这是AI给出的双方最佳的应对。",
+      "originalText": "黑棋再回到边上拆，这样我们看到黑棋左边能够走到的话，也没有不满，当然上方一带的折冲，双方还是均可以接受的一个局面，这是AI给出的双方最佳的应对。",
+      "textEn": "",
+      "baselineText": "黑棋再回到边上拆，这样我们看到黑棋左边能够走到的话，也没有不满，当然上方一带的折冲，双方还是均可以接受的一个局面，这是AI给出的双方最佳的应对。",
+      "sourceIds": [
+        "chunk-002:u0028"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0211",
+      "text": "所以黑棋在此靠的话，这个地方外围一带，白棋虽然可以走厚，但总要付出一些代价。",
+      "originalText": "所以黑棋在此靠的话，这个地方外围一带，白棋虽然可以走厚，但总要付出一些代价。",
+      "textEn": "",
+      "baselineText": "所以黑棋在此靠的话，这个地方外围一带，白棋虽然可以走厚，但总要付出一些代价。",
+      "sourceIds": [
+        "chunk-002:u0029"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0239",
+      "text": "实战当中，黑棋保留了这个靠，他选择了在上边单尖，这再度给了白棋在此处弃子的一个机会。",
+      "originalText": "实战当中，辜梓豪保留了这个靠，他选择了在上边单尖，这再度给了白棋在此处弃子的一个机会。",
+      "textEn": "",
+      "baselineText": "实战当中，黑棋保留了这个靠，他选择了在上边单尖，这再度给了白棋在此处弃子的一个机会。",
+      "sourceIds": [
+        "chunk-002:u0030"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0240",
+      "text": "下一手棋，白棋从上方爬，",
+      "originalText": "下一手棋，白棋从上方爬，",
+      "textEn": "",
+      "baselineText": "下一手棋，白棋从上方爬，",
+      "sourceIds": [
+        "chunk-002:u0031"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0242",
+      "text": "现在如果黑棋打了",
+      "originalText": "现在如果黑棋打了",
+      "textEn": "",
+      "baselineText": "现在如果黑棋打了",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0032",
+          "quote": "现在如果黑棋打了"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0244",
+      "text": "长出的话，是AI的首选推荐，这样就还原了，",
+      "originalText": "长出的话，是AI的首选推荐，这样就还原了，",
+      "textEn": "",
+      "baselineText": "长出的话，是AI的首选推荐，这样就还原了，",
+      "sourceIds": [
+        {
+          "id": "chunk-002:u0032",
+          "quote": "长出的话，是AI的首选推荐，这样就还原了，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0245",
+      "text": "白棋在此贴下，",
+      "originalText": "白棋在此贴下，",
+      "textEn": "",
+      "baselineText": "白棋在此贴下，",
+      "sourceIds": [
+        "chunk-002:u0033"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0246",
+      "text": "黑棋拐住，",
+      "originalText": "黑棋拐住，",
+      "textEn": "",
+      "baselineText": "黑棋拐住，",
+      "sourceIds": [
+        "chunk-002:u0034"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0247",
+      "text": "白棋再夹，",
+      "originalText": "白棋再夹，",
+      "textEn": "",
+      "baselineText": "白棋再夹，",
+      "sourceIds": [
+        "chunk-002:u0035"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0248",
+      "text": "黑棋从上方扳，白棋这一带已经完成了收气的操作，",
+      "originalText": "黑棋从上方扳，白棋这一带已经完成了收气的操作，",
+      "textEn": "",
+      "baselineText": "黑棋从上方扳，白棋这一带已经完成了收气的操作，",
+      "sourceIds": [
+        "chunk-002:u0036"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0249",
+      "text": "回到左下小飞守角就可以。",
+      "originalText": "回到左下小飞守角就可以。",
+      "textEn": "",
+      "baselineText": "回到左下小飞守角就可以。",
+      "sourceIds": [
+        "chunk-002:u0037"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0251",
+      "text": "而实战当中，黑棋却是不肯，他在此处要给白棋出道考题，",
+      "originalText": "而实战当中，辜梓豪却是不肯，他在此处要给罗玄出道考题，",
+      "textEn": "",
+      "baselineText": "而实战当中，黑棋却是不肯，他在此处要给白棋出道考题，",
+      "sourceIds": [
+        "chunk-002:u0038"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0252",
+      "text": "下一招棋，再尖一手，看白棋如何应对。这手棋从胜率上看虽然有些下降，黑棋从50%降至37%，但是明显出乎了白方的预料。",
+      "originalText": "下一招棋，再尖一手，看白棋如何应对。这手棋从胜率上看虽然有些下降，黑棋从50%降至37%，但是明显出乎了罗玄的预料。",
+      "textEn": "",
+      "baselineText": "下一招棋，再尖一手，看白棋如何应对。这手棋从胜率上看虽然有些下降，黑棋从50%降至37%，但是明显出乎了白方的预料。",
+      "sourceIds": [
+        "chunk-002:u0039"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0254",
+      "text": "此时白棋的最佳应对应该在上方单退一手，",
+      "originalText": "此时白棋的最佳应对应该在上方单退一手，",
+      "textEn": "",
+      "baselineText": "此时白棋的最佳应对应该在上方单退一手，",
+      "sourceIds": [
+        "chunk-002:u0040"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0255",
+      "text": "这样黑棋再粘出的时候，",
+      "originalText": "这样黑棋再粘出的时候，",
+      "textEn": "",
+      "baselineText": "这样黑棋再粘出的时候，",
+      "sourceIds": [
+        "chunk-002:u0041"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0256",
+      "text": "白棋回到左边跳，补住黑棋的冲断，",
+      "originalText": "白棋回到左边跳，补住黑棋的冲断，",
+      "textEn": "",
+      "baselineText": "白棋回到左边跳，补住黑棋的冲断，",
+      "sourceIds": [
+        "chunk-002:u0042"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0257",
+      "text": "黑棋在此跳出，",
+      "originalText": "黑棋在此跳出，",
+      "textEn": "",
+      "baselineText": "黑棋在此跳出，",
+      "sourceIds": [
+        "chunk-002:u0043"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0258",
+      "text": "白棋可以再补一手。上方如果黑棋攻逼过来的话，白棋再尖，向中央出头，双方还是一个乱战的局势，黑棋的这块棋也没有完全安定。",
+      "originalText": "白棋可以再补一手。上方如果黑棋攻逼过来的话，白棋再尖，向中央出头，双方还是一个乱战的局势，黑棋的这块棋也没有完全安定。",
+      "textEn": "",
+      "baselineText": "白棋可以再补一手。上方如果黑棋攻逼过来的话，白棋再尖，向中央出头，双方还是一个乱战的局势，黑棋的这块棋也没有完全安定。",
+      "sourceIds": [
+        "chunk-002:u0044"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0260",
+      "text": "而实战，此处白棋选择跟着应了一手，这样就中计了。这手棋走完之后，白棋胜率从63%直接跌至6%。",
+      "originalText": "而实战，此处罗玄选择跟着应了一手，这样就中计了。这手棋走完之后，白棋胜率从63%直接跌至6%。",
+      "textEn": "",
+      "baselineText": "而实战，此处白棋选择跟着应了一手，这样就中计了。这手棋走完之后，白棋胜率从63%直接跌至6%。",
+      "sourceIds": [
+        "chunk-002:u0045"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0261",
+      "text": "下一招黑棋打吃，",
+      "originalText": "下一招黑棋打吃，",
+      "textEn": "",
+      "baselineText": "下一招黑棋打吃，",
+      "sourceIds": [
+        "chunk-003:u0003"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0262",
+      "text": "此时白棋才突然惊醒，这个地方中刀了。",
+      "originalText": "此时罗玄才突然惊醒，这个地方中刀了。",
+      "textEn": "",
+      "baselineText": "此时白棋才突然惊醒，这个地方中刀了。",
+      "sourceIds": [
+        "chunk-003:u0004"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0263",
+      "text": "因为现在白棋竟然已经粘不住了。",
+      "originalText": "因为现在白棋竟然已经粘不住了。",
+      "textEn": "",
+      "baselineText": "因为现在白棋竟然已经粘不住了。",
+      "sourceIds": [
+        "chunk-003:u0005"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0264",
+      "text": "对于白棋而言，这个地方能不能粘住影响巨大。",
+      "originalText": "对于白棋而言，这个地方能不能粘住影响巨大。",
+      "textEn": "",
+      "baselineText": "对于白棋而言，这个地方能不能粘住影响巨大。",
+      "sourceIds": [
+        "chunk-003:u0006"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0265",
+      "text": "就算上方白棋死掉的话，粘住逼迫黑棋收气，白棋在外围便宜也还是满意的。",
+      "originalText": "就算上方白棋死掉的话，粘住逼迫黑棋收气，白棋在外围便宜也还是满意的。",
+      "textEn": "",
+      "baselineText": "就算上方白棋死掉的话，粘住逼迫黑棋收气，白棋在外围便宜也还是满意的。",
+      "sourceIds": [
+        "chunk-003:u0007"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0267",
+      "text": "但是现在再去粘，为时已晚。",
+      "originalText": "但是现在再去粘，为时已晚。",
+      "textEn": "",
+      "baselineText": "但是现在再去粘，为时已晚。",
+      "sourceIds": [
+        "chunk-003:u0008"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0268",
+      "text": "因为黑棋从上方的虎出愉快，",
+      "originalText": "因为黑棋从上方的虎出愉快，",
+      "textEn": "",
+      "baselineText": "因为黑棋从上方的虎出愉快，",
+      "sourceIds": [
+        "chunk-003:u0009"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0269",
+      "text": "中央断点严厉，白棋只好长出，",
+      "originalText": "中央断点严厉，白棋只好长出，",
+      "textEn": "",
+      "baselineText": "中央断点严厉，白棋只好长出，",
+      "sourceIds": [
+        "chunk-003:u0010"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0270",
+      "text": "黑棋还可以先断一手，",
+      "originalText": "黑棋还可以先断一手，",
+      "textEn": "",
+      "baselineText": "黑棋还可以先断一手，",
+      "sourceIds": [
+        "chunk-003:u0011"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0271",
+      "text": "白棋再次打吃的时候，",
+      "originalText": "白棋再次打吃的时候，",
+      "textEn": "",
+      "baselineText": "白棋再次打吃的时候，",
+      "sourceIds": [
+        "chunk-003:u0012"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0272",
+      "text": "黑棋再爬，",
+      "originalText": "黑棋再爬，",
+      "textEn": "",
+      "baselineText": "黑棋再爬，",
+      "sourceIds": [
+        "chunk-003:u0013"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0273",
+      "text": "这样白棋扳，",
+      "originalText": "这样白棋扳，",
+      "textEn": "",
+      "baselineText": "这样白棋扳，",
+      "sourceIds": [
+        "chunk-003:u0014"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0274",
+      "text": "黑棋扳，",
+      "originalText": "黑棋扳，",
+      "textEn": "",
+      "baselineText": "黑棋扳，",
+      "sourceIds": [
+        "chunk-003:u0015"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0275",
+      "text": "白棋现在也只有强行扳住，",
+      "originalText": "白棋现在也只有强行扳住，",
+      "textEn": "",
+      "baselineText": "白棋现在也只有强行扳住，",
+      "sourceIds": [
+        "chunk-003:u0016"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0276",
+      "text": "不过，黑棋打完之后，",
+      "originalText": "不过，黑棋打完之后，",
+      "textEn": "",
+      "baselineText": "不过，黑棋打完之后，",
+      "sourceIds": [
+        "chunk-003:u0017"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0278",
+      "text": "从二线一粘的时候，白棋现在有三处缺陷，已经难以兼顾了。",
+      "originalText": "从二线一粘的时候，白棋现在有三处缺陷，已经难以兼顾了。",
+      "textEn": "",
+      "baselineText": "从二线一粘的时候，白棋现在有三处缺陷，已经难以兼顾了。",
+      "sourceIds": [
+        "chunk-003:u0018"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0279",
+      "text": "如果从上方长，",
+      "originalText": "如果从上方长，",
+      "textEn": "",
+      "baselineText": "如果从上方长，",
+      "sourceIds": [
+        "chunk-003:u0019"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0280",
+      "text": "那么黑棋就应住。",
+      "originalText": "那么黑棋就应住。",
+      "textEn": "",
+      "baselineText": "那么黑棋就应住。",
+      "sourceIds": [
+        "chunk-003:u0020"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0281",
+      "text": "接下来一来上方黑棋的退出严厉，这一带避免了收气的问题，把白棋全部吃住，整个上边的空全部护住，实地的收获巨大。",
+      "originalText": "接下来一来上方黑棋的退出严厉，这一带避免了收气的问题，把白棋全部吃住，整个上边的空全部护住，实地的收获巨大。",
+      "textEn": "",
+      "baselineText": "接下来一来上方黑棋的退出严厉，这一带避免了收气的问题，把白棋全部吃住，整个上边的空全部护住，实地的收获巨大。",
+      "sourceIds": [
+        "chunk-003:u0021"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0282",
+      "text": "同时我们看到中央，黑棋随时还留有粘出的手段，白棋依然是被分断的一个棋形。",
+      "originalText": "同时我们看到中央，黑棋随时还留有粘出的手段，白棋依然是被分断的一个棋形。",
+      "textEn": "",
+      "baselineText": "同时我们看到中央，黑棋随时还留有粘出的手段，白棋依然是被分断的一个棋形。",
+      "sourceIds": [
+        "chunk-003:u0022"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0283",
+      "text": "而左边的话，黑棋还留有冲完之后断，吃住白棋三颗子的强手。",
+      "originalText": "而左边的话，黑棋还留有冲完之后断，吃住白棋三颗子的强手。",
+      "textEn": "",
+      "baselineText": "而左边的话，黑棋还留有冲完之后断，吃住白棋三颗子的强手。",
+      "sourceIds": [
+        "chunk-003:u0023"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0284",
+      "text": "所以这个地方，和先前我们看到AI给出的通过上方弃子，白棋走厚外围，再从左下守角，差别是巨大的。",
+      "originalText": "所以这个地方，和先前我们看到AI给出的通过上方弃子，白棋走厚外围，再从左下守角，差别是巨大的。",
+      "textEn": "",
+      "baselineText": "所以这个地方，和先前我们看到AI给出的通过上方弃子，白棋走厚外围，再从左下守角，差别是巨大的。",
+      "sourceIds": [
+        "chunk-003:u0024"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0286",
+      "text": "实战当中，意识到这一点之后，白棋只好忍痛止损，在外围长一手。",
+      "originalText": "实战当中，意识到这一点之后，罗玄只好忍痛止损，在外围长一手。",
+      "textEn": "",
+      "baselineText": "实战当中，意识到这一点之后，白棋只好忍痛止损，在外围长一手。",
+      "sourceIds": [
+        "chunk-003:u0025"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0287",
+      "text": "但是这样，被黑棋在角部一提吃，",
+      "originalText": "但是这样，被黑棋在角部一提吃，",
+      "textEn": "",
+      "baselineText": "但是这样，被黑棋在角部一提吃，",
+      "sourceIds": [
+        "chunk-003:u0026"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0288",
+      "text": "角部先前白棋的诸多借用全部消失，黑棋十分的厚实。",
+      "originalText": "角部先前白棋的诸多借用全部消失，黑棋十分的厚实。",
+      "textEn": "",
+      "baselineText": "角部先前白棋的诸多借用全部消失，黑棋十分的厚实。",
+      "sourceIds": [
+        "chunk-003:u0027"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0289",
+      "text": "而黑棋越厚，外围白棋这些断点的缺陷也就越严厉。",
+      "originalText": "而黑棋越厚，外围白棋这些断点的缺陷也就越严厉。",
+      "textEn": "",
+      "baselineText": "而黑棋越厚，外围白棋这些断点的缺陷也就越严厉。",
+      "sourceIds": [
+        "chunk-003:u0028"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0290",
+      "text": "现在白棋已经不好补了。",
+      "originalText": "现在白棋已经不好补了。",
+      "textEn": "",
+      "baselineText": "现在白棋已经不好补了。",
+      "sourceIds": [
+        "chunk-003:u0029"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0291",
+      "text": "下一手棋，白棋干脆回到左下小飞守角，",
+      "originalText": "下一手棋，白棋干脆回到左下小飞守角，",
+      "textEn": "",
+      "baselineText": "下一手棋，白棋干脆回到左下小飞守角，",
+      "sourceIds": [
+        "chunk-003:u0030"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0292",
+      "text": "黑棋在下边占据大场，静观其变。",
+      "originalText": "黑棋在下边占据大场，静观其变。",
+      "textEn": "",
+      "baselineText": "黑棋在下边占据大场，静观其变。",
+      "sourceIds": [
+        "chunk-003:u0031"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0293",
+      "text": "白棋从上方再拆，",
+      "originalText": "白棋从上方再拆，",
+      "textEn": "",
+      "baselineText": "白棋从上方再拆，",
+      "sourceIds": [
+        "chunk-003:u0032"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0294",
+      "text": "黑棋也从右边逼住。",
+      "originalText": "黑棋也从右边逼住。",
+      "textEn": "",
+      "baselineText": "黑棋也从右边逼住。",
+      "sourceIds": [
+        "chunk-003:u0033"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0295",
+      "text": "双方各自占据大场，但是压力却在白方的这一边。",
+      "originalText": "双方各自占据大场，但是压力却在罗玄的这一边。",
+      "textEn": "",
+      "baselineText": "双方各自占据大场，但是压力却在白方的这一边。",
+      "sourceIds": [
+        "chunk-003:u0034"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0296",
+      "text": "下一招棋，白棋在下方逼住的时候，",
+      "originalText": "下一招棋，白棋在下方逼住的时候，",
+      "textEn": "",
+      "baselineText": "下一招棋，白棋在下方逼住的时候，",
+      "sourceIds": [
+        "chunk-003:u0035"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0297",
+      "text": "黑棋从左边靠，处理这颗子。",
+      "originalText": "黑棋从左边靠，处理这颗子。",
+      "textEn": "",
+      "baselineText": "黑棋从左边靠，处理这颗子。",
+      "sourceIds": [
+        "chunk-003:u0036"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0298",
+      "text": "白棋扳，",
+      "originalText": "白棋扳，",
+      "textEn": "",
+      "baselineText": "白棋扳，",
+      "sourceIds": [
+        "chunk-003:u0037"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0299",
+      "text": "黑棋退，",
+      "originalText": "黑棋退，",
+      "textEn": "",
+      "baselineText": "黑棋退，",
+      "sourceIds": [
+        "chunk-003:u0038"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0300",
+      "text": "白棋立下，",
+      "originalText": "白棋立下，",
+      "textEn": "",
+      "baselineText": "白棋立下，",
+      "sourceIds": [
+        "chunk-003:u0039"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0301",
+      "text": "黑棋在中央飞出头，并盯着上方一带对断点的威胁。",
+      "originalText": "黑棋在中央飞出头，并盯着上方一带对断点的威胁。",
+      "textEn": "",
+      "baselineText": "黑棋在中央飞出头，并盯着上方一带对断点的威胁。",
+      "sourceIds": [
+        "chunk-003:u0040"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0302",
+      "text": "下一招棋，白棋从下方打入，以争胜负。",
+      "originalText": "下一招棋，白棋从下方打入，以争胜负。",
+      "textEn": "",
+      "baselineText": "下一招棋，白棋从下方打入，以争胜负。",
+      "sourceIds": [
+        "chunk-003:u0041"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0303",
+      "text": "现在的形势，全局黑棋厚实，而且掌握着进攻的主动权，右边的拆以及下方这颗子都有薄味。",
+      "originalText": "现在的形势，全局黑棋厚实，而且掌握着进攻的主动权，右边的拆以及下方这颗子都有薄味。",
+      "textEn": "",
+      "baselineText": "现在的形势，全局黑棋厚实，而且掌握着进攻的主动权，右边的拆以及下方这颗子都有薄味。",
+      "sourceIds": [
+        "chunk-003:u0042"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0304",
+      "text": "这种利用厚味对对方发起攻击、仗势欺人的下法，正是黑棋最期待和擅长的。",
+      "originalText": "这种利用厚味对对方发起攻击、仗势欺人的下法，正是辜梓豪最期待和擅长的。",
+      "textEn": "",
+      "baselineText": "这种利用厚味对对方发起攻击、仗势欺人的下法，正是黑棋最期待和擅长的。",
+      "sourceIds": [
+        "chunk-003:u0043"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0305",
+      "text": "下一手棋，黑棋再次堂堂正正跳出，威胁右边白棋，",
+      "originalText": "下一手棋，黑棋再次堂堂正正跳出，威胁右边白棋，",
+      "textEn": "",
+      "baselineText": "下一手棋，黑棋再次堂堂正正跳出，威胁右边白棋，",
+      "sourceIds": [
+        "chunk-003:u0044"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0306",
+      "text": "而白棋跳，继续跟着应。",
+      "originalText": "而白棋跳，继续跟着应。",
+      "textEn": "",
+      "baselineText": "而白棋跳，继续跟着应。",
+      "sourceIds": [
+        "chunk-003:u0045"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0307",
+      "text": "下一手，黑棋从左边夹，不断地走厚。",
+      "originalText": "下一手，黑棋从左边夹，不断地走厚。",
+      "textEn": "",
+      "baselineText": "下一手，黑棋从左边夹，不断地走厚。",
+      "sourceIds": [
+        "chunk-003:u0046"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0308",
+      "text": "白棋粘住，",
+      "originalText": "白棋粘住，",
+      "textEn": "",
+      "baselineText": "白棋粘住，",
+      "sourceIds": [
+        "chunk-003:u0047"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0309",
+      "text": "黑棋从上方飞，紧盯着上面白棋断点。",
+      "originalText": "黑棋从上方飞，紧盯着上面白棋断点。",
+      "textEn": "",
+      "baselineText": "黑棋从上方飞，紧盯着上面白棋断点。",
+      "sourceIds": [
+        "chunk-003:u0048"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0310",
+      "text": "白棋只好补棋，",
+      "originalText": "白棋只好补棋，",
+      "textEn": "",
+      "baselineText": "白棋只好补棋，",
+      "sourceIds": [
+        "chunk-003:u0049"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0311",
+      "text": "做好准备之后，黑棋在右边点入，攻击开始。",
+      "originalText": "做好准备之后，黑棋在右边点入，攻击开始。",
+      "textEn": "",
+      "baselineText": "做好准备之后，黑棋在右边点入，攻击开始。",
+      "sourceIds": [
+        "chunk-003:u0050"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0312",
+      "text": "白棋挡下，",
+      "originalText": "白棋挡下，",
+      "textEn": "",
+      "baselineText": "白棋挡下，",
+      "sourceIds": [
+        "chunk-003:u0051"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0313",
+      "text": "黑棋贴起，将白棋分断。",
+      "originalText": "黑棋贴起，将白棋分断。",
+      "textEn": "",
+      "baselineText": "黑棋贴起，将白棋分断。",
+      "sourceIds": [
+        "chunk-003:u0052"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0314",
+      "text": "接下来白棋再立，",
+      "originalText": "接下来白棋再立，",
+      "textEn": "",
+      "baselineText": "接下来白棋再立，",
+      "sourceIds": [
+        "chunk-003:u0053"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0315",
+      "text": "黑棋在中央跳，把自己走畅，依然保持着缠绕攻击的架势，是堂堂正正的好手。",
+      "originalText": "黑棋在中央跳，把自己走畅，依然保持着缠绕攻击的架势，是堂堂正正的好手。",
+      "textEn": "",
+      "baselineText": "黑棋在中央跳，把自己走畅，依然保持着缠绕攻击的架势，是堂堂正正的好手。",
+      "sourceIds": [
+        "chunk-003:u0054"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0316",
+      "text": "下一手白棋再从二路拐，",
+      "originalText": "下一手白棋再从二路拐，",
+      "textEn": "",
+      "baselineText": "下一手白棋再从二路拐，",
+      "sourceIds": [
+        "chunk-003:u0055"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0317",
+      "text": "黑棋从左下点入，这是声东击西战术。",
+      "originalText": "黑棋从左下点入，这是声东击西战术。",
+      "textEn": "",
+      "baselineText": "黑棋从左下点入，这是声东击西战术。",
+      "sourceIds": [
+        "chunk-003:u0056"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0318",
+      "text": "白棋挡住，",
+      "originalText": "白棋挡住，",
+      "textEn": "",
+      "baselineText": "白棋挡住，",
+      "sourceIds": [
+        "chunk-004:u0003"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0319",
+      "text": "黑棋再扳，",
+      "originalText": "黑棋再扳，",
+      "textEn": "",
+      "baselineText": "黑棋再扳，",
+      "sourceIds": [
+        "chunk-004:u0004"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0320",
+      "text": "迫于形势，白棋也只有一应住，现在对于白棋而言实地不能出问题。",
+      "originalText": "迫于形势，白棋也只有一应住，现在对于白棋而言实地不能出问题。",
+      "textEn": "",
+      "baselineText": "迫于形势，白棋也只有一应住，现在对于白棋而言实地不能出问题。",
+      "sourceIds": [
+        "chunk-004:u0005"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0321",
+      "text": "接下来，黑棋再靠。",
+      "originalText": "接下来，黑棋再靠。",
+      "textEn": "",
+      "baselineText": "接下来，黑棋再靠。",
+      "sourceIds": [
+        "chunk-004:u0006"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0322",
+      "text": "白棋扳，",
+      "originalText": "白棋扳，",
+      "textEn": "",
+      "baselineText": "白棋扳，",
+      "sourceIds": [
+        "chunk-004:u0007"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0323",
+      "text": "黑棋退，",
+      "originalText": "黑棋退，",
+      "textEn": "",
+      "baselineText": "黑棋退，",
+      "sourceIds": [
+        "chunk-004:u0008"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0324",
+      "text": "白棋先将黑棋吃住再说，而先手补强之后，",
+      "originalText": "白棋先将黑棋吃住再说，而先手补强之后，",
+      "textEn": "",
+      "baselineText": "白棋先将黑棋吃住再说，而先手补强之后，",
+      "sourceIds": [
+        "chunk-004:u0009"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0325",
+      "text": "黑棋刺完",
+      "originalText": "黑棋刺完",
+      "textEn": "",
+      "baselineText": "黑棋刺完",
+      "sourceIds": [
+        "chunk-004:u0010"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0327",
+      "text": "从中央罩过来，白棋的三颗子顿显窘迫。",
+      "originalText": "从中央罩过来，白棋的三颗子顿显窘迫。",
+      "textEn": "",
+      "baselineText": "从中央罩过来，白棋的三颗子顿显窘迫。",
+      "sourceIds": [
+        "chunk-004:u0011"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0328",
+      "text": "下一手，白棋只好冲出做活，",
+      "originalText": "下一手，白棋只好冲出做活，",
+      "textEn": "",
+      "baselineText": "下一手，白棋只好冲出做活，",
+      "sourceIds": [
+        "chunk-004:u0012"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0329",
+      "text": "黑棋退，",
+      "originalText": "黑棋退，",
+      "textEn": "",
+      "baselineText": "黑棋退，",
+      "sourceIds": [
+        "chunk-004:u0013"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0330",
+      "text": "白棋再冲，",
+      "originalText": "白棋再冲，",
+      "textEn": "",
+      "baselineText": "白棋再冲，",
+      "sourceIds": [
+        "chunk-004:u0014"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0331",
+      "text": "黑棋继续在外围走厚，由于右边的这块白棋尚未活净，中央的黑棋越厚，对右边白棋的威胁也就越大，而上方白棋的厚味也就逐步地被抵消掉了。",
+      "originalText": "黑棋继续在外围走厚，由于右边的这块白棋尚未活净，中央的黑棋越厚，对右边白棋的威胁也就越大，而上方白棋的厚味也就逐步地被抵消掉了。",
+      "textEn": "",
+      "baselineText": "黑棋继续在外围走厚，由于右边的这块白棋尚未活净，中央的黑棋越厚，对右边白棋的威胁也就越大，而上方白棋的厚味也就逐步地被抵消掉了。",
+      "sourceIds": [
+        "chunk-004:u0015"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0332",
+      "text": "下一手，白棋在此靠，从夹缝当中寻求生机，",
+      "originalText": "下一手，白棋在此靠，从夹缝当中寻求生机，",
+      "textEn": "",
+      "baselineText": "下一手，白棋在此靠，从夹缝当中寻求生机，",
+      "sourceIds": [
+        "chunk-004:u0016"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0333",
+      "text": "黑棋拐出，",
+      "originalText": "黑棋拐出，",
+      "textEn": "",
+      "baselineText": "黑棋拐出，",
+      "sourceIds": [
+        "chunk-004:u0017"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0334",
+      "text": "白棋再长，",
+      "originalText": "白棋再长，",
+      "textEn": "",
+      "baselineText": "白棋再长，",
+      "sourceIds": [
+        "chunk-004:u0018"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0335",
+      "text": "黑棋在左边的跳刺先手，",
+      "originalText": "黑棋在左边的跳刺先手，",
+      "textEn": "",
+      "baselineText": "黑棋在左边的跳刺先手，",
+      "sourceIds": [
+        "chunk-004:u0019"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0336",
+      "text": "白棋粘住，",
+      "originalText": "白棋粘住，",
+      "textEn": "",
+      "baselineText": "白棋粘住，",
+      "sourceIds": [
+        "chunk-004:u0020"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0337",
+      "text": "黑棋从中央压了过来。",
+      "originalText": "黑棋从中央压了过来。",
+      "textEn": "",
+      "baselineText": "黑棋从中央压了过来。",
+      "sourceIds": [
+        "chunk-004:u0021"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0338",
+      "text": "当白棋再拐的时候，",
+      "originalText": "当白棋再拐的时候，",
+      "textEn": "",
+      "baselineText": "当白棋再拐的时候，",
+      "sourceIds": [
+        "chunk-004:u0022"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0339",
+      "text": "黑棋粘住，",
+      "originalText": "黑棋粘住，",
+      "textEn": "",
+      "baselineText": "黑棋粘住，",
+      "sourceIds": [
+        "chunk-004:u0023"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0340",
+      "text": "下一招，白棋在下方飞，搭建眼位。",
+      "originalText": "下一招，白棋在下方飞，搭建眼位。",
+      "textEn": "",
+      "baselineText": "下一招，白棋在下方飞，搭建眼位。",
+      "sourceIds": [
+        "chunk-004:u0024"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0341",
+      "text": "其实对于黑棋而言，现在最简明的应对，就是在中央一带自补一手，双也好，",
+      "originalText": "其实对于黑棋而言，现在最简明的应对，就是在中央一带自补一手，双也好，",
+      "textEn": "",
+      "baselineText": "其实对于黑棋而言，现在最简明的应对，就是在中央一带自补一手，双也好，",
+      "sourceIds": [
+        "chunk-004:u0025"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0343",
+      "text": "或者在此压住也可以，白棋如果爬回，那么黑棋再回到右下尖，对白棋展开攻击。",
+      "originalText": "或者在此压住也可以，白棋如果爬回，那么黑棋再回到右下尖，对白棋展开攻击。",
+      "textEn": "",
+      "baselineText": "或者在此压住也可以，白棋如果爬回，那么黑棋再回到右下尖，对白棋展开攻击。",
+      "sourceIds": [
+        "chunk-004:u0026"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0345",
+      "text": "实战，黑棋先贴一手，",
+      "originalText": "实战，黑棋先贴一手，",
+      "textEn": "",
+      "baselineText": "实战，黑棋先贴一手，",
+      "sourceIds": [
+        "chunk-004:u0027"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0346",
+      "text": "白棋扳住也没有问题，现在AI依旧建议黑棋赶快回到中央补棋，不与下方白棋纠缠，迅速地缩小棋盘，简化局势。",
+      "originalText": "白棋扳住也没有问题，现在AI依旧建议黑棋赶快回到中央补棋，不与下方白棋纠缠，迅速地缩小棋盘，简化局势。",
+      "textEn": "",
+      "baselineText": "白棋扳住也没有问题，现在AI依旧建议黑棋赶快回到中央补棋，不与下方白棋纠缠，迅速地缩小棋盘，简化局势。",
+      "sourceIds": [
+        "chunk-004:u0028"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0347",
+      "text": "但黑棋不肯轻易地放过白棋，下一招，从二路拐下，要求继续搜刮。",
+      "originalText": "但辜梓豪不肯轻易地放过白棋，下一招，从二路拐下，要求继续搜刮。",
+      "textEn": "",
+      "baselineText": "但黑棋不肯轻易地放过白棋，下一招，从二路拐下，要求继续搜刮。",
+      "sourceIds": [
+        "chunk-004:u0029"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0348",
+      "text": "不过，这手棋走完之后，胜率上出现了一些波动，黑棋从90%左右降至了75%，但是从目差上看，黑棋的领先优势反而有扩大之势，这表明这个地方的变化十分的复杂。",
+      "originalText": "不过，这手棋走完之后，胜率上出现了一些波动，黑棋从90%左右降至了75%，但是从目差上看，黑棋的领先优势反而有扩大之势，这表明这个地方的变化十分的复杂。",
+      "textEn": "",
+      "baselineText": "不过，这手棋走完之后，胜率上出现了一些波动，黑棋从90%左右降至了75%，但是从目差上看，黑棋的领先优势反而有扩大之势，这表明这个地方的变化十分的复杂。",
+      "sourceIds": [
+        "chunk-004:u0030"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0350",
+      "text": "白棋的机会是，现在要从中央冲出，盯着左边冲断的手段，黑棋也没有完全活净，",
+      "originalText": "白棋的机会是，现在要从中央冲出，盯着左边冲断的手段，黑棋也没有完全活净，",
+      "textEn": "",
+      "baselineText": "白棋的机会是，现在要从中央冲出，盯着左边冲断的手段，黑棋也没有完全活净，",
+      "sourceIds": [
+        "chunk-004:u0031"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0351",
+      "text": "而黑棋补棋，",
+      "originalText": "而黑棋补棋，",
+      "textEn": "",
+      "baselineText": "而黑棋补棋，",
+      "sourceIds": [
+        "chunk-004:u0032"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0352",
+      "text": "白棋再长，",
+      "originalText": "白棋再长，",
+      "textEn": "",
+      "baselineText": "白棋再长，",
+      "sourceIds": [
+        "chunk-004:u0033"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0353",
+      "text": "黑棋顶住的时候，",
+      "originalText": "黑棋顶住的时候，",
+      "textEn": "",
+      "baselineText": "黑棋顶住的时候，",
+      "sourceIds": [
+        "chunk-004:u0034"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0354",
+      "text": "白棋还要祭出在右边靠的手段，这样盯着中央几颗黑子的薄味，与黑棋展开作战。当然这个作战，黑棋的成算也不大，但是由于变化复杂，对于劣势的一方，机会总要大一些。",
+      "originalText": "白棋还要祭出在右边靠的手段，这样盯着中央几颗黑子的薄味，与黑棋展开作战。当然这个作战，黑棋的成算也不大，但是由于变化复杂，对于劣势的一方，机会总要大一些。",
+      "textEn": "",
+      "baselineText": "白棋还要祭出在右边靠的手段，这样盯着中央几颗黑子的薄味，与黑棋展开作战。当然这个作战，黑棋的成算也不大，但是由于变化复杂，对于劣势的一方，机会总要大一些。",
+      "sourceIds": [
+        "chunk-004:u0035"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0356",
+      "text": "而实战当中，白方的选择是继续在局部做活，这样黑棋这些欺负白棋过分的手段，反而都变成了好手。",
+      "originalText": "而实战当中，罗玄的选择是继续在局部做活，这样黑棋这些欺负白棋过分的手段，反而都变成了好手。",
+      "textEn": "",
+      "baselineText": "而实战当中，白方的选择是继续在局部做活，这样黑棋这些欺负白棋过分的手段，反而都变成了好手。",
+      "sourceIds": [
+        "chunk-004:u0036"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0357",
+      "text": "接下来黑棋继续尖，要求白棋做眼，白棋始终没有下出在中央冲出的手段。",
+      "originalText": "接下来黑棋继续尖，要求白棋做眼，白棋始终没有下出在中央冲出的手段。",
+      "textEn": "",
+      "baselineText": "接下来黑棋继续尖，要求白棋做眼，白棋始终没有下出在中央冲出的手段。",
+      "sourceIds": [
+        "chunk-004:u0037"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0358",
+      "text": "下一手，白棋扳，",
+      "originalText": "下一手，白棋扳，",
+      "textEn": "",
+      "baselineText": "下一手，白棋扳，",
+      "sourceIds": [
+        "chunk-004:u0038"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0359",
+      "text": "黑棋退，",
+      "originalText": "黑棋退，",
+      "textEn": "",
+      "baselineText": "黑棋退，",
+      "sourceIds": [
+        "chunk-004:u0039"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0360",
+      "text": "白棋再挤，",
+      "originalText": "白棋再挤，",
+      "textEn": "",
+      "baselineText": "白棋再挤，",
+      "sourceIds": [
+        "chunk-004:u0040"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0361",
+      "text": "黑棋就粘住。",
+      "originalText": "黑棋就粘住。",
+      "textEn": "",
+      "baselineText": "黑棋就粘住。",
+      "sourceIds": [
+        "chunk-004:u0041"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0362",
+      "text": "而白棋爬一手，",
+      "originalText": "而白棋爬一手，",
+      "textEn": "",
+      "baselineText": "而白棋爬一手，",
+      "sourceIds": [
+        "chunk-004:u0042"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0363",
+      "text": "黑棋扳，",
+      "originalText": "黑棋扳，",
+      "textEn": "",
+      "baselineText": "黑棋扳，",
+      "sourceIds": [
+        "chunk-004:u0043"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0364",
+      "text": "白棋夹，",
+      "originalText": "白棋夹，",
+      "textEn": "",
+      "baselineText": "白棋夹，",
+      "sourceIds": [
+        "chunk-004:u0044"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0365",
+      "text": "黑棋从角部挡住，这一系列的操作，白棋都不便宜，角上的黑棋被逐步地撞厚，对于右边白棋的压力越来越大。",
+      "originalText": "黑棋从角部挡住，这一系列的操作，白棋都不便宜，角上的黑棋被逐步地撞厚，对于右边白棋的压力越来越大。",
+      "textEn": "",
+      "baselineText": "黑棋从角部挡住，这一系列的操作，白棋都不便宜，角上的黑棋被逐步地撞厚，对于右边白棋的压力越来越大。",
+      "sourceIds": [
+        "chunk-004:u0045"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0366",
+      "text": "下一手，白棋打吃",
+      "originalText": "下一手，白棋打吃",
+      "textEn": "",
+      "baselineText": "下一手，白棋打吃",
+      "sourceIds": [
+        "chunk-004:u0046"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0367",
+      "text": "黑棋就粘，",
+      "originalText": "黑棋就粘，",
+      "textEn": "",
+      "baselineText": "黑棋就粘，",
+      "sourceIds": [
+        "chunk-004:u0047"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0368",
+      "text": "然后白棋在此贴住，护住眼位的同时，继续盯着左边冲断的手段。",
+      "originalText": "然后白棋在此贴住，护住眼位的同时，继续盯着左边冲断的手段。",
+      "textEn": "",
+      "baselineText": "然后白棋在此贴住，护住眼位的同时，继续盯着左边冲断的手段。",
+      "sourceIds": [
+        "chunk-004:u0048"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0369",
+      "text": "黑棋回到中央补棋，",
+      "originalText": "黑棋回到中央补棋，",
+      "textEn": "",
+      "baselineText": "黑棋回到中央补棋，",
+      "sourceIds": [
+        "chunk-004:u0049"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0370",
+      "text": "白棋再做活，这样局部黑棋先手定型，",
+      "originalText": "白棋再做活，这样局部黑棋先手定型，",
+      "textEn": "",
+      "baselineText": "白棋再做活，这样局部黑棋先手定型，",
+      "sourceIds": [
+        "chunk-004:u0050"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0371",
+      "text": "接下来再从右边扳继续攻击。",
+      "originalText": "接下来再从右边扳继续攻击。",
+      "textEn": "",
+      "baselineText": "接下来再从右边扳继续攻击。",
+      "sourceIds": [
+        "chunk-004:u0051"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0372",
+      "text": "白棋在此断的时候，",
+      "originalText": "白棋在此断的时候，",
+      "textEn": "",
+      "baselineText": "白棋在此断的时候，",
+      "sourceIds": [
+        "chunk-005:u0005"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0373",
+      "text": "黑棋打完之后",
+      "originalText": "黑棋打完之后",
+      "textEn": "",
+      "baselineText": "黑棋打完之后",
+      "sourceIds": [
+        "chunk-005:u0006"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0375",
+      "text": "再打，都是一选的手段。",
+      "originalText": "再打，都是一选的手段。",
+      "textEn": "",
+      "baselineText": "再打，都是一选的手段。",
+      "sourceIds": [
+        "chunk-005:u0007"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0377",
+      "text": "黑棋护住角地，",
+      "originalText": "黑棋护住角地，",
+      "textEn": "",
+      "baselineText": "黑棋护住角地，",
+      "sourceIds": [
+        "chunk-005:u0008"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0378",
+      "text": "同时白棋虽然提了一个龟甲的形状，",
+      "originalText": "同时白棋虽然提了一个龟甲的形状，",
+      "textEn": "",
+      "baselineText": "同时白棋虽然提了一个龟甲的形状，",
+      "sourceIds": [
+        "chunk-005:u0009"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0379",
+      "text": "但是整体依然没有活干净。",
+      "originalText": "但是整体依然没有活干净。",
+      "textEn": "",
+      "baselineText": "但是整体依然没有活干净。",
+      "sourceIds": [
+        "chunk-005:u0010"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0380",
+      "text": "下一手棋，白棋从上方打入继续求战。",
+      "originalText": "下一手棋，白棋从上方打入继续求战。",
+      "textEn": "",
+      "baselineText": "下一手棋，白棋从上方打入继续求战。",
+      "sourceIds": [
+        "chunk-005:u0011"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0381",
+      "text": "黑棋尖，先将白棋分断。",
+      "originalText": "黑棋尖，先将白棋分断。",
+      "textEn": "",
+      "baselineText": "黑棋尖，先将白棋分断。",
+      "sourceIds": [
+        "chunk-005:u0012"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0382",
+      "text": "接下来白棋跳出，",
+      "originalText": "接下来白棋跳出，",
+      "textEn": "",
+      "baselineText": "接下来白棋跳出，",
+      "sourceIds": [
+        "chunk-005:u0013"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0383",
+      "text": "黑棋在下方长出，对右边白棋施压。",
+      "originalText": "黑棋在下方长出，对右边白棋施压。",
+      "textEn": "",
+      "baselineText": "黑棋在下方长出，对右边白棋施压。",
+      "sourceIds": [
+        "chunk-005:u0014"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0384",
+      "text": "但白棋顾不上这些，现在如果说黑棋唯一有一些薄味的地方，那自然就是右上角的这两颗子。",
+      "originalText": "但白棋顾不上这些，现在如果说黑棋唯一有一些薄味的地方，那自然就是右上角的这两颗子。",
+      "textEn": "",
+      "baselineText": "但白棋顾不上这些，现在如果说黑棋唯一有一些薄味的地方，那自然就是右上角的这两颗子。",
+      "sourceIds": [
+        "chunk-005:u0015"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0385",
+      "text": "所以白棋不惜在此并一手，伤害到下方的白棋之后，",
+      "originalText": "所以白棋不惜在此并一手，伤害到下方的白棋之后，",
+      "textEn": "",
+      "baselineText": "所以白棋不惜在此并一手，伤害到下方的白棋之后，",
+      "sourceIds": [
+        "chunk-005:u0016"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0387",
+      "text": "从上边强行靠完",
+      "originalText": "从上边强行靠完",
+      "textEn": "",
+      "baselineText": "从上边强行靠完",
+      "sourceIds": [
+        "chunk-005:u0017"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0389",
+      "text": "再顶，",
+      "originalText": "再顶，",
+      "textEn": "",
+      "baselineText": "再顶，",
+      "sourceIds": [
+        "chunk-005:u0018"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0391",
+      "text": "然后断上去，寻求战机。",
+      "originalText": "然后断上去，寻求战机。",
+      "textEn": "",
+      "baselineText": "然后断上去，寻求战机。",
+      "sourceIds": [
+        "chunk-005:u0019"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0392",
+      "text": "但黑方的控盘技术也十分了得，",
+      "originalText": "但辜梓豪的控盘技术也十分了得，",
+      "textEn": "",
+      "baselineText": "但黑方的控盘技术也十分了得，",
+      "sourceIds": [
+        "chunk-005:u0020"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0393",
+      "text": "下一手棋，在中央一飞，既盯着上方白棋的棋形缺陷，同时又继续对右边白棋施压。",
+      "originalText": "下一手棋，在中央一飞，既盯着上方白棋的棋形缺陷，同时又继续对右边白棋施压。",
+      "textEn": "",
+      "baselineText": "下一手棋，在中央一飞，既盯着上方白棋的棋形缺陷，同时又继续对右边白棋施压。",
+      "sourceIds": [
+        "chunk-005:u0021"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0394",
+      "text": "右边的白棋如果死掉的话，这盘棋直接就结束了。",
+      "originalText": "右边的白棋如果死掉的话，这盘棋直接就结束了。",
+      "textEn": "",
+      "baselineText": "右边的白棋如果死掉的话，这盘棋直接就结束了。",
+      "sourceIds": [
+        "chunk-005:u0022"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0395",
+      "text": "所以白棋再逃出，",
+      "originalText": "所以白棋再逃出，",
+      "textEn": "",
+      "baselineText": "所以白棋再逃出，",
+      "sourceIds": [
+        "chunk-005:u0023"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0396",
+      "text": "黑棋在上方顶先手，",
+      "originalText": "黑棋在上方顶先手，",
+      "textEn": "",
+      "baselineText": "黑棋在上方顶先手，",
+      "sourceIds": [
+        "chunk-005:u0024"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0397",
+      "text": "白棋补棋，",
+      "originalText": "白棋补棋，",
+      "textEn": "",
+      "baselineText": "白棋补棋，",
+      "sourceIds": [
+        "chunk-005:u0025"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0398",
+      "text": "黑棋再从角部吃住这颗子，站稳脚跟。",
+      "originalText": "黑棋再从角部吃住这颗子，站稳脚跟。",
+      "textEn": "",
+      "baselineText": "黑棋再从角部吃住这颗子，站稳脚跟。",
+      "sourceIds": [
+        "chunk-005:u0026"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0399",
+      "text": "下一手棋，白棋立下，",
+      "originalText": "下一手棋，白棋立下，",
+      "textEn": "",
+      "baselineText": "下一手棋，白棋立下，",
+      "sourceIds": [
+        "chunk-005:u0027"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0400",
+      "text": "黑棋挡。",
+      "originalText": "黑棋挡。",
+      "textEn": "",
+      "baselineText": "黑棋挡。",
+      "sourceIds": [
+        "chunk-005:u0028"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0401",
+      "text": "接下来，白棋继续逃出，",
+      "originalText": "接下来，白棋继续逃出，",
+      "textEn": "",
+      "baselineText": "接下来，白棋继续逃出，",
+      "sourceIds": [
+        "chunk-005:u0029"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0402",
+      "text": "黑棋在中央飞，利用下方及左边一带的厚味，继续猛攻，让白棋往墙上撞。",
+      "originalText": "黑棋在中央飞，利用下方及左边一带的厚味，继续猛攻，让白棋往墙上撞。",
+      "textEn": "",
+      "baselineText": "黑棋在中央飞，利用下方及左边一带的厚味，继续猛攻，让白棋往墙上撞。",
+      "sourceIds": [
+        "chunk-005:u0030"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0403",
+      "text": "下一手白棋长出，",
+      "originalText": "下一手白棋长出，",
+      "textEn": "",
+      "baselineText": "下一手白棋长出，",
+      "sourceIds": [
+        "chunk-005:u0031"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0404",
+      "text": "黑棋再长。",
+      "originalText": "黑棋再长。",
+      "textEn": "",
+      "baselineText": "黑棋再长。",
+      "sourceIds": [
+        "chunk-005:u0032"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0405",
+      "text": "接下来白棋从上方打，",
+      "originalText": "接下来白棋从上方打，",
+      "textEn": "",
+      "baselineText": "接下来白棋从上方打，",
+      "sourceIds": [
+        "chunk-005:u0033"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0406",
+      "text": "黑棋就粘住。",
+      "originalText": "黑棋就粘住。",
+      "textEn": "",
+      "baselineText": "黑棋就粘住。",
+      "sourceIds": [
+        "chunk-005:u0034"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0407",
+      "text": "上边的棋形，白棋还有断点，只好自补，",
+      "originalText": "上边的棋形，白棋还有断点，只好自补，",
+      "textEn": "",
+      "baselineText": "上边的棋形，白棋还有断点，只好自补，",
+      "sourceIds": [
+        "chunk-005:u0035"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0408",
+      "text": "然后黑棋再一尖，一来限制上方白棋继续成空，同时要求右边的白棋补活。",
+      "originalText": "然后黑棋再一尖，一来限制上方白棋继续成空，同时要求右边的白棋补活。",
+      "textEn": "",
+      "baselineText": "然后黑棋再一尖，一来限制上方白棋继续成空，同时要求右边的白棋补活。",
+      "sourceIds": [
+        "chunk-005:u0036"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0409",
+      "text": "但现在的形势，黑棋的盘面领先已经在15目棋以上，白棋也知道单纯做活这块棋的话，这盘棋已经没有什么机会了，所以白棋开始拼命。",
+      "originalText": "但现在的形势，黑棋的盘面领先已经在15目棋以上，白棋也知道单纯做活这块棋的话，这盘棋已经没有什么机会了，所以罗玄开始拼命。",
+      "textEn": "",
+      "baselineText": "但现在的形势，黑棋的盘面领先已经在15目棋以上，白棋也知道单纯做活这块棋的话，这盘棋已经没有什么机会了，所以白棋开始拼命。",
+      "sourceIds": [
+        "chunk-005:u0037"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0410",
+      "text": "从中央冲出之后，",
+      "originalText": "从中央冲出之后，",
+      "textEn": "",
+      "baselineText": "从中央冲出之后，",
+      "sourceIds": [
+        "chunk-005:u0038"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0412",
+      "text": "直接扳了过来。",
+      "originalText": "直接扳了过来。",
+      "textEn": "",
+      "baselineText": "直接扳了过来。",
+      "sourceIds": [
+        "chunk-005:u0039"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0413",
+      "text": "黑棋也毫不犹豫地切断，",
+      "originalText": "黑棋也毫不犹豫地切断，",
+      "textEn": "",
+      "baselineText": "黑棋也毫不犹豫地切断，",
+      "sourceIds": [
+        "chunk-005:u0040"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0414",
+      "text": "白棋打吃，",
+      "originalText": "白棋打吃，",
+      "textEn": "",
+      "baselineText": "白棋打吃，",
+      "sourceIds": [
+        "chunk-005:u0041"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0415",
+      "text": "黑棋粘住，",
+      "originalText": "黑棋粘住，",
+      "textEn": "",
+      "baselineText": "黑棋粘住，",
+      "sourceIds": [
+        "chunk-005:u0042"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0416",
+      "text": "白棋再虎，",
+      "originalText": "白棋再虎，",
+      "textEn": "",
+      "baselineText": "白棋再虎，",
+      "sourceIds": [
+        "chunk-005:u0043"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0417",
+      "text": "黑棋在上方冲先手，",
+      "originalText": "黑棋在上方冲先手，",
+      "textEn": "",
+      "baselineText": "黑棋在上方冲先手，",
+      "sourceIds": [
+        "chunk-005:u0044"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0418",
+      "text": "白棋粘，",
+      "originalText": "白棋粘，",
+      "textEn": "",
+      "baselineText": "白棋粘，",
+      "sourceIds": [
+        "chunk-005:u0045"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0419",
+      "text": "然后黑棋打吃，",
+      "originalText": "然后黑棋打吃，",
+      "textEn": "",
+      "baselineText": "然后黑棋打吃，",
+      "sourceIds": [
+        "chunk-005:u0046"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0420",
+      "text": "白棋应住，",
+      "originalText": "白棋应住，",
+      "textEn": "",
+      "baselineText": "白棋应住，",
+      "sourceIds": [
+        "chunk-005:u0047"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0421",
+      "text": "黑棋在中央一飞，把中央的这块棋又全部包了进去。",
+      "originalText": "黑棋在中央一飞，把中央的这块棋又全部包了进去。",
+      "textEn": "",
+      "baselineText": "黑棋在中央一飞，把中央的这块棋又全部包了进去。",
+      "sourceIds": [
+        "chunk-005:u0048"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0422",
+      "text": "当然白棋在此处的用意，是借助弃掉中央几颗子，寻求对左边黑棋棋形的反击。",
+      "originalText": "当然罗玄在此处的用意，是借助弃掉中央几颗子，寻求对左边黑棋棋形的反击。",
+      "textEn": "",
+      "baselineText": "当然白棋在此处的用意，是借助弃掉中央几颗子，寻求对左边黑棋棋形的反击。",
+      "sourceIds": [
+        "chunk-005:u0049"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0423",
+      "text": "下一招，白棋尖，",
+      "originalText": "下一招，白棋尖，",
+      "textEn": "",
+      "baselineText": "下一招，白棋尖，",
+      "sourceIds": [
+        "chunk-005:u0050"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0424",
+      "text": "黑棋挡住，",
+      "originalText": "黑棋挡住，",
+      "textEn": "",
+      "baselineText": "黑棋挡住，",
+      "sourceIds": [
+        "chunk-005:u0051"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0425",
+      "text": "白棋从下方冲，",
+      "originalText": "白棋从下方冲，",
+      "textEn": "",
+      "baselineText": "白棋从下方冲，",
+      "sourceIds": [
+        "chunk-005:u0052"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0426",
+      "text": "黑棋挡，",
+      "originalText": "黑棋挡，",
+      "textEn": "",
+      "baselineText": "黑棋挡，",
+      "sourceIds": [
+        "chunk-005:u0053"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0427",
+      "text": "然后白棋一挖。",
+      "originalText": "然后白棋一挖。",
+      "textEn": "",
+      "baselineText": "然后白棋一挖。",
+      "sourceIds": [
+        "chunk-005:u0054"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0428",
+      "text": "黑棋补住断点，",
+      "originalText": "黑棋补住断点，",
+      "textEn": "",
+      "baselineText": "黑棋补住断点，",
+      "sourceIds": [
+        "chunk-005:u0055"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0429",
+      "text": "接下来白棋从上方打吃，",
+      "originalText": "接下来白棋从上方打吃，",
+      "textEn": "",
+      "baselineText": "接下来白棋从上方打吃，",
+      "sourceIds": [
+        "chunk-005:u0056"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0430",
+      "text": "黑棋在粘的时候，",
+      "originalText": "黑棋在粘的时候，",
+      "textEn": "",
+      "baselineText": "黑棋在粘的时候，",
+      "sourceIds": [
+        "chunk-005:u0057"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0431",
+      "text": "白棋粘回，一来右边要粘，强行逃出去，并盯着黑棋断点。",
+      "originalText": "白棋粘回，一来右边要粘，强行逃出去，并盯着黑棋断点。",
+      "textEn": "",
+      "baselineText": "白棋粘回，一来右边要粘，强行逃出去，并盯着黑棋断点。",
+      "sourceIds": [
+        "chunk-005:u0058"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0432",
+      "text": "但黑棋看得很清楚，先把中央全部吃住再说。",
+      "originalText": "但辜梓豪看得很清楚，先把中央全部吃住再说。",
+      "textEn": "",
+      "baselineText": "但黑棋看得很清楚，先把中央全部吃住再说。",
+      "sourceIds": [
+        "chunk-005:u0059"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0433",
+      "text": "当白棋在此断的时候，",
+      "originalText": "当白棋在此断的时候，",
+      "textEn": "",
+      "baselineText": "当白棋在此断的时候，",
+      "sourceIds": [
+        "chunk-005:u0060"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0434",
+      "text": "黑棋从上方一夹，",
+      "originalText": "黑棋从上方一夹，",
+      "textEn": "",
+      "baselineText": "黑棋从上方一夹，",
+      "sourceIds": [
+        "chunk-005:u0061"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0435",
+      "text": "由于白棋气紧的问题，现在黑棋可以利用滚包收气，在局部整形。",
+      "originalText": "由于白棋气紧的问题，现在黑棋可以利用滚包收气，在局部整形。",
+      "textEn": "",
+      "baselineText": "由于白棋气紧的问题，现在黑棋可以利用滚包收气，在局部整形。",
+      "sourceIds": [
+        "chunk-005:u0062"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0443",
+      "text": "下一手棋从上方一靠的时候，白棋就投子了。",
+      "originalText": "下一手棋从上方一靠的时候，罗玄就投子了。",
+      "textEn": "",
+      "baselineText": "下一手棋从上方一靠的时候，白棋就投子了。",
+      "sourceIds": [
+        "chunk-005:u0063"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0444",
+      "text": "那么现在的形势到底怎么样呢？右边白棋这块棋是死是活，我们逐一和大家拆解一下。",
+      "originalText": "那么现在的形势到底怎么样呢？右边白棋这块棋是死是活，我们逐一和大家拆解一下。",
+      "textEn": "",
+      "baselineText": "那么现在的形势到底怎么样呢？右边白棋这块棋是死是活，我们逐一和大家拆解一下。",
+      "sourceIds": [
+        "chunk-005:u0064"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0445",
+      "text": "首先，从AI分析来看，现在黑棋的盘面领先在20目棋左右。",
+      "originalText": "首先，从AI分析来看，现在黑棋的盘面领先在20目棋左右。",
+      "textEn": "",
+      "baselineText": "首先，从AI分析来看，现在黑棋的盘面领先在20目棋左右。",
+      "sourceIds": [
+        "chunk-005:u0065"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0446",
+      "text": "因为有了这手靠之后，由于上方还有冲断的手段，黑棋的死活没有问题。",
+      "originalText": "因为有了这手靠之后，由于上方还有冲断的手段，黑棋的死活没有问题。",
+      "textEn": "",
+      "baselineText": "因为有了这手靠之后，由于上方还有冲断的手段，黑棋的死活没有问题。",
+      "sourceIds": [
+        "chunk-005:u0066"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0448",
+      "text": "白棋如果粘的话，",
+      "originalText": "白棋如果粘的话，",
+      "textEn": "",
+      "baselineText": "白棋如果粘的话，",
+      "sourceIds": [
+        "chunk-005:u0067"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0449",
+      "text": "黑棋自补一手就可以，",
+      "originalText": "黑棋自补一手就可以，",
+      "textEn": "",
+      "baselineText": "黑棋自补一手就可以，",
+      "sourceIds": [
+        "chunk-006:u0003"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0450",
+      "text": "左边一带没有棋，至于中央，白棋是逃不出去的，",
+      "originalText": "左边一带没有棋，至于中央，白棋是逃不出去的，",
+      "textEn": "",
+      "baselineText": "左边一带没有棋，至于中央，白棋是逃不出去的，",
+      "sourceIds": [
+        "chunk-006:u0004"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0451",
+      "text": "而白棋的手段也无非就是在此冲完之后",
+      "originalText": "而白棋的手段也无非就是在此冲完之后",
+      "textEn": "",
+      "baselineText": "而白棋的手段也无非就是在此冲完之后",
+      "sourceIds": [
+        {
+          "id": "chunk-006:u0005",
+          "quote": "而白棋的手段也无非就是在此冲完之后"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0453",
+      "text": "断，",
+      "originalText": "断，",
+      "textEn": "",
+      "baselineText": "断，",
+      "sourceIds": [
+        {
+          "id": "chunk-006:u0005",
+          "quote": "断，"
+        }
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0454",
+      "text": "通过弃子在外围先手定型。",
+      "originalText": "通过弃子在外围先手定型。",
+      "textEn": "",
+      "baselineText": "通过弃子在外围先手定型。",
+      "sourceIds": [
+        "chunk-006:u0006"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0455",
+      "text": "黑棋提吃，",
+      "originalText": "黑棋提吃，",
+      "textEn": "",
+      "baselineText": "黑棋提吃，",
+      "sourceIds": [
+        "chunk-006:u0007"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0456",
+      "text": "白棋打，",
+      "originalText": "白棋打，",
+      "textEn": "",
+      "baselineText": "白棋打，",
+      "sourceIds": [
+        "chunk-006:u0008"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0457",
+      "text": "黑棋粘住，",
+      "originalText": "黑棋粘住，",
+      "textEn": "",
+      "baselineText": "黑棋粘住，",
+      "sourceIds": [
+        "chunk-006:u0009"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0458",
+      "text": "如果白棋断打，黑棋粘就可以，这个地方杀气，白棋也总是杀不过黑棋的。",
+      "originalText": "如果白棋断打，黑棋粘就可以，这个地方杀气，白棋也总是杀不过黑棋的。",
+      "textEn": "",
+      "baselineText": "如果白棋断打，黑棋粘就可以，这个地方杀气，白棋也总是杀不过黑棋的。",
+      "sourceIds": [
+        "chunk-006:u0010"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0459",
+      "text": "那么最后我们来说一下右边白棋的死活问题。这块棋是活棋，但是活了棋也不够了，因为中央已经付出了代价。",
+      "originalText": "那么最后我们来说一下右边白棋的死活问题。这块棋是活棋，但是活了棋也不够了，因为中央已经付出了代价。",
+      "textEn": "",
+      "baselineText": "那么最后我们来说一下右边白棋的死活问题。这块棋是活棋，但是活了棋也不够了，因为中央已经付出了代价。",
+      "sourceIds": [
+        "chunk-006:u0011"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0460",
+      "text": "白棋的活棋手筋是从二路挤一手。",
+      "originalText": "白棋的活棋手筋是从二路挤一手。",
+      "textEn": "",
+      "baselineText": "白棋的活棋手筋是从二路挤一手。",
+      "sourceIds": [
+        "chunk-006:u0012"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0461",
+      "text": "首先黑棋不能从一路打吃，",
+      "originalText": "首先黑棋不能从一路打吃，",
+      "textEn": "",
+      "baselineText": "首先黑棋不能从一路打吃，",
+      "sourceIds": [
+        "chunk-006:u0013"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0462",
+      "text": "否则白棋在上方一断之后，中央的断严厉，这一带黑棋自身棋形很薄，同时下方要粘回这颗子，这样黑棋的攻杀反而帮了白棋的忙。",
+      "originalText": "否则白棋在上方一断之后，中央的断严厉，这一带黑棋自身棋形很薄，同时下方要粘回这颗子，这样黑棋的攻杀反而帮了白棋的忙。",
+      "textEn": "",
+      "baselineText": "否则白棋在上方一断之后，中央的断严厉，这一带黑棋自身棋形很薄，同时下方要粘回这颗子，这样黑棋的攻杀反而帮了白棋的忙。",
+      "sourceIds": [
+        "chunk-006:u0014"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0473",
+      "text": "那么如果吃住这颗子怎样呢？",
+      "originalText": "那么如果吃住这颗子怎样呢？",
+      "textEn": "",
+      "baselineText": "那么如果吃住这颗子怎样呢？",
+      "sourceIds": [
+        "chunk-006:u0015"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0474",
+      "text": "白棋可以再次打吃，",
+      "originalText": "白棋可以再次打吃，",
+      "textEn": "",
+      "baselineText": "白棋可以再次打吃，",
+      "sourceIds": [
+        "chunk-006:u0016"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0475",
+      "text": "黑棋提吃，",
+      "originalText": "黑棋提吃，",
+      "textEn": "",
+      "baselineText": "黑棋提吃，",
+      "sourceIds": [
+        "chunk-006:u0017"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0476",
+      "text": "然后白棋再挤上去。",
+      "originalText": "然后白棋再挤上去。",
+      "textEn": "",
+      "baselineText": "然后白棋再挤上去。",
+      "sourceIds": [
+        "chunk-006:u0018"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0477",
+      "text": "现在黑棋不敢贸然反击，",
+      "originalText": "现在黑棋不敢贸然反击，",
+      "textEn": "",
+      "baselineText": "现在黑棋不敢贸然反击，",
+      "sourceIds": [
+        "chunk-006:u0019"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0478",
+      "text": "因为白棋有冲的手段，黑棋自身也有薄味。",
+      "originalText": "因为白棋有冲的手段，黑棋自身也有薄味。",
+      "textEn": "",
+      "baselineText": "因为白棋有冲的手段，黑棋自身也有薄味。",
+      "sourceIds": [
+        "chunk-006:u0020"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0493",
+      "text": "但对黑棋而言现在不必强杀，粘住就可以，",
+      "originalText": "但对黑棋而言现在不必强杀，粘住就可以，",
+      "textEn": "",
+      "baselineText": "但对黑棋而言现在不必强杀，粘住就可以，",
+      "sourceIds": [
+        "chunk-006:u0021"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0494",
+      "text": "白棋再冲，",
+      "originalText": "白棋再冲，",
+      "textEn": "",
+      "baselineText": "白棋再冲，",
+      "sourceIds": [
+        "chunk-006:u0022"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0495",
+      "text": "黑棋就双住。这样白棋这块棋做活总没有问题，但是如我们先前所说，活了也不够了。",
+      "originalText": "黑棋就双住。这样白棋这块棋做活总没有问题，但是如我们先前所说，活了也不够了。",
+      "textEn": "",
+      "baselineText": "黑棋就双住。这样白棋这块棋做活总没有问题，但是如我们先前所说，活了也不够了。",
+      "sourceIds": [
+        "chunk-006:u0023"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0505",
+      "text": "还有一个变化是，在这一带白棋挤的时候，",
+      "originalText": "还有一个变化是，在这一带白棋挤的时候，",
+      "textEn": "",
+      "baselineText": "还有一个变化是，在这一带白棋挤的时候，",
+      "sourceIds": [
+        "chunk-006:u0024"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0506",
+      "text": "黑棋直接在上方粘回也是可行的方案。当然这样白棋立下做活，黑棋把自己的联络补强，也是黑棋大胜的形势。所以右边这块棋的死活跟局势已经没有什么关系了。",
+      "originalText": "黑棋直接在上方粘回也是可行的方案。当然这样白棋立下做活，黑棋把自己的联络补强，也是黑棋大胜的形势。所以右边这块棋的死活跟局势已经没有什么关系了。",
+      "textEn": "",
+      "baselineText": "黑棋直接在上方粘回也是可行的方案。当然这样白棋立下做活，黑棋把自己的联络补强，也是黑棋大胜的形势。所以右边这块棋的死活跟局势已经没有什么关系了。",
+      "sourceIds": [
+        "chunk-006:u0025"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0507",
+      "text": "在此处随手一挡之后，",
+      "originalText": "在此处随手一挡之后，",
+      "textEn": "",
+      "baselineText": "在此处随手一挡之后，",
+      "sourceIds": [
+        "chunk-006:u0027"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0508",
+      "text": "被黑棋打吃，白棋才突然发现这几颗子粘不回去，",
+      "originalText": "被黑棋打吃，白棋才突然发现这几颗子粘不回去，",
+      "textEn": "",
+      "baselineText": "被黑棋打吃，白棋才突然发现这几颗子粘不回去，",
+      "sourceIds": [
+        "chunk-006:u0028"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "note:e0509",
+      "text": "而左上一番交锋下来，黑棋已经占据了优势，乃至是胜势的局面。",
+      "originalText": "而左上一番交锋下来，黑棋已经占据了优势，乃至是胜势的局面。",
+      "textEn": "",
+      "baselineText": "而左上一番交锋下来，黑棋已经占据了优势，乃至是胜势的局面。",
+      "sourceIds": [
+        "chunk-006:u0029"
+      ],
+      "section": "commentary"
+    },
+    {
+      "id": "user:e0054",
+      "text": "黑棋扳收气，",
+      "originalText": "",
+      "sourceIds": [],
+      "section": "commentary",
+      "userAdded": true
+    },
+    {
+      "id": "user:e0055",
+      "text": "白棋顶先手，",
+      "originalText": "",
+      "sourceIds": [],
+      "section": "commentary",
+      "userAdded": true
+    }
+  ],
+  "placements": [
+    {
+      "sentenceId": "note:e0005",
+      "position": "m:4",
+      "eventId": "e0005"
+    },
+    {
+      "sentenceId": "note:e0006",
+      "position": "m:5",
+      "eventId": "e0006"
+    },
+    {
+      "sentenceId": "note:e0007",
+      "position": "m:6",
+      "eventId": "e0007"
+    },
+    {
+      "sentenceId": "note:e0008",
+      "position": "m:7",
+      "eventId": "e0008"
+    },
+    {
+      "sentenceId": "note:e0009",
+      "position": "m:8",
+      "eventId": "e0009"
+    },
+    {
+      "sentenceId": "note:e0010",
+      "position": "m:9",
+      "eventId": "e0010"
+    },
+    {
+      "sentenceId": "note:e0017",
+      "position": "m:15",
+      "eventId": "e0017"
+    },
+    {
+      "sentenceId": "note:e0018",
+      "position": "m:16",
+      "eventId": "e0018"
+    },
+    {
+      "sentenceId": "note:e0020",
+      "position": "m:18",
+      "eventId": "e0020"
+    },
+    {
+      "sentenceId": "note:e0021",
+      "position": "m:19",
+      "eventId": "e0021"
+    },
+    {
+      "sentenceId": "note:e0022",
+      "position": "m:20",
+      "eventId": "e0022"
+    },
+    {
+      "sentenceId": "note:e0023",
+      "position": "m:21",
+      "eventId": "e0023"
+    },
+    {
+      "sentenceId": "note:e0025",
+      "position": "m:22",
+      "eventId": "e0025"
+    },
+    {
+      "sentenceId": "note:e0026",
+      "position": "m:22",
+      "eventId": "e0026"
+    },
+    {
+      "sentenceId": "note:e0027",
+      "position": "m:23",
+      "eventId": "e0027"
+    },
+    {
+      "sentenceId": "note:e0028",
+      "position": "m:24",
+      "eventId": "e0028"
+    },
+    {
+      "sentenceId": "note:e0029",
+      "position": "m:24",
+      "eventId": "e0029"
+    },
+    {
+      "sentenceId": "note:e0030",
+      "position": "m:25",
+      "eventId": "e0030"
+    },
+    {
+      "sentenceId": "note:e0031",
+      "position": "m:26",
+      "eventId": "e0031"
+    },
+    {
+      "sentenceId": "note:e0032",
+      "position": "m:27",
+      "eventId": "e0032"
+    },
+    {
+      "sentenceId": "note:e0033",
+      "position": "m:28",
+      "eventId": "e0033"
+    },
+    {
+      "sentenceId": "note:e0034",
+      "position": "m:29",
+      "eventId": "e0034"
+    },
+    {
+      "sentenceId": "note:e0035",
+      "position": "m:29",
+      "eventId": "e0035"
+    },
+    {
+      "sentenceId": "note:e0036",
+      "position": "m:30",
+      "eventId": "e0036"
+    },
+    {
+      "sentenceId": "note:e0037",
+      "position": "m:31",
+      "eventId": "e0037"
+    },
+    {
+      "sentenceId": "note:e0038",
+      "position": "m:32",
+      "eventId": "e0038"
+    },
+    {
+      "sentenceId": "note:e0040",
+      "position": "m:33",
+      "eventId": "e0040"
+    },
+    {
+      "sentenceId": "note:e0041",
+      "position": "m:33",
+      "eventId": "e0041"
+    },
+    {
+      "sentenceId": "note:e0043",
+      "position": "b:v01:1",
+      "eventId": "e0043"
+    },
+    {
+      "sentenceId": "note:e0044",
+      "position": "b:v01:1",
+      "eventId": "e0044"
+    },
+    {
+      "sentenceId": "note:e0045",
+      "position": "b:v01:1",
+      "eventId": "e0045"
+    },
+    {
+      "sentenceId": "note:e0046",
+      "position": "b:v01:2",
+      "eventId": "e0046"
+    },
+    {
+      "sentenceId": "note:e0047",
+      "position": "b:v01:3",
+      "eventId": "e0047"
+    },
+    {
+      "sentenceId": "note:e0048",
+      "position": "b:v01:4",
+      "eventId": "e0048"
+    },
+    {
+      "sentenceId": "note:e0050",
+      "position": "b:v01:6",
+      "eventId": "e0050"
+    },
+    {
+      "sentenceId": "note:e0051",
+      "position": "b:v01:7",
+      "eventId": "e0051"
+    },
+    {
+      "sentenceId": "note:e0052",
+      "position": "b:v01:8",
+      "eventId": "e0052"
+    },
+    {
+      "sentenceId": "note:e0053",
+      "position": "b:v01:9",
+      "eventId": "e0053"
+    },
+    {
+      "sentenceId": "note:e0056",
+      "position": "b:v01:12",
+      "eventId": "e0056"
+    },
+    {
+      "sentenceId": "note:e0057",
+      "position": "b:v01:13",
+      "eventId": "e0057"
+    },
+    {
+      "sentenceId": "note:e0058",
+      "position": "b:v01:13",
+      "eventId": "e0058"
+    },
+    {
+      "sentenceId": "note:e0061",
+      "position": "m:34",
+      "eventId": "e0061"
+    },
+    {
+      "sentenceId": "note:e0062",
+      "position": "m:34",
+      "eventId": "e0062"
+    },
+    {
+      "sentenceId": "note:e0063",
+      "position": "m:34",
+      "eventId": "e0063"
+    },
+    {
+      "sentenceId": "note:e0065",
+      "position": "b:v02:1",
+      "eventId": "e0065"
+    },
+    {
+      "sentenceId": "note:e0066",
+      "position": "b:v02:1",
+      "eventId": "e0066"
+    },
+    {
+      "sentenceId": "note:e0067",
+      "position": "b:v02:1",
+      "eventId": "e0067"
+    },
+    {
+      "sentenceId": "note:e0068",
+      "position": "b:v02:2",
+      "eventId": "e0068"
+    },
+    {
+      "sentenceId": "note:e0069",
+      "position": "b:v02:3",
+      "eventId": "e0069"
+    },
+    {
+      "sentenceId": "note:e0070",
+      "position": "b:v02:4",
+      "eventId": "e0070"
+    },
+    {
+      "sentenceId": "note:e0071",
+      "position": "b:v02:5",
+      "eventId": "e0071"
+    },
+    {
+      "sentenceId": "note:e0072",
+      "position": "b:v02:6",
+      "eventId": "e0072"
+    },
+    {
+      "sentenceId": "note:e0073",
+      "position": "b:v02:7",
+      "eventId": "e0073"
+    },
+    {
+      "sentenceId": "note:e0074",
+      "position": "b:v02:8",
+      "eventId": "e0074"
+    },
+    {
+      "sentenceId": "note:e0075",
+      "position": "b:v02:9",
+      "eventId": "e0075"
+    },
+    {
+      "sentenceId": "note:e0077",
+      "position": "b:v02:11",
+      "eventId": "e0077"
+    },
+    {
+      "sentenceId": "note:e0078",
+      "position": "b:v02:12",
+      "eventId": "e0078"
+    },
+    {
+      "sentenceId": "note:e0079",
+      "position": "b:v02:13",
+      "eventId": "e0079"
+    },
+    {
+      "sentenceId": "note:e0080",
+      "position": "b:v02:13",
+      "eventId": "e0080"
+    },
+    {
+      "sentenceId": "note:e0081",
+      "position": "b:v02:14",
+      "eventId": "e0081"
+    },
+    {
+      "sentenceId": "note:e0083",
+      "position": "b:v02:16",
+      "eventId": "e0083"
+    },
+    {
+      "sentenceId": "note:e0099",
+      "position": "b:v03:15",
+      "eventId": "e0099"
+    },
+    {
+      "sentenceId": "note:e0100",
+      "position": "b:v03:15",
+      "eventId": "e0100"
+    },
+    {
+      "sentenceId": "note:e0115",
+      "position": "b:v04:14",
+      "eventId": "e0115"
+    },
+    {
+      "sentenceId": "note:e0116",
+      "position": "b:v04:15",
+      "eventId": "e0116"
+    },
+    {
+      "sentenceId": "note:e0117",
+      "position": "b:v04:16",
+      "eventId": "e0117"
+    },
+    {
+      "sentenceId": "note:e0120",
+      "position": "b:v04:19",
+      "eventId": "e0120"
+    },
+    {
+      "sentenceId": "note:e0121",
+      "position": "b:v04:19",
+      "eventId": "e0121"
+    },
+    {
+      "sentenceId": "note:e0124",
+      "position": "b:v02:2",
+      "eventId": "e0124"
+    },
+    {
+      "sentenceId": "note:e0141",
+      "position": "b:v05:2",
+      "eventId": "e0141"
+    },
+    {
+      "sentenceId": "note:e0142",
+      "position": "b:v05:3",
+      "eventId": "e0142"
+    },
+    {
+      "sentenceId": "note:e0144",
+      "position": "b:v05:5",
+      "eventId": "e0144"
+    },
+    {
+      "sentenceId": "note:e0145",
+      "position": "b:v05:6",
+      "eventId": "e0145"
+    },
+    {
+      "sentenceId": "note:e0146",
+      "position": "b:v05:7",
+      "eventId": "e0146"
+    },
+    {
+      "sentenceId": "note:e0148",
+      "position": "b:v05:9",
+      "eventId": "e0148"
+    },
+    {
+      "sentenceId": "note:e0149",
+      "position": "b:v05:9",
+      "eventId": "e0149"
+    },
+    {
+      "sentenceId": "note:e0150",
+      "position": "b:v05:10",
+      "eventId": "e0150"
+    },
+    {
+      "sentenceId": "note:e0151",
+      "position": "b:v05:11",
+      "eventId": "e0151"
+    },
+    {
+      "sentenceId": "note:e0152",
+      "position": "b:v05:12",
+      "eventId": "e0152"
+    },
+    {
+      "sentenceId": "note:e0153",
+      "position": "b:v05:13",
+      "eventId": "e0153"
+    },
+    {
+      "sentenceId": "note:e0164",
+      "position": "b:v05:10",
+      "eventId": "e0164"
+    },
+    {
+      "sentenceId": "note:e0178",
+      "position": "b:v06:10",
+      "eventId": "e0178"
+    },
+    {
+      "sentenceId": "note:e0179",
+      "position": "b:v06:11",
+      "eventId": "e0179"
+    },
+    {
+      "sentenceId": "note:e0180",
+      "position": "b:v06:12",
+      "eventId": "e0180"
+    },
+    {
+      "sentenceId": "note:e0181",
+      "position": "b:v06:13",
+      "eventId": "e0181"
+    },
+    {
+      "sentenceId": "note:e0194",
+      "position": "b:v07:12",
+      "eventId": "e0194"
+    },
+    {
+      "sentenceId": "note:e0195",
+      "position": "b:v07:13",
+      "eventId": "e0195"
+    },
+    {
+      "sentenceId": "note:e0196",
+      "position": "b:v07:14",
+      "eventId": "e0196"
+    },
+    {
+      "sentenceId": "note:e0197",
+      "position": "b:v07:15",
+      "eventId": "e0197"
+    },
+    {
+      "sentenceId": "note:e0198",
+      "position": "b:v07:16",
+      "eventId": "e0198"
+    },
+    {
+      "sentenceId": "note:e0199",
+      "position": "b:v07:17",
+      "eventId": "e0199"
+    },
+    {
+      "sentenceId": "note:e0200",
+      "position": "b:v07:18",
+      "eventId": "e0200"
+    },
+    {
+      "sentenceId": "note:e0201",
+      "position": "b:v07:19",
+      "eventId": "e0201"
+    },
+    {
+      "sentenceId": "note:e0202",
+      "position": "b:v07:20",
+      "eventId": "e0202"
+    },
+    {
+      "sentenceId": "note:e0203",
+      "position": "b:v07:21",
+      "eventId": "e0203"
+    },
+    {
+      "sentenceId": "note:e0204",
+      "position": "b:v07:22",
+      "eventId": "e0204"
+    },
+    {
+      "sentenceId": "note:e0205",
+      "position": "b:v07:23",
+      "eventId": "e0205"
+    },
+    {
+      "sentenceId": "note:e0206",
+      "position": "b:v07:24",
+      "eventId": "e0206"
+    },
+    {
+      "sentenceId": "note:e0207",
+      "position": "b:v07:25",
+      "eventId": "e0207"
+    },
+    {
+      "sentenceId": "note:e0208",
+      "position": "b:v07:26",
+      "eventId": "e0208"
+    },
+    {
+      "sentenceId": "note:e0209",
+      "position": "b:v07:27",
+      "eventId": "e0209"
+    },
+    {
+      "sentenceId": "note:e0211",
+      "position": "b:v07:1",
+      "eventId": "e0211"
+    },
+    {
+      "sentenceId": "note:e0239",
+      "position": "m:35",
+      "eventId": "e0239"
+    },
+    {
+      "sentenceId": "note:e0240",
+      "position": "m:36",
+      "eventId": "e0240"
+    },
+    {
+      "sentenceId": "note:e0242",
+      "position": "b:v08:1",
+      "eventId": "e0242"
+    },
+    {
+      "sentenceId": "note:e0244",
+      "position": "b:v08:3",
+      "eventId": "e0244"
+    },
+    {
+      "sentenceId": "note:e0245",
+      "position": "b:v08:4",
+      "eventId": "e0245"
+    },
+    {
+      "sentenceId": "note:e0246",
+      "position": "b:v08:5",
+      "eventId": "e0246"
+    },
+    {
+      "sentenceId": "note:e0247",
+      "position": "b:v08:6",
+      "eventId": "e0247"
+    },
+    {
+      "sentenceId": "note:e0248",
+      "position": "b:v08:7",
+      "eventId": "e0248"
+    },
+    {
+      "sentenceId": "note:e0249",
+      "position": "b:v08:8",
+      "eventId": "e0249"
+    },
+    {
+      "sentenceId": "note:e0251",
+      "position": "m:37",
+      "eventId": "e0251"
+    },
+    {
+      "sentenceId": "note:e0252",
+      "position": "m:37",
+      "eventId": "e0252"
+    },
+    {
+      "sentenceId": "note:e0254",
+      "position": "b:v09:1",
+      "eventId": "e0254"
+    },
+    {
+      "sentenceId": "note:e0255",
+      "position": "b:v09:2",
+      "eventId": "e0255"
+    },
+    {
+      "sentenceId": "note:e0256",
+      "position": "b:v09:3",
+      "eventId": "e0256"
+    },
+    {
+      "sentenceId": "note:e0257",
+      "position": "b:v09:4",
+      "eventId": "e0257"
+    },
+    {
+      "sentenceId": "note:e0258",
+      "position": "b:v09:5",
+      "eventId": "e0258"
+    },
+    {
+      "sentenceId": "note:e0260",
+      "position": "m:38",
+      "eventId": "e0260"
+    },
+    {
+      "sentenceId": "note:e0261",
+      "position": "m:39",
+      "eventId": "e0261"
+    },
+    {
+      "sentenceId": "note:e0262",
+      "position": "m:39",
+      "eventId": "e0262"
+    },
+    {
+      "sentenceId": "note:e0263",
+      "position": "m:39",
+      "eventId": "e0263"
+    },
+    {
+      "sentenceId": "note:e0264",
+      "position": "m:39",
+      "eventId": "e0264"
+    },
+    {
+      "sentenceId": "note:e0265",
+      "position": "m:39",
+      "eventId": "e0265"
+    },
+    {
+      "sentenceId": "note:e0267",
+      "position": "b:v10:1",
+      "eventId": "e0267"
+    },
+    {
+      "sentenceId": "note:e0268",
+      "position": "b:v10:2",
+      "eventId": "e0268"
+    },
+    {
+      "sentenceId": "note:e0269",
+      "position": "b:v10:3",
+      "eventId": "e0269"
+    },
+    {
+      "sentenceId": "note:e0270",
+      "position": "b:v10:4",
+      "eventId": "e0270"
+    },
+    {
+      "sentenceId": "note:e0271",
+      "position": "b:v10:5",
+      "eventId": "e0271"
+    },
+    {
+      "sentenceId": "note:e0272",
+      "position": "b:v10:6",
+      "eventId": "e0272"
+    },
+    {
+      "sentenceId": "note:e0273",
+      "position": "b:v10:7",
+      "eventId": "e0273"
+    },
+    {
+      "sentenceId": "note:e0274",
+      "position": "b:v10:8",
+      "eventId": "e0274"
+    },
+    {
+      "sentenceId": "note:e0275",
+      "position": "b:v10:9",
+      "eventId": "e0275"
+    },
+    {
+      "sentenceId": "note:e0276",
+      "position": "b:v10:10",
+      "eventId": "e0276"
+    },
+    {
+      "sentenceId": "note:e0278",
+      "position": "b:v10:12",
+      "eventId": "e0278"
+    },
+    {
+      "sentenceId": "note:e0279",
+      "position": "b:v10:13",
+      "eventId": "e0279"
+    },
+    {
+      "sentenceId": "note:e0280",
+      "position": "b:v10:14",
+      "eventId": "e0280"
+    },
+    {
+      "sentenceId": "note:e0281",
+      "position": "b:v10:14",
+      "eventId": "e0281"
+    },
+    {
+      "sentenceId": "note:e0282",
+      "position": "b:v10:14",
+      "eventId": "e0282"
+    },
+    {
+      "sentenceId": "note:e0283",
+      "position": "b:v10:14",
+      "eventId": "e0283"
+    },
+    {
+      "sentenceId": "note:e0284",
+      "position": "b:v10:14",
+      "eventId": "e0284"
+    },
+    {
+      "sentenceId": "note:e0286",
+      "position": "m:40",
+      "eventId": "e0286"
+    },
+    {
+      "sentenceId": "note:e0287",
+      "position": "m:41",
+      "eventId": "e0287"
+    },
+    {
+      "sentenceId": "note:e0288",
+      "position": "m:41",
+      "eventId": "e0288"
+    },
+    {
+      "sentenceId": "note:e0289",
+      "position": "m:41",
+      "eventId": "e0289"
+    },
+    {
+      "sentenceId": "note:e0290",
+      "position": "m:41",
+      "eventId": "e0290"
+    },
+    {
+      "sentenceId": "note:e0291",
+      "position": "m:42",
+      "eventId": "e0291"
+    },
+    {
+      "sentenceId": "note:e0292",
+      "position": "m:43",
+      "eventId": "e0292"
+    },
+    {
+      "sentenceId": "note:e0293",
+      "position": "m:44",
+      "eventId": "e0293"
+    },
+    {
+      "sentenceId": "note:e0294",
+      "position": "m:45",
+      "eventId": "e0294"
+    },
+    {
+      "sentenceId": "note:e0295",
+      "position": "m:45",
+      "eventId": "e0295"
+    },
+    {
+      "sentenceId": "note:e0296",
+      "position": "m:46",
+      "eventId": "e0296"
+    },
+    {
+      "sentenceId": "note:e0297",
+      "position": "m:47",
+      "eventId": "e0297"
+    },
+    {
+      "sentenceId": "note:e0298",
+      "position": "m:48",
+      "eventId": "e0298"
+    },
+    {
+      "sentenceId": "note:e0299",
+      "position": "m:49",
+      "eventId": "e0299"
+    },
+    {
+      "sentenceId": "note:e0300",
+      "position": "m:50",
+      "eventId": "e0300"
+    },
+    {
+      "sentenceId": "note:e0301",
+      "position": "m:51",
+      "eventId": "e0301"
+    },
+    {
+      "sentenceId": "note:e0302",
+      "position": "m:52",
+      "eventId": "e0302"
+    },
+    {
+      "sentenceId": "note:e0303",
+      "position": "m:52",
+      "eventId": "e0303"
+    },
+    {
+      "sentenceId": "note:e0304",
+      "position": "m:52",
+      "eventId": "e0304"
+    },
+    {
+      "sentenceId": "note:e0305",
+      "position": "m:53",
+      "eventId": "e0305"
+    },
+    {
+      "sentenceId": "note:e0306",
+      "position": "m:54",
+      "eventId": "e0306"
+    },
+    {
+      "sentenceId": "note:e0307",
+      "position": "m:55",
+      "eventId": "e0307"
+    },
+    {
+      "sentenceId": "note:e0308",
+      "position": "m:56",
+      "eventId": "e0308"
+    },
+    {
+      "sentenceId": "note:e0309",
+      "position": "m:57",
+      "eventId": "e0309"
+    },
+    {
+      "sentenceId": "note:e0310",
+      "position": "m:58",
+      "eventId": "e0310"
+    },
+    {
+      "sentenceId": "note:e0311",
+      "position": "m:59",
+      "eventId": "e0311"
+    },
+    {
+      "sentenceId": "note:e0312",
+      "position": "m:60",
+      "eventId": "e0312"
+    },
+    {
+      "sentenceId": "note:e0313",
+      "position": "m:61",
+      "eventId": "e0313"
+    },
+    {
+      "sentenceId": "note:e0314",
+      "position": "m:62",
+      "eventId": "e0314"
+    },
+    {
+      "sentenceId": "note:e0315",
+      "position": "m:63",
+      "eventId": "e0315"
+    },
+    {
+      "sentenceId": "note:e0316",
+      "position": "m:64",
+      "eventId": "e0316"
+    },
+    {
+      "sentenceId": "note:e0317",
+      "position": "m:65",
+      "eventId": "e0317"
+    },
+    {
+      "sentenceId": "note:e0318",
+      "position": "m:66",
+      "eventId": "e0318"
+    },
+    {
+      "sentenceId": "note:e0319",
+      "position": "m:67",
+      "eventId": "e0319"
+    },
+    {
+      "sentenceId": "note:e0320",
+      "position": "m:68",
+      "eventId": "e0320"
+    },
+    {
+      "sentenceId": "note:e0321",
+      "position": "m:69",
+      "eventId": "e0321"
+    },
+    {
+      "sentenceId": "note:e0322",
+      "position": "m:70",
+      "eventId": "e0322"
+    },
+    {
+      "sentenceId": "note:e0323",
+      "position": "m:71",
+      "eventId": "e0323"
+    },
+    {
+      "sentenceId": "note:e0324",
+      "position": "m:72",
+      "eventId": "e0324"
+    },
+    {
+      "sentenceId": "note:e0325",
+      "position": "m:73",
+      "eventId": "e0325"
+    },
+    {
+      "sentenceId": "note:e0327",
+      "position": "m:75",
+      "eventId": "e0327"
+    },
+    {
+      "sentenceId": "note:e0328",
+      "position": "m:76",
+      "eventId": "e0328"
+    },
+    {
+      "sentenceId": "note:e0329",
+      "position": "m:77",
+      "eventId": "e0329"
+    },
+    {
+      "sentenceId": "note:e0330",
+      "position": "m:78",
+      "eventId": "e0330"
+    },
+    {
+      "sentenceId": "note:e0331",
+      "position": "m:79",
+      "eventId": "e0331"
+    },
+    {
+      "sentenceId": "note:e0332",
+      "position": "m:80",
+      "eventId": "e0332"
+    },
+    {
+      "sentenceId": "note:e0333",
+      "position": "m:81",
+      "eventId": "e0333"
+    },
+    {
+      "sentenceId": "note:e0334",
+      "position": "m:82",
+      "eventId": "e0334"
+    },
+    {
+      "sentenceId": "note:e0335",
+      "position": "m:83",
+      "eventId": "e0335"
+    },
+    {
+      "sentenceId": "note:e0336",
+      "position": "m:84",
+      "eventId": "e0336"
+    },
+    {
+      "sentenceId": "note:e0337",
+      "position": "m:85",
+      "eventId": "e0337"
+    },
+    {
+      "sentenceId": "note:e0338",
+      "position": "m:86",
+      "eventId": "e0338"
+    },
+    {
+      "sentenceId": "note:e0339",
+      "position": "m:87",
+      "eventId": "e0339"
+    },
+    {
+      "sentenceId": "note:e0340",
+      "position": "m:88",
+      "eventId": "e0340"
+    },
+    {
+      "sentenceId": "note:e0341",
+      "position": "m:88",
+      "eventId": "e0341"
+    },
+    {
+      "sentenceId": "note:e0343",
+      "position": "b:v11:1",
+      "eventId": "e0343"
+    },
+    {
+      "sentenceId": "note:e0345",
+      "position": "m:89",
+      "eventId": "e0345"
+    },
+    {
+      "sentenceId": "note:e0346",
+      "position": "m:90",
+      "eventId": "e0346"
+    },
+    {
+      "sentenceId": "note:e0347",
+      "position": "m:91",
+      "eventId": "e0347"
+    },
+    {
+      "sentenceId": "note:e0348",
+      "position": "m:91",
+      "eventId": "e0348"
+    },
+    {
+      "sentenceId": "note:e0350",
+      "position": "b:v12:1",
+      "eventId": "e0350"
+    },
+    {
+      "sentenceId": "note:e0351",
+      "position": "b:v12:2",
+      "eventId": "e0351"
+    },
+    {
+      "sentenceId": "note:e0352",
+      "position": "b:v12:3",
+      "eventId": "e0352"
+    },
+    {
+      "sentenceId": "note:e0353",
+      "position": "b:v12:4",
+      "eventId": "e0353"
+    },
+    {
+      "sentenceId": "note:e0354",
+      "position": "b:v12:5",
+      "eventId": "e0354"
+    },
+    {
+      "sentenceId": "note:e0356",
+      "position": "m:92",
+      "eventId": "e0356"
+    },
+    {
+      "sentenceId": "note:e0357",
+      "position": "m:93",
+      "eventId": "e0357"
+    },
+    {
+      "sentenceId": "note:e0358",
+      "position": "m:94",
+      "eventId": "e0358"
+    },
+    {
+      "sentenceId": "note:e0359",
+      "position": "m:95",
+      "eventId": "e0359"
+    },
+    {
+      "sentenceId": "note:e0360",
+      "position": "m:96",
+      "eventId": "e0360"
+    },
+    {
+      "sentenceId": "note:e0361",
+      "position": "m:97",
+      "eventId": "e0361"
+    },
+    {
+      "sentenceId": "note:e0362",
+      "position": "m:98",
+      "eventId": "e0362"
+    },
+    {
+      "sentenceId": "note:e0363",
+      "position": "m:99",
+      "eventId": "e0363"
+    },
+    {
+      "sentenceId": "note:e0364",
+      "position": "m:100",
+      "eventId": "e0364"
+    },
+    {
+      "sentenceId": "note:e0365",
+      "position": "m:101",
+      "eventId": "e0365"
+    },
+    {
+      "sentenceId": "note:e0366",
+      "position": "m:102",
+      "eventId": "e0366"
+    },
+    {
+      "sentenceId": "note:e0367",
+      "position": "m:103",
+      "eventId": "e0367"
+    },
+    {
+      "sentenceId": "note:e0368",
+      "position": "m:104",
+      "eventId": "e0368"
+    },
+    {
+      "sentenceId": "note:e0369",
+      "position": "m:105",
+      "eventId": "e0369"
+    },
+    {
+      "sentenceId": "note:e0370",
+      "position": "m:106",
+      "eventId": "e0370"
+    },
+    {
+      "sentenceId": "note:e0371",
+      "position": "m:107",
+      "eventId": "e0371"
+    },
+    {
+      "sentenceId": "note:e0372",
+      "position": "m:108",
+      "eventId": "e0372"
+    },
+    {
+      "sentenceId": "note:e0373",
+      "position": "m:109",
+      "eventId": "e0373"
+    },
+    {
+      "sentenceId": "note:e0375",
+      "position": "m:111",
+      "eventId": "e0375"
+    },
+    {
+      "sentenceId": "note:e0377",
+      "position": "m:113",
+      "eventId": "e0377"
+    },
+    {
+      "sentenceId": "note:e0378",
+      "position": "m:112",
+      "eventId": "e0378"
+    },
+    {
+      "sentenceId": "note:e0379",
+      "position": "m:113",
+      "eventId": "e0379"
+    },
+    {
+      "sentenceId": "note:e0380",
+      "position": "m:114",
+      "eventId": "e0380"
+    },
+    {
+      "sentenceId": "note:e0381",
+      "position": "m:115",
+      "eventId": "e0381"
+    },
+    {
+      "sentenceId": "note:e0382",
+      "position": "m:116",
+      "eventId": "e0382"
+    },
+    {
+      "sentenceId": "note:e0383",
+      "position": "m:117",
+      "eventId": "e0383"
+    },
+    {
+      "sentenceId": "note:e0384",
+      "position": "m:117",
+      "eventId": "e0384"
+    },
+    {
+      "sentenceId": "note:e0385",
+      "position": "m:118",
+      "eventId": "e0385"
+    },
+    {
+      "sentenceId": "note:e0387",
+      "position": "m:120",
+      "eventId": "e0387"
+    },
+    {
+      "sentenceId": "note:e0389",
+      "position": "m:122",
+      "eventId": "e0389"
+    },
+    {
+      "sentenceId": "note:e0391",
+      "position": "m:124",
+      "eventId": "e0391"
+    },
+    {
+      "sentenceId": "note:e0392",
+      "position": "m:124",
+      "eventId": "e0392"
+    },
+    {
+      "sentenceId": "note:e0393",
+      "position": "m:125",
+      "eventId": "e0393"
+    },
+    {
+      "sentenceId": "note:e0394",
+      "position": "m:125",
+      "eventId": "e0394"
+    },
+    {
+      "sentenceId": "note:e0395",
+      "position": "m:126",
+      "eventId": "e0395"
+    },
+    {
+      "sentenceId": "note:e0396",
+      "position": "m:127",
+      "eventId": "e0396"
+    },
+    {
+      "sentenceId": "note:e0397",
+      "position": "m:128",
+      "eventId": "e0397"
+    },
+    {
+      "sentenceId": "note:e0398",
+      "position": "m:129",
+      "eventId": "e0398"
+    },
+    {
+      "sentenceId": "note:e0399",
+      "position": "m:130",
+      "eventId": "e0399"
+    },
+    {
+      "sentenceId": "note:e0400",
+      "position": "m:131",
+      "eventId": "e0400"
+    },
+    {
+      "sentenceId": "note:e0401",
+      "position": "m:132",
+      "eventId": "e0401"
+    },
+    {
+      "sentenceId": "note:e0402",
+      "position": "m:133",
+      "eventId": "e0402"
+    },
+    {
+      "sentenceId": "note:e0403",
+      "position": "m:134",
+      "eventId": "e0403"
+    },
+    {
+      "sentenceId": "note:e0404",
+      "position": "m:135",
+      "eventId": "e0404"
+    },
+    {
+      "sentenceId": "note:e0405",
+      "position": "m:136",
+      "eventId": "e0405"
+    },
+    {
+      "sentenceId": "note:e0406",
+      "position": "m:137",
+      "eventId": "e0406"
+    },
+    {
+      "sentenceId": "note:e0407",
+      "position": "m:138",
+      "eventId": "e0407"
+    },
+    {
+      "sentenceId": "note:e0408",
+      "position": "m:139",
+      "eventId": "e0408"
+    },
+    {
+      "sentenceId": "note:e0409",
+      "position": "m:139",
+      "eventId": "e0409"
+    },
+    {
+      "sentenceId": "note:e0410",
+      "position": "m:140",
+      "eventId": "e0410"
+    },
+    {
+      "sentenceId": "note:e0412",
+      "position": "m:142",
+      "eventId": "e0412"
+    },
+    {
+      "sentenceId": "note:e0413",
+      "position": "m:143",
+      "eventId": "e0413"
+    },
+    {
+      "sentenceId": "note:e0414",
+      "position": "m:144",
+      "eventId": "e0414"
+    },
+    {
+      "sentenceId": "note:e0415",
+      "position": "m:145",
+      "eventId": "e0415"
+    },
+    {
+      "sentenceId": "note:e0416",
+      "position": "m:146",
+      "eventId": "e0416"
+    },
+    {
+      "sentenceId": "note:e0417",
+      "position": "m:147",
+      "eventId": "e0417"
+    },
+    {
+      "sentenceId": "note:e0418",
+      "position": "m:148",
+      "eventId": "e0418"
+    },
+    {
+      "sentenceId": "note:e0419",
+      "position": "m:149",
+      "eventId": "e0419"
+    },
+    {
+      "sentenceId": "note:e0420",
+      "position": "m:150",
+      "eventId": "e0420"
+    },
+    {
+      "sentenceId": "note:e0421",
+      "position": "m:151",
+      "eventId": "e0421"
+    },
+    {
+      "sentenceId": "note:e0422",
+      "position": "m:151",
+      "eventId": "e0422"
+    },
+    {
+      "sentenceId": "note:e0423",
+      "position": "m:152",
+      "eventId": "e0423"
+    },
+    {
+      "sentenceId": "note:e0424",
+      "position": "m:153",
+      "eventId": "e0424"
+    },
+    {
+      "sentenceId": "note:e0425",
+      "position": "m:154",
+      "eventId": "e0425"
+    },
+    {
+      "sentenceId": "note:e0426",
+      "position": "m:155",
+      "eventId": "e0426"
+    },
+    {
+      "sentenceId": "note:e0427",
+      "position": "m:156",
+      "eventId": "e0427"
+    },
+    {
+      "sentenceId": "note:e0428",
+      "position": "m:157",
+      "eventId": "e0428"
+    },
+    {
+      "sentenceId": "note:e0429",
+      "position": "m:158",
+      "eventId": "e0429"
+    },
+    {
+      "sentenceId": "note:e0430",
+      "position": "m:159",
+      "eventId": "e0430"
+    },
+    {
+      "sentenceId": "note:e0431",
+      "position": "m:160",
+      "eventId": "e0431"
+    },
+    {
+      "sentenceId": "note:e0432",
+      "position": "m:161",
+      "eventId": "e0432"
+    },
+    {
+      "sentenceId": "note:e0433",
+      "position": "m:162",
+      "eventId": "e0433"
+    },
+    {
+      "sentenceId": "note:e0434",
+      "position": "m:163",
+      "eventId": "e0434"
+    },
+    {
+      "sentenceId": "note:e0435",
+      "position": "m:163",
+      "eventId": "e0435"
+    },
+    {
+      "sentenceId": "note:e0443",
+      "position": "m:171",
+      "eventId": "e0443"
+    },
+    {
+      "sentenceId": "note:e0444",
+      "position": "m:171",
+      "eventId": "e0444"
+    },
+    {
+      "sentenceId": "note:e0445",
+      "position": "m:171",
+      "eventId": "e0445"
+    },
+    {
+      "sentenceId": "note:e0446",
+      "position": "m:171",
+      "eventId": "e0446"
+    },
+    {
+      "sentenceId": "note:e0448",
+      "position": "b:v13:1",
+      "eventId": "e0448"
+    },
+    {
+      "sentenceId": "note:e0449",
+      "position": "b:v13:2",
+      "eventId": "e0449"
+    },
+    {
+      "sentenceId": "note:e0450",
+      "position": "b:v13:2",
+      "eventId": "e0450"
+    },
+    {
+      "sentenceId": "note:e0451",
+      "position": "b:v13:3",
+      "eventId": "e0451"
+    },
+    {
+      "sentenceId": "note:e0453",
+      "position": "b:v13:5",
+      "eventId": "e0453"
+    },
+    {
+      "sentenceId": "note:e0454",
+      "position": "b:v13:5",
+      "eventId": "e0454"
+    },
+    {
+      "sentenceId": "note:e0455",
+      "position": "b:v13:6",
+      "eventId": "e0455"
+    },
+    {
+      "sentenceId": "note:e0456",
+      "position": "b:v13:7",
+      "eventId": "e0456"
+    },
+    {
+      "sentenceId": "note:e0457",
+      "position": "b:v13:8",
+      "eventId": "e0457"
+    },
+    {
+      "sentenceId": "note:e0458",
+      "position": "b:v13:8",
+      "eventId": "e0458"
+    },
+    {
+      "sentenceId": "note:e0459",
+      "position": "b:v13:8",
+      "eventId": "e0459"
+    },
+    {
+      "sentenceId": "note:e0460",
+      "position": "b:v13:9",
+      "eventId": "e0460"
+    },
+    {
+      "sentenceId": "note:e0461",
+      "position": "b:v13:10",
+      "eventId": "e0461"
+    },
+    {
+      "sentenceId": "note:e0462",
+      "position": "b:v13:11",
+      "eventId": "e0462"
+    },
+    {
+      "sentenceId": "note:e0473",
+      "position": "b:v14:10",
+      "eventId": "e0473"
+    },
+    {
+      "sentenceId": "note:e0474",
+      "position": "b:v14:11",
+      "eventId": "e0474"
+    },
+    {
+      "sentenceId": "note:e0475",
+      "position": "b:v14:12",
+      "eventId": "e0475"
+    },
+    {
+      "sentenceId": "note:e0476",
+      "position": "b:v14:13",
+      "eventId": "e0476"
+    },
+    {
+      "sentenceId": "note:e0477",
+      "position": "b:v14:14",
+      "eventId": "e0477"
+    },
+    {
+      "sentenceId": "note:e0478",
+      "position": "b:v14:15",
+      "eventId": "e0478"
+    },
+    {
+      "sentenceId": "note:e0493",
+      "position": "b:v15:14",
+      "eventId": "e0493"
+    },
+    {
+      "sentenceId": "note:e0494",
+      "position": "b:v15:15",
+      "eventId": "e0494"
+    },
+    {
+      "sentenceId": "note:e0495",
+      "position": "b:v15:16",
+      "eventId": "e0495"
+    },
+    {
+      "sentenceId": "note:e0505",
+      "position": "b:v16:9",
+      "eventId": "e0505"
+    },
+    {
+      "sentenceId": "note:e0506",
+      "position": "b:v16:10",
+      "eventId": "e0506"
+    },
+    {
+      "sentenceId": "note:e0507",
+      "position": "m:38",
+      "eventId": "e0507"
+    },
+    {
+      "sentenceId": "note:e0508",
+      "position": "m:39",
+      "eventId": "e0508"
+    },
+    {
+      "sentenceId": "note:e0509",
+      "position": "m:41",
+      "eventId": "e0509"
+    },
+    {
+      "sentenceId": "user:e0054",
+      "position": "b:v01:10",
+      "eventId": "e0054"
+    },
+    {
+      "sentenceId": "user:e0055",
+      "position": "b:v01:11",
+      "eventId": "e0055"
+    }
+  ],
+  "points": {},
+  "annotations": [],
+  "humanReview": "in_progress",
+  "trainingEligible": false,
+  "updatedAt": "2026-10-31T10:55:38.069Z",
+  "migratedFrom": "c52b5675",
+  "migrationConflicts": [],
+  "reviewedEventIds": []
+}
