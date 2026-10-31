@@ -11,7 +11,7 @@
   "komiVerified": true,
   "boardSize": 19,
   "moveCount": 171,
-  "annotationCount": 308,
+  "annotationCount": 312,
   "variationCount": 16,
   "framingCount": 0,
   "events": [
@@ -9107,13 +9107,15 @@
         4,
         2
       ],
-      "text": "",
+      "text": "黑棋可以打完之后，",
       "branch": "v05",
       "step": 3,
       "branchLength": 13,
       "label": null,
-      "duration": 0.7,
-      "sources": [],
+      "duration": 1.8,
+      "sources": [
+        "chunk-002:u0001"
+      ],
       "marks": [
         {
           "point": [
@@ -9139,7 +9141,7 @@
       ],
       "start": 254.957,
       "textEn": "",
-      "textVerbatim": "",
+      "textVerbatim": "黑棋可以打完之后，",
       "textEdits": [],
       "contentVersion": 3
     },
@@ -9192,7 +9194,7 @@
           "number": 4
         }
       ],
-      "start": 255.907,
+      "start": 257.007,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -9210,13 +9212,15 @@
         6,
         2
       ],
-      "text": "",
+      "text": "在上方双住。",
       "branch": "v05",
       "step": 5,
       "branchLength": 13,
       "label": null,
-      "duration": 0.7,
-      "sources": [],
+      "duration": 1.8,
+      "sources": [
+        "chunk-002:u0002"
+      ],
       "marks": [
         {
           "point": [
@@ -9254,9 +9258,9 @@
           "number": 5
         }
       ],
-      "start": 256.857,
+      "start": 257.957,
       "textEn": "",
-      "textVerbatim": "",
+      "textVerbatim": "在上方双住。",
       "textEdits": [],
       "contentVersion": 3
     },
@@ -9272,13 +9276,15 @@
         7,
         2
       ],
-      "text": "",
+      "text": "白棋再贴下的时候，",
       "branch": "v05",
       "step": 6,
       "branchLength": 13,
       "label": null,
-      "duration": 0.7,
-      "sources": [],
+      "duration": 1.8,
+      "sources": [
+        "chunk-002:u0003"
+      ],
       "marks": [
         {
           "point": [
@@ -9323,9 +9329,9 @@
           "number": 6
         }
       ],
-      "start": 257.807,
+      "start": 260.007,
       "textEn": "",
-      "textVerbatim": "",
+      "textVerbatim": "白棋再贴下的时候，",
       "textEdits": [],
       "contentVersion": 3
     },
@@ -9404,7 +9410,7 @@
           "number": 7
         }
       ],
-      "start": 258.757,
+      "start": 262.057,
       "textEn": "",
       "textVerbatim": "黑棋可以从二路扳",
       "textEdits": [],
@@ -9487,7 +9493,7 @@
           "number": 8
         }
       ],
-      "start": 260.807,
+      "start": 264.107,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -9582,7 +9588,7 @@
           "number": 9
         }
       ],
-      "start": 261.757,
+      "start": 265.057,
       "textEn": "",
       "textVerbatim": "粘。",
       "textEdits": [],
@@ -9674,7 +9680,7 @@
           "number": 9
         }
       ],
-      "start": 263.807,
+      "start": 267.107,
       "textEn": "",
       "textVerbatim": "此时新的问题又出现了，外围一带白棋留下了诸多的断点和借用，而上方的收气，白棋依旧是杀不过黑棋。",
       "textEdits": [],
@@ -9773,7 +9779,7 @@
           "number": 10
         }
       ],
-      "start": 272.602,
+      "start": 275.902,
       "textEn": "",
       "textVerbatim": "接下来，如果白棋在上方虎的话，有些过于用强，",
       "textEdits": [],
@@ -9879,7 +9885,7 @@
           "number": 11
         }
       ],
-      "start": 276.852,
+      "start": 280.152,
       "textEn": "",
       "textVerbatim": "黑棋可以在此断一手，一来防住白棋在这一带收气的手段，黑棋的粘有先手，同时我们看到白棋外围也需要补棋，",
       "textEdits": [],
@@ -9992,7 +9998,7 @@
           "number": 12
         }
       ],
-      "start": 286.193,
+      "start": 289.493,
       "textEn": "",
       "textVerbatim": "如果断打，",
       "textEdits": [],
@@ -10112,7 +10118,7 @@
           "number": 13
         }
       ],
-      "start": 288.243,
+      "start": 291.543,
       "textEn": "",
       "textVerbatim": "黑棋可以长出，上方一带还有尖的先手，角部的收气，黑棋依然可以吃住白棋，只要白棋被分段的话，外势留下缺陷，黑棋里外都走到，总是满意的。",
       "textEdits": [],
@@ -10137,7 +10143,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 300.493,
+      "start": 303.793,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10171,7 +10177,7 @@
           "number": 1
         }
       ],
-      "start": 301.443,
+      "start": 304.743,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10212,7 +10218,7 @@
           "number": 2
         }
       ],
-      "start": 302.393,
+      "start": 305.693,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10260,7 +10266,7 @@
           "number": 3
         }
       ],
-      "start": 303.343,
+      "start": 306.643,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10315,7 +10321,7 @@
           "number": 4
         }
       ],
-      "start": 304.293,
+      "start": 307.593,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10377,7 +10383,7 @@
           "number": 5
         }
       ],
-      "start": 305.243,
+      "start": 308.543,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10446,7 +10452,7 @@
           "number": 6
         }
       ],
-      "start": 306.193,
+      "start": 309.493,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10522,7 +10528,7 @@
           "number": 7
         }
       ],
-      "start": 307.143,
+      "start": 310.443,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10605,7 +10611,7 @@
           "number": 8
         }
       ],
-      "start": 308.093,
+      "start": 311.393,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10695,7 +10701,7 @@
           "number": 9
         }
       ],
-      "start": 309.043,
+      "start": 312.343,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -10797,7 +10803,7 @@
           "number": 10
         }
       ],
-      "start": 309.993,
+      "start": 313.293,
       "textEn": "",
       "textVerbatim": "所以白棋在上方的虎并不好，",
       "textEdits": [],
@@ -10901,7 +10907,7 @@
           "number": 11
         }
       ],
-      "start": 312.607,
+      "start": 315.907,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11012,7 +11018,7 @@
           "number": 12
         }
       ],
-      "start": 313.557,
+      "start": 316.857,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11130,7 +11136,7 @@
           "number": 13
         }
       ],
-      "start": 314.507,
+      "start": 317.807,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11155,7 +11161,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 315.457,
+      "start": 318.757,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11189,7 +11195,7 @@
           "number": 1
         }
       ],
-      "start": 316.407,
+      "start": 319.707,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11230,7 +11236,7 @@
           "number": 2
         }
       ],
-      "start": 317.357,
+      "start": 320.657,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11278,7 +11284,7 @@
           "number": 3
         }
       ],
-      "start": 318.307,
+      "start": 321.607,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11333,7 +11339,7 @@
           "number": 4
         }
       ],
-      "start": 319.257,
+      "start": 322.557,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11395,7 +11401,7 @@
           "number": 5
         }
       ],
-      "start": 320.207,
+      "start": 323.507,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11464,7 +11470,7 @@
           "number": 6
         }
       ],
-      "start": 321.157,
+      "start": 324.457,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11540,7 +11546,7 @@
           "number": 7
         }
       ],
-      "start": 322.107,
+      "start": 325.407,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11623,7 +11629,7 @@
           "number": 8
         }
       ],
-      "start": 323.057,
+      "start": 326.357,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11713,7 +11719,7 @@
           "number": 9
         }
       ],
-      "start": 324.007,
+      "start": 327.307,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -11815,7 +11821,7 @@
           "number": 10
         }
       ],
-      "start": 324.957,
+      "start": 328.257,
       "textEn": "",
       "textVerbatim": "这个时候白棋的最佳应对还是要走厚外围，直接粘住，",
       "textEdits": [],
@@ -11921,7 +11927,7 @@
           "number": 11
         }
       ],
-      "start": 329.571,
+      "start": 332.871,
       "textEn": "",
       "textVerbatim": "当然，此时也给黑棋在上方留下了夹的手段。",
       "textEdits": [],
@@ -12034,7 +12040,7 @@
           "number": 12
         }
       ],
-      "start": 333.457,
+      "start": 336.757,
       "textEn": "",
       "textVerbatim": "白棋不能立下强行阻渡，",
       "textEdits": [],
@@ -12154,7 +12160,7 @@
           "number": 13
         }
       ],
-      "start": 335.707,
+      "start": 339.007,
       "textEn": "",
       "textVerbatim": "否则黑棋在此跳先手，白棋不管怎么补棋，黑棋再回到上方收气的话，那么外围还是被黑棋便宜了。",
       "textEdits": [],
@@ -12179,7 +12185,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 343.957,
+      "start": 347.257,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12213,7 +12219,7 @@
           "number": 1
         }
       ],
-      "start": 344.907,
+      "start": 348.207,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12254,7 +12260,7 @@
           "number": 2
         }
       ],
-      "start": 345.857,
+      "start": 349.157,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12302,7 +12308,7 @@
           "number": 3
         }
       ],
-      "start": 346.807,
+      "start": 350.107,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12357,7 +12363,7 @@
           "number": 4
         }
       ],
-      "start": 347.757,
+      "start": 351.057,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12419,7 +12425,7 @@
           "number": 5
         }
       ],
-      "start": 348.707,
+      "start": 352.007,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12488,7 +12494,7 @@
           "number": 6
         }
       ],
-      "start": 349.657,
+      "start": 352.957,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12564,7 +12570,7 @@
           "number": 7
         }
       ],
-      "start": 350.607,
+      "start": 353.907,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12647,7 +12653,7 @@
           "number": 8
         }
       ],
-      "start": 351.557,
+      "start": 354.857,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12737,7 +12743,7 @@
           "number": 9
         }
       ],
-      "start": 352.507,
+      "start": 355.807,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12834,7 +12840,7 @@
           "number": 10
         }
       ],
-      "start": 353.457,
+      "start": 356.757,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -12938,7 +12944,7 @@
           "number": 11
         }
       ],
-      "start": 354.407,
+      "start": 357.707,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -13051,7 +13057,7 @@
           "number": 12
         }
       ],
-      "start": 355.357,
+      "start": 358.657,
       "textEn": "",
       "textVerbatim": "所以白棋大致要虎，",
       "textEdits": [],
@@ -13171,7 +13177,7 @@
           "number": 13
         }
       ],
-      "start": 357.407,
+      "start": 360.707,
       "textEn": "",
       "textVerbatim": "黑棋打吃，",
       "textEdits": [],
@@ -13298,7 +13304,7 @@
           "number": 14
         }
       ],
-      "start": 359.457,
+      "start": 362.757,
       "textEn": "",
       "textVerbatim": "白棋粘住，",
       "textEdits": [],
@@ -13432,7 +13438,7 @@
           "number": 15
         }
       ],
-      "start": 361.507,
+      "start": 364.807,
       "textEn": "",
       "textVerbatim": "黑棋再长出，",
       "textEdits": [],
@@ -13573,7 +13579,7 @@
           "number": 16
         }
       ],
-      "start": 363.557,
+      "start": 366.857,
       "textEn": "",
       "textVerbatim": "然后白棋在此跳，",
       "textEdits": [],
@@ -13721,7 +13727,7 @@
           "number": 17
         }
       ],
-      "start": 365.607,
+      "start": 368.907,
       "textEn": "",
       "textVerbatim": "黑棋可以从上方飞回去，守角的这颗子发挥作用。",
       "textEdits": [],
@@ -13876,7 +13882,7 @@
           "number": 18
         }
       ],
-      "start": 369.857,
+      "start": 373.157,
       "textEn": "",
       "textVerbatim": "白棋冲，",
       "textEdits": [],
@@ -14038,7 +14044,7 @@
           "number": 19
         }
       ],
-      "start": 371.907,
+      "start": 375.207,
       "textEn": "",
       "textVerbatim": "黑棋就退，",
       "textEdits": [],
@@ -14210,7 +14216,7 @@
           "number": 20
         }
       ],
-      "start": 373.957,
+      "start": 377.257,
       "textEn": "",
       "textVerbatim": "这个地方冲的话",
       "textEdits": [],
@@ -14389,7 +14395,7 @@
           "number": 21
         }
       ],
-      "start": 376.007,
+      "start": 379.307,
       "textEn": "",
       "textVerbatim": "应住就可以，",
       "textEdits": [],
@@ -14572,7 +14578,7 @@
           "number": 22
         }
       ],
-      "start": 378.057,
+      "start": 381.357,
       "textEn": "",
       "textVerbatim": "再冲，",
       "textEdits": [],
@@ -14762,7 +14768,7 @@
           "number": 23
         }
       ],
-      "start": 380.107,
+      "start": 383.407,
       "textEn": "",
       "textVerbatim": "黑棋挡住，",
       "textEdits": [],
@@ -14959,7 +14965,7 @@
           "number": 24
         }
       ],
-      "start": 382.157,
+      "start": 385.457,
       "textEn": "",
       "textVerbatim": "断，",
       "textEdits": [],
@@ -15163,7 +15169,7 @@
           "number": 25
         }
       ],
-      "start": 384.207,
+      "start": 387.507,
       "textEn": "",
       "textVerbatim": "黑棋在上方一退，由于此处还有冲断的手段，白棋外围也留下了缺陷，",
       "textEdits": [],
@@ -15374,7 +15380,7 @@
           "number": 26
         }
       ],
-      "start": 390.093,
+      "start": 393.393,
       "textEn": "",
       "textVerbatim": "下一手棋，白棋自补是本手，",
       "textEdits": [],
@@ -15592,7 +15598,7 @@
           "number": 27
         }
       ],
-      "start": 392.707,
+      "start": 396.007,
       "textEn": "",
       "textVerbatim": "黑棋再回到边上拆，这样我们看到黑棋左边能够走到的话，也没有不满，当然上方一带的折冲，双方还是均可以接受的一个局面，这是AI给出的双方最佳的应对。",
       "textEdits": [],
@@ -15617,7 +15623,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 406.048,
+      "start": 409.348,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -15653,7 +15659,7 @@
           "number": 1
         }
       ],
-      "start": 406.998,
+      "start": 410.298,
       "textEn": "",
       "textVerbatim": "所以黑棋在此靠的话，这个地方外围一带，白棋虽然可以走厚，但总要付出一些代价。",
       "textEdits": [],
@@ -15694,7 +15700,7 @@
           "number": 2
         }
       ],
-      "start": 414.157,
+      "start": 417.457,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -15742,7 +15748,7 @@
           "number": 3
         }
       ],
-      "start": 415.107,
+      "start": 418.407,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -15797,7 +15803,7 @@
           "number": 4
         }
       ],
-      "start": 416.057,
+      "start": 419.357,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -15859,7 +15865,7 @@
           "number": 5
         }
       ],
-      "start": 417.007,
+      "start": 420.307,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -15928,7 +15934,7 @@
           "number": 6
         }
       ],
-      "start": 417.957,
+      "start": 421.257,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16004,7 +16010,7 @@
           "number": 7
         }
       ],
-      "start": 418.907,
+      "start": 422.207,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16087,7 +16093,7 @@
           "number": 8
         }
       ],
-      "start": 419.857,
+      "start": 423.157,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16177,7 +16183,7 @@
           "number": 9
         }
       ],
-      "start": 420.807,
+      "start": 424.107,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16274,7 +16280,7 @@
           "number": 10
         }
       ],
-      "start": 421.757,
+      "start": 425.057,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16378,7 +16384,7 @@
           "number": 11
         }
       ],
-      "start": 422.707,
+      "start": 426.007,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16489,7 +16495,7 @@
           "number": 12
         }
       ],
-      "start": 423.657,
+      "start": 426.957,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16607,7 +16613,7 @@
           "number": 13
         }
       ],
-      "start": 424.607,
+      "start": 427.907,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16732,7 +16738,7 @@
           "number": 14
         }
       ],
-      "start": 425.557,
+      "start": 428.857,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -16864,7 +16870,7 @@
           "number": 15
         }
       ],
-      "start": 426.507,
+      "start": 429.807,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17003,7 +17009,7 @@
           "number": 16
         }
       ],
-      "start": 427.457,
+      "start": 430.757,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17149,7 +17155,7 @@
           "number": 17
         }
       ],
-      "start": 428.407,
+      "start": 431.707,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17302,7 +17308,7 @@
           "number": 18
         }
       ],
-      "start": 429.357,
+      "start": 432.657,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17462,7 +17468,7 @@
           "number": 19
         }
       ],
-      "start": 430.307,
+      "start": 433.607,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17629,7 +17635,7 @@
           "number": 20
         }
       ],
-      "start": 431.257,
+      "start": 434.557,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17803,7 +17809,7 @@
           "number": 21
         }
       ],
-      "start": 432.207,
+      "start": 435.507,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -17984,7 +17990,7 @@
           "number": 22
         }
       ],
-      "start": 433.157,
+      "start": 436.457,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -18172,7 +18178,7 @@
           "number": 23
         }
       ],
-      "start": 434.107,
+      "start": 437.407,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -18367,7 +18373,7 @@
           "number": 24
         }
       ],
-      "start": 435.057,
+      "start": 438.357,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -18569,7 +18575,7 @@
           "number": 25
         }
       ],
-      "start": 436.007,
+      "start": 439.307,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -18778,7 +18784,7 @@
           "number": 26
         }
       ],
-      "start": 436.957,
+      "start": 440.257,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -18994,7 +19000,7 @@
           "number": 27
         }
       ],
-      "start": 437.907,
+      "start": 441.207,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -19019,7 +19025,7 @@
       "label": "回到实战",
       "duration": 0.7,
       "sources": [],
-      "start": 438.857,
+      "start": 442.157,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -19046,7 +19052,7 @@
       "sources": [
         "chunk-002:u0030"
       ],
-      "start": 439.807,
+      "start": 443.107,
       "textEn": "",
       "textVerbatim": "实战当中，辜梓豪保留了这个靠，他选择了在上边单尖，这再度给了白棋在此处弃子的一个机会。",
       "textEdits": [
@@ -19079,7 +19085,7 @@
       "sources": [
         "chunk-002:u0031"
       ],
-      "start": 447.693,
+      "start": 450.993,
       "textEn": "",
       "textVerbatim": "下一手棋，白棋从上方爬，",
       "textEdits": [],
@@ -19104,7 +19110,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 450.125,
+      "start": 453.425,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -19143,7 +19149,7 @@
           "number": 1
         }
       ],
-      "start": 451.075,
+      "start": 454.375,
       "textEn": "",
       "textVerbatim": "现在如果黑棋打了",
       "textEdits": [],
@@ -19184,7 +19190,7 @@
           "number": 2
         }
       ],
-      "start": 453.125,
+      "start": 456.425,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -19237,7 +19243,7 @@
           "number": 3
         }
       ],
-      "start": 454.075,
+      "start": 457.375,
       "textEn": "",
       "textVerbatim": "长出的话，是AI的首选推荐，这样就还原了，",
       "textEdits": [],
@@ -19294,7 +19300,7 @@
           "number": 4
         }
       ],
-      "start": 458.143,
+      "start": 461.443,
       "textEn": "",
       "textVerbatim": "白棋在此贴下，",
       "textEdits": [],
@@ -19358,7 +19364,7 @@
           "number": 5
         }
       ],
-      "start": 460.193,
+      "start": 463.493,
       "textEn": "",
       "textVerbatim": "黑棋拐住，",
       "textEdits": [],
@@ -19429,7 +19435,7 @@
           "number": 6
         }
       ],
-      "start": 462.243,
+      "start": 465.543,
       "textEn": "",
       "textVerbatim": "白棋再夹，",
       "textEdits": [],
@@ -19507,7 +19513,7 @@
           "number": 7
         }
       ],
-      "start": 464.293,
+      "start": 467.593,
       "textEn": "",
       "textVerbatim": "黑棋从上方扳，白棋这一带已经完成了收气的操作，",
       "textEdits": [],
@@ -19592,7 +19598,7 @@
           "number": 8
         }
       ],
-      "start": 468.725,
+      "start": 472.025,
       "textEn": "",
       "textVerbatim": "回到左下小飞守角就可以。",
       "textEdits": [],
@@ -19617,7 +19623,7 @@
       "label": "回到实战",
       "duration": 0.7,
       "sources": [],
-      "start": 471.157,
+      "start": 474.457,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -19644,7 +19650,7 @@
       "sources": [
         "chunk-002:u0038"
       ],
-      "start": 472.107,
+      "start": 475.407,
       "textEn": "",
       "textVerbatim": "而实战当中，辜梓豪却是不肯，他在此处要给罗玄出道考题，",
       "textEdits": [
@@ -19682,7 +19688,7 @@
       "sources": [
         "chunk-002:u0039"
       ],
-      "start": 477.084,
+      "start": 480.384,
       "textEn": "",
       "textVerbatim": "下一招棋，再尖一手，看白棋如何应对。这手棋从胜率上看虽然有些下降，黑棋从50%降至37%，但是明显出乎了罗玄的预料。",
       "textEdits": [
@@ -19713,7 +19719,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 487.879,
+      "start": 491.179,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -19749,7 +19755,7 @@
           "number": 1
         }
       ],
-      "start": 488.829,
+      "start": 492.129,
       "textEn": "",
       "textVerbatim": "此时白棋的最佳应对应该在上方单退一手，",
       "textEdits": [],
@@ -19792,7 +19798,7 @@
           "number": 2
         }
       ],
-      "start": 492.534,
+      "start": 495.834,
       "textEn": "",
       "textVerbatim": "这样黑棋再粘出的时候，",
       "textEdits": [],
@@ -19842,7 +19848,7 @@
           "number": 3
         }
       ],
-      "start": 494.784,
+      "start": 498.084,
       "textEn": "",
       "textVerbatim": "白棋回到左边跳，补住黑棋的冲断，",
       "textEdits": [],
@@ -19899,7 +19905,7 @@
           "number": 4
         }
       ],
-      "start": 497.943,
+      "start": 501.243,
       "textEn": "",
       "textVerbatim": "黑棋在此跳出，",
       "textEdits": [],
@@ -19963,7 +19969,7 @@
           "number": 5
         }
       ],
-      "start": 499.993,
+      "start": 503.293,
       "textEn": "",
       "textVerbatim": "白棋可以再补一手。上方如果黑棋攻逼过来的话，白棋再尖，向中央出头，双方还是一个乱战的局势，黑棋的这块棋也没有完全安定。",
       "textEdits": [],
@@ -19988,7 +19994,7 @@
       "label": "回到实战",
       "duration": 0.7,
       "sources": [],
-      "start": 510.97,
+      "start": 514.27,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -20015,7 +20021,7 @@
       "sources": [
         "chunk-002:u0045"
       ],
-      "start": 511.92,
+      "start": 515.22,
       "textEn": "",
       "textVerbatim": "而实战，此处罗玄选择跟着应了一手，这样就中计了。这手棋走完之后，白棋胜率从63%直接跌至6%。",
       "textEdits": [
@@ -20048,7 +20054,7 @@
       "sources": [
         "chunk-003:u0003"
       ],
-      "start": 520.715,
+      "start": 524.015,
       "textEn": "",
       "textVerbatim": "下一招黑棋打吃，",
       "textEdits": [],
@@ -20075,7 +20081,7 @@
       "sources": [
         "chunk-003:u0004"
       ],
-      "start": 522.765,
+      "start": 526.065,
       "textEn": "",
       "textVerbatim": "此时罗玄才突然惊醒，这个地方中刀了。",
       "textEdits": [
@@ -20108,7 +20114,7 @@
       "sources": [
         "chunk-003:u0005"
       ],
-      "start": 526.288,
+      "start": 529.588,
       "textEn": "",
       "textVerbatim": "因为现在白棋竟然已经粘不住了。",
       "textEdits": [],
@@ -20135,7 +20141,7 @@
       "sources": [
         "chunk-003:u0006"
       ],
-      "start": 529.265,
+      "start": 532.565,
       "textEn": "",
       "textVerbatim": "对于白棋而言，这个地方能不能粘住影响巨大。",
       "textEdits": [],
@@ -20162,7 +20168,7 @@
       "sources": [
         "chunk-003:u0007"
       ],
-      "start": 533.333,
+      "start": 536.633,
       "textEn": "",
       "textVerbatim": "就算上方白棋死掉的话，粘住逼迫黑棋收气，白棋在外围便宜也还是满意的。",
       "textEdits": [],
@@ -20187,7 +20193,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 539.765,
+      "start": 543.065,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -20223,7 +20229,7 @@
           "number": 1
         }
       ],
-      "start": 540.715,
+      "start": 544.015,
       "textEn": "",
       "textVerbatim": "但是现在再去粘，为时已晚。",
       "textEdits": [],
@@ -20266,7 +20272,7 @@
           "number": 2
         }
       ],
-      "start": 543.329,
+      "start": 546.629,
       "textEn": "",
       "textVerbatim": "因为黑棋从上方的虎出愉快，",
       "textEdits": [],
@@ -20316,7 +20322,7 @@
           "number": 3
         }
       ],
-      "start": 545.943,
+      "start": 549.243,
       "textEn": "",
       "textVerbatim": "中央断点严厉，白棋只好长出，",
       "textEdits": [],
@@ -20373,7 +20379,7 @@
           "number": 4
         }
       ],
-      "start": 548.738,
+      "start": 552.038,
       "textEn": "",
       "textVerbatim": "黑棋还可以先断一手，",
       "textEdits": [],
@@ -20437,7 +20443,7 @@
           "number": 5
         }
       ],
-      "start": 550.806,
+      "start": 554.106,
       "textEn": "",
       "textVerbatim": "白棋再次打吃的时候，",
       "textEdits": [],
@@ -20508,7 +20514,7 @@
           "number": 6
         }
       ],
-      "start": 552.874,
+      "start": 556.174,
       "textEn": "",
       "textVerbatim": "黑棋再爬，",
       "textEdits": [],
@@ -20586,7 +20592,7 @@
           "number": 7
         }
       ],
-      "start": 554.924,
+      "start": 558.224,
       "textEn": "",
       "textVerbatim": "这样白棋扳，",
       "textEdits": [],
@@ -20671,7 +20677,7 @@
           "number": 8
         }
       ],
-      "start": 556.974,
+      "start": 560.274,
       "textEn": "",
       "textVerbatim": "黑棋扳，",
       "textEdits": [],
@@ -20763,7 +20769,7 @@
           "number": 9
         }
       ],
-      "start": 559.024,
+      "start": 562.324,
       "textEn": "",
       "textVerbatim": "白棋现在也只有强行扳住，",
       "textEdits": [],
@@ -20862,7 +20868,7 @@
           "number": 10
         }
       ],
-      "start": 561.456,
+      "start": 564.756,
       "textEn": "",
       "textVerbatim": "不过，黑棋打完之后，",
       "textEdits": [],
@@ -20966,7 +20972,7 @@
           "number": 11
         }
       ],
-      "start": 563.524,
+      "start": 566.824,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -21079,7 +21085,7 @@
           "number": 12
         }
       ],
-      "start": 564.474,
+      "start": 567.774,
       "textEn": "",
       "textVerbatim": "从二线一粘的时候，白棋现在有三处缺陷，已经难以兼顾了。",
       "textEdits": [],
@@ -21199,7 +21205,7 @@
           "number": 13
         }
       ],
-      "start": 569.633,
+      "start": 572.933,
       "textEn": "",
       "textVerbatim": "如果从上方长，",
       "textEdits": [],
@@ -21326,7 +21332,7 @@
           "number": 14
         }
       ],
-      "start": 571.683,
+      "start": 574.983,
       "textEn": "",
       "textVerbatim": "那么黑棋就应住。",
       "textEdits": [],
@@ -21453,7 +21459,7 @@
           "number": 14
         }
       ],
-      "start": 573.733,
+      "start": 577.033,
       "textEn": "",
       "textVerbatim": "接下来一来上方黑棋的退出严厉，这一带避免了收气的问题，把白棋全部吃住，整个上边的空全部护住，实地的收获巨大。",
       "textEdits": [],
@@ -21580,7 +21586,7 @@
           "number": 14
         }
       ],
-      "start": 583.801,
+      "start": 587.101,
       "textEn": "",
       "textVerbatim": "同时我们看到中央，黑棋随时还留有粘出的手段，白棋依然是被分断的一个棋形。",
       "textEdits": [],
@@ -21707,7 +21713,7 @@
           "number": 14
         }
       ],
-      "start": 590.596,
+      "start": 593.896,
       "textEn": "",
       "textVerbatim": "而左边的话，黑棋还留有冲完之后断，吃住白棋三颗子的强手。",
       "textEdits": [],
@@ -21834,7 +21840,7 @@
           "number": 14
         }
       ],
-      "start": 595.937,
+      "start": 599.237,
       "textEn": "",
       "textVerbatim": "所以这个地方，和先前我们看到AI给出的通过上方弃子，白棋走厚外围，再从左下守角，差别是巨大的。",
       "textEdits": [],
@@ -21859,7 +21865,7 @@
       "label": "回到实战",
       "duration": 0.7,
       "sources": [],
-      "start": 604.732,
+      "start": 608.032,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -21886,7 +21892,7 @@
       "sources": [
         "chunk-003:u0025"
       ],
-      "start": 605.682,
+      "start": 608.982,
       "textEn": "",
       "textVerbatim": "实战当中，意识到这一点之后，罗玄只好忍痛止损，在外围长一手。",
       "textEdits": [
@@ -21919,7 +21925,7 @@
       "sources": [
         "chunk-003:u0026"
       ],
-      "start": 611.387,
+      "start": 614.687,
       "textEn": "",
       "textVerbatim": "但是这样，被黑棋在角部一提吃，",
       "textEdits": [],
@@ -21946,7 +21952,7 @@
       "sources": [
         "chunk-003:u0027"
       ],
-      "start": 614.364,
+      "start": 617.664,
       "textEn": "",
       "textVerbatim": "角部先前白棋的诸多借用全部消失，黑棋十分的厚实。",
       "textEdits": [],
@@ -21973,7 +21979,7 @@
       "sources": [
         "chunk-003:u0028"
       ],
-      "start": 618.978,
+      "start": 622.278,
       "textEn": "",
       "textVerbatim": "而黑棋越厚，外围白棋这些断点的缺陷也就越严厉。",
       "textEdits": [],
@@ -22000,7 +22006,7 @@
       "sources": [
         "chunk-003:u0029"
       ],
-      "start": 623.41,
+      "start": 626.71,
       "textEn": "",
       "textVerbatim": "现在白棋已经不好补了。",
       "textEdits": [],
@@ -22027,7 +22033,7 @@
       "sources": [
         "chunk-003:u0030"
       ],
-      "start": 625.66,
+      "start": 628.96,
       "textEn": "",
       "textVerbatim": "下一手棋，白棋干脆回到左下小飞守角，",
       "textEdits": [],
@@ -22054,7 +22060,7 @@
       "sources": [
         "chunk-003:u0031"
       ],
-      "start": 629.183,
+      "start": 632.483,
       "textEn": "",
       "textVerbatim": "黑棋在下边占据大场，静观其变。",
       "textEdits": [],
@@ -22081,7 +22087,7 @@
       "sources": [
         "chunk-003:u0032"
       ],
-      "start": 632.16,
+      "start": 635.46,
       "textEn": "",
       "textVerbatim": "白棋从上方再拆，",
       "textEdits": [],
@@ -22108,7 +22114,7 @@
       "sources": [
         "chunk-003:u0033"
       ],
-      "start": 634.21,
+      "start": 637.51,
       "textEn": "",
       "textVerbatim": "黑棋也从右边逼住。",
       "textEdits": [],
@@ -22135,7 +22141,7 @@
       "sources": [
         "chunk-003:u0034"
       ],
-      "start": 636.26,
+      "start": 639.56,
       "textEn": "",
       "textVerbatim": "双方各自占据大场，但是压力却在罗玄的这一边。",
       "textEdits": [
@@ -22168,7 +22174,7 @@
       "sources": [
         "chunk-003:u0035"
       ],
-      "start": 640.51,
+      "start": 643.81,
       "textEn": "",
       "textVerbatim": "下一招棋，白棋在下方逼住的时候，",
       "textEdits": [],
@@ -22195,7 +22201,7 @@
       "sources": [
         "chunk-003:u0036"
       ],
-      "start": 643.669,
+      "start": 646.969,
       "textEn": "",
       "textVerbatim": "黑棋从左边靠，处理这颗子。",
       "textEdits": [],
@@ -22222,7 +22228,7 @@
       "sources": [
         "chunk-003:u0037"
       ],
-      "start": 646.283,
+      "start": 649.583,
       "textEn": "",
       "textVerbatim": "白棋扳，",
       "textEdits": [],
@@ -22249,7 +22255,7 @@
       "sources": [
         "chunk-003:u0038"
       ],
-      "start": 648.333,
+      "start": 651.633,
       "textEn": "",
       "textVerbatim": "黑棋退，",
       "textEdits": [],
@@ -22276,7 +22282,7 @@
       "sources": [
         "chunk-003:u0039"
       ],
-      "start": 650.383,
+      "start": 653.683,
       "textEn": "",
       "textVerbatim": "白棋立下，",
       "textEdits": [],
@@ -22303,7 +22309,7 @@
       "sources": [
         "chunk-003:u0040"
       ],
-      "start": 652.433,
+      "start": 655.733,
       "textEn": "",
       "textVerbatim": "黑棋在中央飞出头，并盯着上方一带对断点的威胁。",
       "textEdits": [],
@@ -22330,7 +22336,7 @@
       "sources": [
         "chunk-003:u0041"
       ],
-      "start": 656.865,
+      "start": 660.165,
       "textEn": "",
       "textVerbatim": "下一招棋，白棋从下方打入，以争胜负。",
       "textEdits": [],
@@ -22357,7 +22363,7 @@
       "sources": [
         "chunk-003:u0042"
       ],
-      "start": 660.388,
+      "start": 663.688,
       "textEn": "",
       "textVerbatim": "现在的形势，全局黑棋厚实，而且掌握着进攻的主动权，右边的拆以及下方这颗子都有薄味。",
       "textEdits": [],
@@ -22384,7 +22390,7 @@
       "sources": [
         "chunk-003:u0043"
       ],
-      "start": 668.093,
+      "start": 671.393,
       "textEn": "",
       "textVerbatim": "这种利用厚味对对方发起攻击、仗势欺人的下法，正是辜梓豪最期待和擅长的。",
       "textEdits": [
@@ -22417,7 +22423,7 @@
       "sources": [
         "chunk-003:u0044"
       ],
-      "start": 674.525,
+      "start": 677.825,
       "textEn": "",
       "textVerbatim": "下一手棋，黑棋再次堂堂正正跳出，威胁右边白棋，",
       "textEdits": [],
@@ -22444,7 +22450,7 @@
       "sources": [
         "chunk-003:u0045"
       ],
-      "start": 678.957,
+      "start": 682.257,
       "textEn": "",
       "textVerbatim": "而白棋跳，继续跟着应。",
       "textEdits": [],
@@ -22471,7 +22477,7 @@
       "sources": [
         "chunk-003:u0046"
       ],
-      "start": 681.207,
+      "start": 684.507,
       "textEn": "",
       "textVerbatim": "下一手，黑棋从左边夹，不断地走厚。",
       "textEdits": [],
@@ -22498,7 +22504,7 @@
       "sources": [
         "chunk-003:u0047"
       ],
-      "start": 684.548,
+      "start": 687.848,
       "textEn": "",
       "textVerbatim": "白棋粘住，",
       "textEdits": [],
@@ -22525,7 +22531,7 @@
       "sources": [
         "chunk-003:u0048"
       ],
-      "start": 686.598,
+      "start": 689.898,
       "textEn": "",
       "textVerbatim": "黑棋从上方飞，紧盯着上面白棋断点。",
       "textEdits": [],
@@ -22552,7 +22558,7 @@
       "sources": [
         "chunk-003:u0049"
       ],
-      "start": 689.939,
+      "start": 693.239,
       "textEn": "",
       "textVerbatim": "白棋只好补棋，",
       "textEdits": [],
@@ -22579,7 +22585,7 @@
       "sources": [
         "chunk-003:u0050"
       ],
-      "start": 691.989,
+      "start": 695.289,
       "textEn": "",
       "textVerbatim": "做好准备之后，黑棋在右边点入，攻击开始。",
       "textEdits": [],
@@ -22606,7 +22612,7 @@
       "sources": [
         "chunk-003:u0051"
       ],
-      "start": 695.875,
+      "start": 699.175,
       "textEn": "",
       "textVerbatim": "白棋挡下，",
       "textEdits": [],
@@ -22633,7 +22639,7 @@
       "sources": [
         "chunk-003:u0052"
       ],
-      "start": 697.925,
+      "start": 701.225,
       "textEn": "",
       "textVerbatim": "黑棋贴起，将白棋分断。",
       "textEdits": [],
@@ -22660,7 +22666,7 @@
       "sources": [
         "chunk-003:u0053"
       ],
-      "start": 700.175,
+      "start": 703.475,
       "textEn": "",
       "textVerbatim": "接下来白棋再立，",
       "textEdits": [],
@@ -22687,7 +22693,7 @@
       "sources": [
         "chunk-003:u0054"
       ],
-      "start": 702.225,
+      "start": 705.525,
       "textEn": "",
       "textVerbatim": "黑棋在中央跳，把自己走畅，依然保持着缠绕攻击的架势，是堂堂正正的好手。",
       "textEdits": [],
@@ -22714,7 +22720,7 @@
       "sources": [
         "chunk-003:u0055"
       ],
-      "start": 708.839,
+      "start": 712.139,
       "textEn": "",
       "textVerbatim": "下一手白棋再从二路拐，",
       "textEdits": [],
@@ -22741,7 +22747,7 @@
       "sources": [
         "chunk-003:u0056"
       ],
-      "start": 711.089,
+      "start": 714.389,
       "textEn": "",
       "textVerbatim": "黑棋从左下点入，这是声东击西战术。",
       "textEdits": [],
@@ -22768,7 +22774,7 @@
       "sources": [
         "chunk-004:u0003"
       ],
-      "start": 714.43,
+      "start": 717.73,
       "textEn": "",
       "textVerbatim": "白棋挡住，",
       "textEdits": [],
@@ -22795,7 +22801,7 @@
       "sources": [
         "chunk-004:u0004"
       ],
-      "start": 716.48,
+      "start": 719.78,
       "textEn": "",
       "textVerbatim": "黑棋再扳，",
       "textEdits": [],
@@ -22822,7 +22828,7 @@
       "sources": [
         "chunk-004:u0005"
       ],
-      "start": 718.53,
+      "start": 721.83,
       "textEn": "",
       "textVerbatim": "迫于形势，白棋也只有一应住，现在对于白棋而言实地不能出问题。",
       "textEdits": [],
@@ -22849,7 +22855,7 @@
       "sources": [
         "chunk-004:u0006"
       ],
-      "start": 724.235,
+      "start": 727.535,
       "textEn": "",
       "textVerbatim": "接下来，黑棋再靠。",
       "textEdits": [],
@@ -22876,7 +22882,7 @@
       "sources": [
         "chunk-004:u0007"
       ],
-      "start": 726.285,
+      "start": 729.585,
       "textEn": "",
       "textVerbatim": "白棋扳，",
       "textEdits": [],
@@ -22903,7 +22909,7 @@
       "sources": [
         "chunk-004:u0008"
       ],
-      "start": 728.335,
+      "start": 731.635,
       "textEn": "",
       "textVerbatim": "黑棋退，",
       "textEdits": [],
@@ -22930,7 +22936,7 @@
       "sources": [
         "chunk-004:u0009"
       ],
-      "start": 730.385,
+      "start": 733.685,
       "textEn": "",
       "textVerbatim": "白棋先将黑棋吃住再说，而先手补强之后，",
       "textEdits": [],
@@ -22957,7 +22963,7 @@
       "sources": [
         "chunk-004:u0010"
       ],
-      "start": 734.09,
+      "start": 737.39,
       "textEn": "",
       "textVerbatim": "黑棋刺完",
       "textEdits": [],
@@ -22982,7 +22988,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 736.14,
+      "start": 739.44,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -23009,7 +23015,7 @@
       "sources": [
         "chunk-004:u0011"
       ],
-      "start": 737.09,
+      "start": 740.39,
       "textEn": "",
       "textVerbatim": "从中央罩过来，白棋的三颗子顿显窘迫。",
       "textEdits": [],
@@ -23036,7 +23042,7 @@
       "sources": [
         "chunk-004:u0012"
       ],
-      "start": 740.613,
+      "start": 743.913,
       "textEn": "",
       "textVerbatim": "下一手，白棋只好冲出做活，",
       "textEdits": [],
@@ -23063,7 +23069,7 @@
       "sources": [
         "chunk-004:u0013"
       ],
-      "start": 743.227,
+      "start": 746.527,
       "textEn": "",
       "textVerbatim": "黑棋退，",
       "textEdits": [],
@@ -23090,7 +23096,7 @@
       "sources": [
         "chunk-004:u0014"
       ],
-      "start": 745.277,
+      "start": 748.577,
       "textEn": "",
       "textVerbatim": "白棋再冲，",
       "textEdits": [],
@@ -23117,7 +23123,7 @@
       "sources": [
         "chunk-004:u0015"
       ],
-      "start": 747.327,
+      "start": 750.627,
       "textEn": "",
       "textVerbatim": "黑棋继续在外围走厚，由于右边的这块白棋尚未活净，中央的黑棋越厚，对右边白棋的威胁也就越大，而上方白棋的厚味也就逐步地被抵消掉了。",
       "textEdits": [],
@@ -23144,7 +23150,7 @@
       "sources": [
         "chunk-004:u0016"
       ],
-      "start": 759.213,
+      "start": 762.513,
       "textEn": "",
       "textVerbatim": "下一手，白棋在此靠，从夹缝当中寻求生机，",
       "textEdits": [],
@@ -23171,7 +23177,7 @@
       "sources": [
         "chunk-004:u0017"
       ],
-      "start": 763.099,
+      "start": 766.399,
       "textEn": "",
       "textVerbatim": "黑棋拐出，",
       "textEdits": [],
@@ -23198,7 +23204,7 @@
       "sources": [
         "chunk-004:u0018"
       ],
-      "start": 765.149,
+      "start": 768.449,
       "textEn": "",
       "textVerbatim": "白棋再长，",
       "textEdits": [],
@@ -23225,7 +23231,7 @@
       "sources": [
         "chunk-004:u0019"
       ],
-      "start": 767.199,
+      "start": 770.499,
       "textEn": "",
       "textVerbatim": "黑棋在左边的跳刺先手，",
       "textEdits": [],
@@ -23252,7 +23258,7 @@
       "sources": [
         "chunk-004:u0020"
       ],
-      "start": 769.449,
+      "start": 772.749,
       "textEn": "",
       "textVerbatim": "白棋粘住，",
       "textEdits": [],
@@ -23279,7 +23285,7 @@
       "sources": [
         "chunk-004:u0021"
       ],
-      "start": 771.499,
+      "start": 774.799,
       "textEn": "",
       "textVerbatim": "黑棋从中央压了过来。",
       "textEdits": [],
@@ -23306,7 +23312,7 @@
       "sources": [
         "chunk-004:u0022"
       ],
-      "start": 773.567,
+      "start": 776.867,
       "textEn": "",
       "textVerbatim": "当白棋再拐的时候，",
       "textEdits": [],
@@ -23333,7 +23339,7 @@
       "sources": [
         "chunk-004:u0023"
       ],
-      "start": 775.617,
+      "start": 778.917,
       "textEn": "",
       "textVerbatim": "黑棋粘住，",
       "textEdits": [],
@@ -23360,7 +23366,7 @@
       "sources": [
         "chunk-004:u0024"
       ],
-      "start": 777.667,
+      "start": 780.967,
       "textEn": "",
       "textVerbatim": "下一招，白棋在下方飞，搭建眼位。",
       "textEdits": [],
@@ -23387,7 +23393,7 @@
       "sources": [
         "chunk-004:u0025"
       ],
-      "start": 780.826,
+      "start": 784.126,
       "textEn": "",
       "textVerbatim": "其实对于黑棋而言，现在最简明的应对，就是在中央一带自补一手，双也好，",
       "textEdits": [],
@@ -23412,7 +23418,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 787.258,
+      "start": 790.558,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -23448,7 +23454,7 @@
           "number": 1
         }
       ],
-      "start": 788.208,
+      "start": 791.508,
       "textEn": "",
       "textVerbatim": "或者在此压住也可以，白棋如果爬回，那么黑棋再回到右下尖，对白棋展开攻击。",
       "textEdits": [],
@@ -23473,7 +23479,7 @@
       "label": "回到实战",
       "duration": 0.7,
       "sources": [],
-      "start": 795.003,
+      "start": 798.303,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -23500,7 +23506,7 @@
       "sources": [
         "chunk-004:u0027"
       ],
-      "start": 795.953,
+      "start": 799.253,
       "textEn": "",
       "textVerbatim": "实战，黑棋先贴一手，",
       "textEdits": [],
@@ -23527,7 +23533,7 @@
       "sources": [
         "chunk-004:u0028"
       ],
-      "start": 798.021,
+      "start": 801.321,
       "textEn": "",
       "textVerbatim": "白棋扳住也没有问题，现在AI依旧建议黑棋赶快回到中央补棋，不与下方白棋纠缠，迅速地缩小棋盘，简化局势。",
       "textEdits": [],
@@ -23554,7 +23560,7 @@
       "sources": [
         "chunk-004:u0029"
       ],
-      "start": 807.544,
+      "start": 810.844,
       "textEn": "",
       "textVerbatim": "但辜梓豪不肯轻易地放过白棋，下一招，从二路拐下，要求继续搜刮。",
       "textEdits": [
@@ -23587,7 +23593,7 @@
       "sources": [
         "chunk-004:u0030"
       ],
-      "start": 813.249,
+      "start": 816.549,
       "textEn": "",
       "textVerbatim": "不过，这手棋走完之后，胜率上出现了一些波动，黑棋从90%左右降至了75%，但是从目差上看，黑棋的领先优势反而有扩大之势，这表明这个地方的变化十分的复杂。",
       "textEdits": [],
@@ -23612,7 +23618,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 827.317,
+      "start": 830.617,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -23648,7 +23654,7 @@
           "number": 1
         }
       ],
-      "start": 828.267,
+      "start": 831.567,
       "textEn": "",
       "textVerbatim": "白棋的机会是，现在要从中央冲出，盯着左边冲断的手段，黑棋也没有完全活净，",
       "textEdits": [],
@@ -23691,7 +23697,7 @@
           "number": 2
         }
       ],
-      "start": 835.062,
+      "start": 838.362,
       "textEn": "",
       "textVerbatim": "而黑棋补棋，",
       "textEdits": [],
@@ -23741,7 +23747,7 @@
           "number": 3
         }
       ],
-      "start": 837.112,
+      "start": 840.412,
       "textEn": "",
       "textVerbatim": "白棋再长，",
       "textEdits": [],
@@ -23798,7 +23804,7 @@
           "number": 4
         }
       ],
-      "start": 839.162,
+      "start": 842.462,
       "textEn": "",
       "textVerbatim": "黑棋顶住的时候，",
       "textEdits": [],
@@ -23862,7 +23868,7 @@
           "number": 5
         }
       ],
-      "start": 841.212,
+      "start": 844.512,
       "textEn": "",
       "textVerbatim": "白棋还要祭出在右边靠的手段，这样盯着中央几颗黑子的薄味，与黑棋展开作战。当然这个作战，黑棋的成算也不大，但是由于变化复杂，对于劣势的一方，机会总要大一些。",
       "textEdits": [],
@@ -23887,7 +23893,7 @@
       "label": "回到实战",
       "duration": 0.7,
       "sources": [],
-      "start": 855.462,
+      "start": 858.762,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -23914,7 +23920,7 @@
       "sources": [
         "chunk-004:u0036"
       ],
-      "start": 856.412,
+      "start": 859.712,
       "textEn": "",
       "textVerbatim": "而实战当中，罗玄的选择是继续在局部做活，这样黑棋这些欺负白棋过分的手段，反而都变成了好手。",
       "textEdits": [
@@ -23947,7 +23953,7 @@
       "sources": [
         "chunk-004:u0037"
       ],
-      "start": 864.844,
+      "start": 868.144,
       "textEn": "",
       "textVerbatim": "接下来黑棋继续尖，要求白棋做眼，白棋始终没有下出在中央冲出的手段。",
       "textEdits": [],
@@ -23974,7 +23980,7 @@
       "sources": [
         "chunk-004:u0038"
       ],
-      "start": 871.094,
+      "start": 874.394,
       "textEn": "",
       "textVerbatim": "下一手，白棋扳，",
       "textEdits": [],
@@ -24001,7 +24007,7 @@
       "sources": [
         "chunk-004:u0039"
       ],
-      "start": 873.144,
+      "start": 876.444,
       "textEn": "",
       "textVerbatim": "黑棋退，",
       "textEdits": [],
@@ -24028,7 +24034,7 @@
       "sources": [
         "chunk-004:u0040"
       ],
-      "start": 875.194,
+      "start": 878.494,
       "textEn": "",
       "textVerbatim": "白棋再挤，",
       "textEdits": [],
@@ -24055,7 +24061,7 @@
       "sources": [
         "chunk-004:u0041"
       ],
-      "start": 877.244,
+      "start": 880.544,
       "textEn": "",
       "textVerbatim": "黑棋就粘住。",
       "textEdits": [],
@@ -24082,7 +24088,7 @@
       "sources": [
         "chunk-004:u0042"
       ],
-      "start": 879.294,
+      "start": 882.594,
       "textEn": "",
       "textVerbatim": "而白棋爬一手，",
       "textEdits": [],
@@ -24109,7 +24115,7 @@
       "sources": [
         "chunk-004:u0043"
       ],
-      "start": 881.344,
+      "start": 884.644,
       "textEn": "",
       "textVerbatim": "黑棋扳，",
       "textEdits": [],
@@ -24136,7 +24142,7 @@
       "sources": [
         "chunk-004:u0044"
       ],
-      "start": 883.394,
+      "start": 886.694,
       "textEn": "",
       "textVerbatim": "白棋夹，",
       "textEdits": [],
@@ -24163,7 +24169,7 @@
       "sources": [
         "chunk-004:u0045"
       ],
-      "start": 885.444,
+      "start": 888.744,
       "textEn": "",
       "textVerbatim": "黑棋从角部挡住，这一系列的操作，白棋都不便宜，角上的黑棋被逐步地撞厚，对于右边白棋的压力越来越大。",
       "textEdits": [],
@@ -24190,7 +24196,7 @@
       "sources": [
         "chunk-004:u0046"
       ],
-      "start": 894.603,
+      "start": 897.903,
       "textEn": "",
       "textVerbatim": "下一手，白棋打吃",
       "textEdits": [],
@@ -24217,7 +24223,7 @@
       "sources": [
         "chunk-004:u0047"
       ],
-      "start": 896.653,
+      "start": 899.953,
       "textEn": "",
       "textVerbatim": "黑棋就粘，",
       "textEdits": [],
@@ -24244,7 +24250,7 @@
       "sources": [
         "chunk-004:u0048"
       ],
-      "start": 898.703,
+      "start": 902.003,
       "textEn": "",
       "textVerbatim": "然后白棋在此贴住，护住眼位的同时，继续盯着左边冲断的手段。",
       "textEdits": [],
@@ -24271,7 +24277,7 @@
       "sources": [
         "chunk-004:u0049"
       ],
-      "start": 904.226,
+      "start": 907.526,
       "textEn": "",
       "textVerbatim": "黑棋回到中央补棋，",
       "textEdits": [],
@@ -24298,7 +24304,7 @@
       "sources": [
         "chunk-004:u0050"
       ],
-      "start": 906.276,
+      "start": 909.576,
       "textEn": "",
       "textVerbatim": "白棋再做活，这样局部黑棋先手定型，",
       "textEdits": [],
@@ -24325,7 +24331,7 @@
       "sources": [
         "chunk-004:u0051"
       ],
-      "start": 909.617,
+      "start": 912.917,
       "textEn": "",
       "textVerbatim": "接下来再从右边扳继续攻击。",
       "textEdits": [],
@@ -24352,7 +24358,7 @@
       "sources": [
         "chunk-005:u0005"
       ],
-      "start": 912.231,
+      "start": 915.531,
       "textEn": "",
       "textVerbatim": "白棋在此断的时候，",
       "textEdits": [],
@@ -24379,7 +24385,7 @@
       "sources": [
         "chunk-005:u0006"
       ],
-      "start": 914.281,
+      "start": 917.581,
       "textEn": "",
       "textVerbatim": "黑棋打完之后",
       "textEdits": [],
@@ -24404,7 +24410,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 916.331,
+      "start": 919.631,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -24431,7 +24437,7 @@
       "sources": [
         "chunk-005:u0007"
       ],
-      "start": 917.281,
+      "start": 920.581,
       "textEn": "",
       "textVerbatim": "再打，都是一选的手段。",
       "textEdits": [],
@@ -24456,7 +24462,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 919.531,
+      "start": 922.831,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -24483,7 +24489,7 @@
       "sources": [
         "chunk-005:u0008"
       ],
-      "start": 920.481,
+      "start": 923.781,
       "textEn": "",
       "textVerbatim": "黑棋护住角地，",
       "textEdits": [],
@@ -24510,7 +24516,7 @@
       "sources": [
         "chunk-005:u0009"
       ],
-      "start": 922.531,
+      "start": 925.831,
       "textEn": "",
       "textVerbatim": "同时白棋虽然提了一个龟甲的形状，",
       "textEdits": [],
@@ -24537,7 +24543,7 @@
       "sources": [
         "chunk-005:u0010"
       ],
-      "start": 925.69,
+      "start": 928.99,
       "textEn": "",
       "textVerbatim": "但是整体依然没有活干净。",
       "textEdits": [],
@@ -24564,7 +24570,7 @@
       "sources": [
         "chunk-005:u0011"
       ],
-      "start": 928.122,
+      "start": 931.422,
       "textEn": "",
       "textVerbatim": "下一手棋，白棋从上方打入继续求战。",
       "textEdits": [],
@@ -24591,7 +24597,7 @@
       "sources": [
         "chunk-005:u0012"
       ],
-      "start": 931.463,
+      "start": 934.763,
       "textEn": "",
       "textVerbatim": "黑棋尖，先将白棋分断。",
       "textEdits": [],
@@ -24618,7 +24624,7 @@
       "sources": [
         "chunk-005:u0013"
       ],
-      "start": 933.713,
+      "start": 937.013,
       "textEn": "",
       "textVerbatim": "接下来白棋跳出，",
       "textEdits": [],
@@ -24645,7 +24651,7 @@
       "sources": [
         "chunk-005:u0014"
       ],
-      "start": 935.763,
+      "start": 939.063,
       "textEn": "",
       "textVerbatim": "黑棋在下方长出，对右边白棋施压。",
       "textEdits": [],
@@ -24672,7 +24678,7 @@
       "sources": [
         "chunk-005:u0015"
       ],
-      "start": 938.922,
+      "start": 942.222,
       "textEn": "",
       "textVerbatim": "但白棋顾不上这些，现在如果说黑棋唯一有一些薄味的地方，那自然就是右上角的这两颗子。",
       "textEdits": [],
@@ -24699,7 +24705,7 @@
       "sources": [
         "chunk-005:u0016"
       ],
-      "start": 946.627,
+      "start": 949.927,
       "textEn": "",
       "textVerbatim": "所以白棋不惜在此并一手，伤害到下方的白棋之后，",
       "textEdits": [],
@@ -24724,7 +24730,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 951.059,
+      "start": 954.359,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -24751,7 +24757,7 @@
       "sources": [
         "chunk-005:u0017"
       ],
-      "start": 952.009,
+      "start": 955.309,
       "textEn": "",
       "textVerbatim": "从上边强行靠完",
       "textEdits": [],
@@ -24776,7 +24782,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 954.059,
+      "start": 957.359,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -24803,7 +24809,7 @@
       "sources": [
         "chunk-005:u0018"
       ],
-      "start": 955.009,
+      "start": 958.309,
       "textEn": "",
       "textVerbatim": "再顶，",
       "textEdits": [],
@@ -24828,7 +24834,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 957.059,
+      "start": 960.359,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -24855,7 +24861,7 @@
       "sources": [
         "chunk-005:u0019"
       ],
-      "start": 958.009,
+      "start": 961.309,
       "textEn": "",
       "textVerbatim": "然后断上去，寻求战机。",
       "textEdits": [],
@@ -24882,7 +24888,7 @@
       "sources": [
         "chunk-005:u0020"
       ],
-      "start": 960.259,
+      "start": 963.559,
       "textEn": "",
       "textVerbatim": "但辜梓豪的控盘技术也十分了得，",
       "textEdits": [
@@ -24915,7 +24921,7 @@
       "sources": [
         "chunk-005:u0021"
       ],
-      "start": 963.054,
+      "start": 966.354,
       "textEn": "",
       "textVerbatim": "下一手棋，在中央一飞，既盯着上方白棋的棋形缺陷，同时又继续对右边白棋施压。",
       "textEdits": [],
@@ -24942,7 +24948,7 @@
       "sources": [
         "chunk-005:u0022"
       ],
-      "start": 970.031,
+      "start": 973.331,
       "textEn": "",
       "textVerbatim": "右边的白棋如果死掉的话，这盘棋直接就结束了。",
       "textEdits": [],
@@ -24969,7 +24975,7 @@
       "sources": [
         "chunk-005:u0023"
       ],
-      "start": 974.281,
+      "start": 977.581,
       "textEn": "",
       "textVerbatim": "所以白棋再逃出，",
       "textEdits": [],
@@ -24996,7 +25002,7 @@
       "sources": [
         "chunk-005:u0024"
       ],
-      "start": 976.331,
+      "start": 979.631,
       "textEn": "",
       "textVerbatim": "黑棋在上方顶先手，",
       "textEdits": [],
@@ -25023,7 +25029,7 @@
       "sources": [
         "chunk-005:u0025"
       ],
-      "start": 978.381,
+      "start": 981.681,
       "textEn": "",
       "textVerbatim": "白棋补棋，",
       "textEdits": [],
@@ -25050,7 +25056,7 @@
       "sources": [
         "chunk-005:u0026"
       ],
-      "start": 980.431,
+      "start": 983.731,
       "textEn": "",
       "textVerbatim": "黑棋再从角部吃住这颗子，站稳脚跟。",
       "textEdits": [],
@@ -25077,7 +25083,7 @@
       "sources": [
         "chunk-005:u0027"
       ],
-      "start": 983.772,
+      "start": 987.072,
       "textEn": "",
       "textVerbatim": "下一手棋，白棋立下，",
       "textEdits": [],
@@ -25104,7 +25110,7 @@
       "sources": [
         "chunk-005:u0028"
       ],
-      "start": 985.84,
+      "start": 989.14,
       "textEn": "",
       "textVerbatim": "黑棋挡。",
       "textEdits": [],
@@ -25131,7 +25137,7 @@
       "sources": [
         "chunk-005:u0029"
       ],
-      "start": 987.89,
+      "start": 991.19,
       "textEn": "",
       "textVerbatim": "接下来，白棋继续逃出，",
       "textEdits": [],
@@ -25158,7 +25164,7 @@
       "sources": [
         "chunk-005:u0030"
       ],
-      "start": 990.14,
+      "start": 993.44,
       "textEn": "",
       "textVerbatim": "黑棋在中央飞，利用下方及左边一带的厚味，继续猛攻，让白棋往墙上撞。",
       "textEdits": [],
@@ -25185,7 +25191,7 @@
       "sources": [
         "chunk-005:u0031"
       ],
-      "start": 996.39,
+      "start": 999.69,
       "textEn": "",
       "textVerbatim": "下一手白棋长出，",
       "textEdits": [],
@@ -25212,7 +25218,7 @@
       "sources": [
         "chunk-005:u0032"
       ],
-      "start": 998.44,
+      "start": 1001.74,
       "textEn": "",
       "textVerbatim": "黑棋再长。",
       "textEdits": [],
@@ -25239,7 +25245,7 @@
       "sources": [
         "chunk-005:u0033"
       ],
-      "start": 1000.49,
+      "start": 1003.79,
       "textEn": "",
       "textVerbatim": "接下来白棋从上方打，",
       "textEdits": [],
@@ -25266,7 +25272,7 @@
       "sources": [
         "chunk-005:u0034"
       ],
-      "start": 1002.558,
+      "start": 1005.858,
       "textEn": "",
       "textVerbatim": "黑棋就粘住。",
       "textEdits": [],
@@ -25293,7 +25299,7 @@
       "sources": [
         "chunk-005:u0035"
       ],
-      "start": 1004.608,
+      "start": 1007.908,
       "textEn": "",
       "textVerbatim": "上边的棋形，白棋还有断点，只好自补，",
       "textEdits": [],
@@ -25320,7 +25326,7 @@
       "sources": [
         "chunk-005:u0036"
       ],
-      "start": 1008.131,
+      "start": 1011.431,
       "textEn": "",
       "textVerbatim": "然后黑棋再一尖，一来限制上方白棋继续成空，同时要求右边的白棋补活。",
       "textEdits": [],
@@ -25347,7 +25353,7 @@
       "sources": [
         "chunk-005:u0037"
       ],
-      "start": 1014.381,
+      "start": 1017.681,
       "textEn": "",
       "textVerbatim": "但现在的形势，黑棋的盘面领先已经在15目棋以上，白棋也知道单纯做活这块棋的话，这盘棋已经没有什么机会了，所以罗玄开始拼命。",
       "textEdits": [
@@ -25380,7 +25386,7 @@
       "sources": [
         "chunk-005:u0038"
       ],
-      "start": 1025.722,
+      "start": 1029.022,
       "textEn": "",
       "textVerbatim": "从中央冲出之后，",
       "textEdits": [],
@@ -25405,7 +25411,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1027.772,
+      "start": 1031.072,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -25432,7 +25438,7 @@
       "sources": [
         "chunk-005:u0039"
       ],
-      "start": 1028.722,
+      "start": 1032.022,
       "textEn": "",
       "textVerbatim": "直接扳了过来。",
       "textEdits": [],
@@ -25459,7 +25465,7 @@
       "sources": [
         "chunk-005:u0040"
       ],
-      "start": 1030.772,
+      "start": 1034.072,
       "textEn": "",
       "textVerbatim": "黑棋也毫不犹豫地切断，",
       "textEdits": [],
@@ -25486,7 +25492,7 @@
       "sources": [
         "chunk-005:u0041"
       ],
-      "start": 1033.022,
+      "start": 1036.322,
       "textEn": "",
       "textVerbatim": "白棋打吃，",
       "textEdits": [],
@@ -25513,7 +25519,7 @@
       "sources": [
         "chunk-005:u0042"
       ],
-      "start": 1035.072,
+      "start": 1038.372,
       "textEn": "",
       "textVerbatim": "黑棋粘住，",
       "textEdits": [],
@@ -25540,7 +25546,7 @@
       "sources": [
         "chunk-005:u0043"
       ],
-      "start": 1037.122,
+      "start": 1040.422,
       "textEn": "",
       "textVerbatim": "白棋再虎，",
       "textEdits": [],
@@ -25567,7 +25573,7 @@
       "sources": [
         "chunk-005:u0044"
       ],
-      "start": 1039.172,
+      "start": 1042.472,
       "textEn": "",
       "textVerbatim": "黑棋在上方冲先手，",
       "textEdits": [],
@@ -25594,7 +25600,7 @@
       "sources": [
         "chunk-005:u0045"
       ],
-      "start": 1041.222,
+      "start": 1044.522,
       "textEn": "",
       "textVerbatim": "白棋粘，",
       "textEdits": [],
@@ -25621,7 +25627,7 @@
       "sources": [
         "chunk-005:u0046"
       ],
-      "start": 1043.272,
+      "start": 1046.572,
       "textEn": "",
       "textVerbatim": "然后黑棋打吃，",
       "textEdits": [],
@@ -25648,7 +25654,7 @@
       "sources": [
         "chunk-005:u0047"
       ],
-      "start": 1045.322,
+      "start": 1048.622,
       "textEn": "",
       "textVerbatim": "白棋应住，",
       "textEdits": [],
@@ -25675,7 +25681,7 @@
       "sources": [
         "chunk-005:u0048"
       ],
-      "start": 1047.372,
+      "start": 1050.672,
       "textEn": "",
       "textVerbatim": "黑棋在中央一飞，把中央的这块棋又全部包了进去。",
       "textEdits": [],
@@ -25702,7 +25708,7 @@
       "sources": [
         "chunk-005:u0049"
       ],
-      "start": 1051.804,
+      "start": 1055.104,
       "textEn": "",
       "textVerbatim": "当然罗玄在此处的用意，是借助弃掉中央几颗子，寻求对左边黑棋棋形的反击。",
       "textEdits": [
@@ -25735,7 +25741,7 @@
       "sources": [
         "chunk-005:u0050"
       ],
-      "start": 1058.418,
+      "start": 1061.718,
       "textEn": "",
       "textVerbatim": "下一招，白棋尖，",
       "textEdits": [],
@@ -25762,7 +25768,7 @@
       "sources": [
         "chunk-005:u0051"
       ],
-      "start": 1060.468,
+      "start": 1063.768,
       "textEn": "",
       "textVerbatim": "黑棋挡住，",
       "textEdits": [],
@@ -25789,7 +25795,7 @@
       "sources": [
         "chunk-005:u0052"
       ],
-      "start": 1062.518,
+      "start": 1065.818,
       "textEn": "",
       "textVerbatim": "白棋从下方冲，",
       "textEdits": [],
@@ -25816,7 +25822,7 @@
       "sources": [
         "chunk-005:u0053"
       ],
-      "start": 1064.568,
+      "start": 1067.868,
       "textEn": "",
       "textVerbatim": "黑棋挡，",
       "textEdits": [],
@@ -25843,7 +25849,7 @@
       "sources": [
         "chunk-005:u0054"
       ],
-      "start": 1066.618,
+      "start": 1069.918,
       "textEn": "",
       "textVerbatim": "然后白棋一挖。",
       "textEdits": [],
@@ -25870,7 +25876,7 @@
       "sources": [
         "chunk-005:u0055"
       ],
-      "start": 1068.668,
+      "start": 1071.968,
       "textEn": "",
       "textVerbatim": "黑棋补住断点，",
       "textEdits": [],
@@ -25897,7 +25903,7 @@
       "sources": [
         "chunk-005:u0056"
       ],
-      "start": 1070.718,
+      "start": 1074.018,
       "textEn": "",
       "textVerbatim": "接下来白棋从上方打吃，",
       "textEdits": [],
@@ -25924,7 +25930,7 @@
       "sources": [
         "chunk-005:u0057"
       ],
-      "start": 1072.968,
+      "start": 1076.268,
       "textEn": "",
       "textVerbatim": "黑棋在粘的时候，",
       "textEdits": [],
@@ -25951,7 +25957,7 @@
       "sources": [
         "chunk-005:u0058"
       ],
-      "start": 1075.018,
+      "start": 1078.318,
       "textEn": "",
       "textVerbatim": "白棋粘回，一来右边要粘，强行逃出去，并盯着黑棋断点。",
       "textEdits": [],
@@ -25978,7 +25984,7 @@
       "sources": [
         "chunk-005:u0059"
       ],
-      "start": 1079.995,
+      "start": 1083.295,
       "textEn": "",
       "textVerbatim": "但辜梓豪看得很清楚，先把中央全部吃住再说。",
       "textEdits": [
@@ -26011,7 +26017,7 @@
       "sources": [
         "chunk-005:u0060"
       ],
-      "start": 1083.881,
+      "start": 1087.181,
       "textEn": "",
       "textVerbatim": "当白棋在此断的时候，",
       "textEdits": [],
@@ -26038,7 +26044,7 @@
       "sources": [
         "chunk-005:u0061"
       ],
-      "start": 1085.949,
+      "start": 1089.249,
       "textEn": "",
       "textVerbatim": "黑棋从上方一夹，",
       "textEdits": [],
@@ -26065,7 +26071,7 @@
       "sources": [
         "chunk-005:u0062"
       ],
-      "start": 1087.999,
+      "start": 1091.299,
       "textEn": "",
       "textVerbatim": "由于白棋气紧的问题，现在黑棋可以利用滚包收气，在局部整形。",
       "textEdits": [],
@@ -26090,7 +26096,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1093.522,
+      "start": 1096.822,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26115,7 +26121,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1094.472,
+      "start": 1097.772,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26140,7 +26146,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1095.422,
+      "start": 1098.722,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26165,7 +26171,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1096.372,
+      "start": 1099.672,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26190,7 +26196,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1097.322,
+      "start": 1100.622,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26215,7 +26221,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1098.272,
+      "start": 1101.572,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26240,7 +26246,7 @@
       "label": null,
       "duration": 0.7,
       "sources": [],
-      "start": 1099.222,
+      "start": 1102.522,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26267,7 +26273,7 @@
       "sources": [
         "chunk-005:u0063"
       ],
-      "start": 1100.172,
+      "start": 1103.472,
       "textEn": "",
       "textVerbatim": "下一手棋从上方一靠的时候，罗玄就投子了。",
       "textEdits": [
@@ -26300,7 +26306,7 @@
       "sources": [
         "chunk-005:u0064"
       ],
-      "start": 1104.058,
+      "start": 1107.358,
       "textEn": "",
       "textVerbatim": "那么现在的形势到底怎么样呢？右边白棋这块棋是死是活，我们逐一和大家拆解一下。",
       "textEdits": [],
@@ -26327,7 +26333,7 @@
       "sources": [
         "chunk-005:u0065"
       ],
-      "start": 1111.217,
+      "start": 1114.517,
       "textEn": "",
       "textVerbatim": "首先，从AI分析来看，现在黑棋的盘面领先在20目棋左右。",
       "textEdits": [],
@@ -26354,7 +26360,7 @@
       "sources": [
         "chunk-005:u0066"
       ],
-      "start": 1116.558,
+      "start": 1119.858,
       "textEn": "",
       "textVerbatim": "因为有了这手靠之后，由于上方还有冲断的手段，黑棋的死活没有问题。",
       "textEdits": [],
@@ -26379,7 +26385,7 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 1122.626,
+      "start": 1125.926,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -26415,7 +26421,7 @@
           "number": 1
         }
       ],
-      "start": 1123.576,
+      "start": 1126.876,
       "textEn": "",
       "textVerbatim": "白棋如果粘的话，",
       "textEdits": [],
@@ -26423,6 +26429,49 @@
     },
     {
       "id": "e0449",
+      "kind": "variation",
+      "move": 171,
+      "displayMove": 171,
+      "color": "B",
+      "coordinate": "B12",
+      "board": "....................bwbww..........bb...b.bb.w...w.bbbww..bb.b.bw....wbwwb..b.b.bww......w..b...bwbbwb.....w.www...wwwwww......b.bw...bb.www...b....b.b.....bwbbb.bbb...b....b.bwbw.wbwwww........bwwbwwwb.b.www...b.bwbb..b..bw..w...bwbbwbbbb....wwb..www..ww.www.b.bbb.....bbbw..bw....w.....wwwbbww.w.b........wbwwbbbwwbb.b.....wb...bbw.wwbwb...........w....w.....",
+      "last": [
+        1,
+        7
+      ],
+      "text": "黑棋自补一手就可以，",
+      "branch": "v13",
+      "step": 2,
+      "branchLength": 11,
+      "label": null,
+      "duration": 1.818,
+      "sources": [
+        "chunk-006:u0003"
+      ],
+      "marks": [
+        {
+          "point": [
+            3,
+            6
+          ],
+          "number": 1
+        },
+        {
+          "point": [
+            1,
+            7
+          ],
+          "number": 2
+        }
+      ],
+      "start": 1128.926,
+      "textEn": "",
+      "textVerbatim": "黑棋自补一手就可以，",
+      "textEdits": [],
+      "contentVersion": 3
+    },
+    {
+      "id": "e0450",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26458,14 +26507,14 @@
           "number": 2
         }
       ],
-      "start": 1125.626,
+      "start": 1130.994,
       "textEn": "",
       "textVerbatim": "左边一带没有棋，至于中央，白棋是逃不出去的，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0450",
+      "id": "e0451",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26511,14 +26560,14 @@
           "number": 3
         }
       ],
-      "start": 1129.876,
+      "start": 1135.244,
       "textEn": "",
       "textVerbatim": "而白棋的手段也无非就是在此冲完之后",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0451",
+      "id": "e0452",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26566,14 +26615,14 @@
           "number": 4
         }
       ],
-      "start": 1133.217,
+      "start": 1138.585,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0452",
+      "id": "e0453",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26633,14 +26682,14 @@
           "number": 5
         }
       ],
-      "start": 1134.167,
+      "start": 1139.535,
       "textEn": "",
       "textVerbatim": "断，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0453",
+      "id": "e0454",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26697,14 +26746,14 @@
           "number": 5
         }
       ],
-      "start": 1136.217,
+      "start": 1141.585,
       "textEn": "",
       "textVerbatim": "通过弃子在外围先手定型。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0454",
+      "id": "e0455",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26768,14 +26817,14 @@
           "number": 6
         }
       ],
-      "start": 1138.649,
+      "start": 1144.017,
       "textEn": "",
       "textVerbatim": "黑棋提吃，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0455",
+      "id": "e0456",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26846,14 +26895,14 @@
           "number": 7
         }
       ],
-      "start": 1140.699,
+      "start": 1146.067,
       "textEn": "",
       "textVerbatim": "白棋打，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0456",
+      "id": "e0457",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -26931,14 +26980,14 @@
           "number": 8
         }
       ],
-      "start": 1142.749,
+      "start": 1148.117,
       "textEn": "",
       "textVerbatim": "黑棋粘住，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0457",
+      "id": "e0458",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27016,14 +27065,14 @@
           "number": 8
         }
       ],
-      "start": 1144.799,
+      "start": 1150.167,
       "textEn": "",
       "textVerbatim": "如果白棋断打，黑棋粘就可以，这个地方杀气，白棋也总是杀不过黑棋的。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0458",
+      "id": "e0459",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27101,14 +27150,14 @@
           "number": 8
         }
       ],
-      "start": 1151.049,
+      "start": 1156.417,
       "textEn": "",
       "textVerbatim": "那么最后我们来说一下右边白棋的死活问题。这块棋是活棋，但是活了棋也不够了，因为中央已经付出了代价。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0459",
+      "id": "e0460",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27193,14 +27242,14 @@
           "number": 9
         }
       ],
-      "start": 1160.208,
+      "start": 1165.576,
       "textEn": "",
       "textVerbatim": "白棋的活棋手筋是从二路挤一手。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0460",
+      "id": "e0461",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27292,14 +27341,14 @@
           "number": 10
         }
       ],
-      "start": 1163.185,
+      "start": 1168.553,
       "textEn": "",
       "textVerbatim": "首先黑棋不能从一路打吃，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0461",
+      "id": "e0462",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27398,14 +27447,14 @@
           "number": 11
         }
       ],
-      "start": 1165.617,
+      "start": 1170.985,
       "textEn": "",
       "textVerbatim": "否则白棋在上方一断之后，中央的断严厉，这一带黑棋自身棋形很薄，同时下方要粘回这颗子，这样黑棋的攻杀反而帮了白棋的忙。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0462",
+      "id": "e0463",
       "kind": "transition",
       "move": 171,
       "displayMove": 171,
@@ -27423,14 +27472,14 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 1176.412,
+      "start": 1181.78,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0463",
+      "id": "e0464",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27457,14 +27506,14 @@
           "number": 1
         }
       ],
-      "start": 1177.362,
+      "start": 1182.73,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0464",
+      "id": "e0465",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27498,14 +27547,14 @@
           "number": 2
         }
       ],
-      "start": 1178.312,
+      "start": 1183.68,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0465",
+      "id": "e0466",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27546,14 +27595,14 @@
           "number": 3
         }
       ],
-      "start": 1179.262,
+      "start": 1184.63,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0466",
+      "id": "e0467",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27601,14 +27650,14 @@
           "number": 4
         }
       ],
-      "start": 1180.212,
+      "start": 1185.58,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0467",
+      "id": "e0468",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27663,14 +27712,14 @@
           "number": 5
         }
       ],
-      "start": 1181.162,
+      "start": 1186.53,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0468",
+      "id": "e0469",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27732,14 +27781,14 @@
           "number": 6
         }
       ],
-      "start": 1182.112,
+      "start": 1187.48,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0469",
+      "id": "e0470",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27808,14 +27857,14 @@
           "number": 7
         }
       ],
-      "start": 1183.062,
+      "start": 1188.43,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0470",
+      "id": "e0471",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27891,14 +27940,14 @@
           "number": 8
         }
       ],
-      "start": 1184.012,
+      "start": 1189.38,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0471",
+      "id": "e0472",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -27981,14 +28030,14 @@
           "number": 9
         }
       ],
-      "start": 1184.962,
+      "start": 1190.33,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0472",
+      "id": "e0473",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28080,14 +28129,14 @@
           "number": 10
         }
       ],
-      "start": 1185.912,
+      "start": 1191.28,
       "textEn": "",
       "textVerbatim": "那么如果吃住这颗子怎样呢？",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0473",
+      "id": "e0474",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28186,14 +28235,14 @@
           "number": 11
         }
       ],
-      "start": 1188.526,
+      "start": 1193.894,
       "textEn": "",
       "textVerbatim": "白棋可以再次打吃，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0474",
+      "id": "e0475",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28292,14 +28341,14 @@
           "number": 12
         }
       ],
-      "start": 1190.576,
+      "start": 1195.944,
       "textEn": "",
       "textVerbatim": "黑棋提吃，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0475",
+      "id": "e0476",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28405,14 +28454,14 @@
           "number": 13
         }
       ],
-      "start": 1192.626,
+      "start": 1197.994,
       "textEn": "",
       "textVerbatim": "然后白棋再挤上去。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0476",
+      "id": "e0477",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28525,14 +28574,14 @@
           "number": 14
         }
       ],
-      "start": 1194.676,
+      "start": 1200.044,
       "textEn": "",
       "textVerbatim": "现在黑棋不敢贸然反击，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0477",
+      "id": "e0478",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28652,14 +28701,14 @@
           "number": 15
         }
       ],
-      "start": 1196.926,
+      "start": 1202.294,
       "textEn": "",
       "textVerbatim": "因为白棋有冲的手段，黑棋自身也有薄味。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0478",
+      "id": "e0479",
       "kind": "transition",
       "move": 171,
       "displayMove": 171,
@@ -28677,14 +28726,14 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 1200.631,
+      "start": 1205.999,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0479",
+      "id": "e0480",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28711,14 +28760,14 @@
           "number": 1
         }
       ],
-      "start": 1201.581,
+      "start": 1206.949,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0480",
+      "id": "e0481",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28752,14 +28801,14 @@
           "number": 2
         }
       ],
-      "start": 1202.531,
+      "start": 1207.899,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0481",
+      "id": "e0482",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28800,14 +28849,14 @@
           "number": 3
         }
       ],
-      "start": 1203.481,
+      "start": 1208.849,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0482",
+      "id": "e0483",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28855,14 +28904,14 @@
           "number": 4
         }
       ],
-      "start": 1204.431,
+      "start": 1209.799,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0483",
+      "id": "e0484",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28917,14 +28966,14 @@
           "number": 5
         }
       ],
-      "start": 1205.381,
+      "start": 1210.749,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0484",
+      "id": "e0485",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -28986,14 +29035,14 @@
           "number": 6
         }
       ],
-      "start": 1206.331,
+      "start": 1211.699,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0485",
+      "id": "e0486",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29062,14 +29111,14 @@
           "number": 7
         }
       ],
-      "start": 1207.281,
+      "start": 1212.649,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0486",
+      "id": "e0487",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29145,14 +29194,14 @@
           "number": 8
         }
       ],
-      "start": 1208.231,
+      "start": 1213.599,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0487",
+      "id": "e0488",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29235,14 +29284,14 @@
           "number": 9
         }
       ],
-      "start": 1209.181,
+      "start": 1214.549,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0488",
+      "id": "e0489",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29332,14 +29381,14 @@
           "number": 10
         }
       ],
-      "start": 1210.131,
+      "start": 1215.499,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0489",
+      "id": "e0490",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29436,14 +29485,14 @@
           "number": 11
         }
       ],
-      "start": 1211.081,
+      "start": 1216.449,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0490",
+      "id": "e0491",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29540,14 +29589,14 @@
           "number": 12
         }
       ],
-      "start": 1212.031,
+      "start": 1217.399,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0491",
+      "id": "e0492",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29651,14 +29700,14 @@
           "number": 13
         }
       ],
-      "start": 1212.981,
+      "start": 1218.349,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0492",
+      "id": "e0493",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29771,14 +29820,14 @@
           "number": 14
         }
       ],
-      "start": 1213.931,
+      "start": 1219.299,
       "textEn": "",
       "textVerbatim": "但对黑棋而言现在不必强杀，粘住就可以，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0493",
+      "id": "e0494",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -29898,14 +29947,14 @@
           "number": 15
         }
       ],
-      "start": 1217.636,
+      "start": 1223.004,
       "textEn": "",
       "textVerbatim": "白棋再冲，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0494",
+      "id": "e0495",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30032,14 +30081,14 @@
           "number": 16
         }
       ],
-      "start": 1219.686,
+      "start": 1225.054,
       "textEn": "",
       "textVerbatim": "黑棋就双住。这样白棋这块棋做活总没有问题，但是如我们先前所说，活了也不够了。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0495",
+      "id": "e0496",
       "kind": "transition",
       "move": 171,
       "displayMove": 171,
@@ -30057,14 +30106,14 @@
       "label": "回到变化起点",
       "duration": 0.7,
       "sources": [],
-      "start": 1226.845,
+      "start": 1232.213,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0496",
+      "id": "e0497",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30091,14 +30140,14 @@
           "number": 1
         }
       ],
-      "start": 1227.795,
+      "start": 1233.163,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0497",
+      "id": "e0498",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30132,14 +30181,14 @@
           "number": 2
         }
       ],
-      "start": 1228.745,
+      "start": 1234.113,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0498",
+      "id": "e0499",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30180,14 +30229,14 @@
           "number": 3
         }
       ],
-      "start": 1229.695,
+      "start": 1235.063,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0499",
+      "id": "e0500",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30235,14 +30284,14 @@
           "number": 4
         }
       ],
-      "start": 1230.645,
+      "start": 1236.013,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0500",
+      "id": "e0501",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30297,14 +30346,14 @@
           "number": 5
         }
       ],
-      "start": 1231.595,
+      "start": 1236.963,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0501",
+      "id": "e0502",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30366,14 +30415,14 @@
           "number": 6
         }
       ],
-      "start": 1232.545,
+      "start": 1237.913,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0502",
+      "id": "e0503",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30442,14 +30491,14 @@
           "number": 7
         }
       ],
-      "start": 1233.495,
+      "start": 1238.863,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0503",
+      "id": "e0504",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30525,14 +30574,14 @@
           "number": 8
         }
       ],
-      "start": 1234.445,
+      "start": 1239.813,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0504",
+      "id": "e0505",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30617,14 +30666,14 @@
           "number": 9
         }
       ],
-      "start": 1235.395,
+      "start": 1240.763,
       "textEn": "",
       "textVerbatim": "还有一个变化是，在这一带白棋挤的时候，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0505",
+      "id": "e0506",
       "kind": "variation",
       "move": 171,
       "displayMove": 171,
@@ -30716,14 +30765,14 @@
           "number": 10
         }
       ],
-      "start": 1239.1,
+      "start": 1244.468,
       "textEn": "",
       "textVerbatim": "黑棋直接在上方粘回也是可行的方案。当然这样白棋立下做活，黑棋把自己的联络补强，也是黑棋大胜的形势。所以右边这块棋的死活跟局势已经没有什么关系了。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0506",
+      "id": "e0507",
       "kind": "review",
       "move": 38,
       "displayMove": 38,
@@ -30743,14 +30792,14 @@
       "sources": [
         "chunk-006:u0027"
       ],
-      "start": 1252.441,
+      "start": 1257.809,
       "textEn": "",
       "textVerbatim": "在此处随手一挡之后，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0507",
+      "id": "e0508",
       "kind": "review",
       "move": 39,
       "displayMove": 39,
@@ -30770,14 +30819,14 @@
       "sources": [
         "chunk-006:u0028"
       ],
-      "start": 1254.509,
+      "start": 1259.877,
       "textEn": "",
       "textVerbatim": "被黑棋打吃，白棋才突然发现这几颗子粘不回去，",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0508",
+      "id": "e0509",
       "kind": "review",
       "move": 41,
       "displayMove": 41,
@@ -30797,14 +30846,14 @@
       "sources": [
         "chunk-006:u0029"
       ],
-      "start": 1258.759,
+      "start": 1264.127,
       "textEn": "",
       "textVerbatim": "而左上一番交锋下来，黑棋已经占据了优势，乃至是胜势的局面。",
       "textEdits": [],
       "contentVersion": 3
     },
     {
-      "id": "e0509",
+      "id": "e0510",
       "kind": "finish",
       "move": 171,
       "displayMove": 171,
@@ -30822,7 +30871,7 @@
       "label": "讲解结束",
       "duration": 0.7,
       "sources": [],
-      "start": 1264.282,
+      "start": 1269.65,
       "textEn": "",
       "textVerbatim": "",
       "textEdits": [],
@@ -32255,7 +32304,7 @@
       "pointsLoss": null
     }
   ],
-  "duration": 1265.232,
+  "duration": 1270.6,
   "humanReview": "pending",
   "trainingEligible": false,
   "sources": {
@@ -32293,6 +32342,10 @@
       {
         "baseVersion": "c52b5675",
         "url": "data/review-bases/youtube_5fxA9bEEP-Q.c52b5675.json"
+      },
+      {
+        "baseVersion": "265c9071",
+        "url": "data/review-bases/youtube_5fxA9bEEP-Q.265c9071.json"
       }
     ],
     "mainlineUnchanged": true
