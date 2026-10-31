@@ -217,6 +217,7 @@ try{
  const match=location.hash.match(/^#(?:move=)?(\d+)$/);
  const resume=editor.resumeIndex(location.hash);
  if(resume>=0)index=resume;else if(match){selectedTopic=Number(match[1]);index=chapterForMove(data,selectedTopic);}
+ if(skipped.has(index))index=adjacentEvent(data.events,index,-1,skipped);
  history.replaceState(null,'',caseUrl(selected,language,String(current().move||current().displayMove||0)));editor.rememberCurrent();render();
  $('video-link').href=data.sources.video||'#';$('video-link').hidden=!data.sources.video;
 }catch(error){
