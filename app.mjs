@@ -1,5 +1,5 @@
 import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261031-return1';
-import {loadPublishedReview} from './review-published.mjs?v=20261031-return1';
+import {loadPublishedReview} from './review-published.mjs?v=20261031-reviewed1';
 import {prepareLocalReview} from './review-local.mjs?v=20261031-local1';
 import {createReviewEditor} from './review-editor.mjs?v=20261031-flow1';
 import {migrateStoredReview} from './review-migration.mjs?v=20261031-forward1';

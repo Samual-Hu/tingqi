@@ -6,12 +6,22 @@ const content=d=>JSON.stringify([
  d.placements.map(p=>[p.sentenceId,p.position,p.eventId]).sort(),
  d.points??{},d.annotations??[],d.treeOps??[]
 ]);
+function coveredBySnapshot(local,snapshot,baseline){
+ const words=new Map(baseline.sentences.map(s=>[s.id,s])),online=new Map(snapshot.sentences.map(s=>[s.id,s]));
+ for(const s of local.sentences){const b=words.get(s.id);if(!b||s.text!==b.text||!!s.excluded!==!!b.excluded){const n=online.get(s.id);if(!n||s.text!==n.text||!!s.excluded!==!!n.excluded)return false;}}
+ const placed=d=>new Map(d.placements.map(p=>[p.sentenceId,JSON.stringify([p.position,p.eventId])])),before=placed(baseline),after=placed(local),published=placed(snapshot);
+ for(const id of new Set([...before.keys(),...after.keys()]))if(before.get(id)!==after.get(id)&&after.get(id)!==published.get(id))return false;
+ if((local.annotations??[]).some(a=>!(snapshot.annotations??[]).some(b=>JSON.stringify(a)===JSON.stringify(b))))return false;
+ for(const[k,v]of Object.entries(local.points??{}))if(JSON.stringify(v)!==JSON.stringify(snapshot.points?.[k]))return false;
+ return !(local.treeOps?.length)||JSON.stringify(local.treeOps)===JSON.stringify(snapshot.treeOps);
+}
 // An online snapshot seeds a fresh/unedited browser only. Local human edits win.
 export function adoptPublishedReview(storage,data,review){
  const saved=validateDraft(structuredClone(review),data),canonical='tingqi-review-v1:'+data.id;
  const key=canonical+':version:'+baseVersion(data),raw=storage.getItem(key)||storage.getItem(canonical);
  if(raw){let local;try{local=validateDraft(JSON.parse(raw),data);}catch{return false;}
-  if(content(local)!==content(createDraft(data)))return false;
+  const baseline=createDraft(data);
+  if(content(local)!==content(baseline)&&!coveredBySnapshot(local,saved,baseline))return false;
   if(local.bookmark)saved.bookmark=local.bookmark;
  }
  saved.onlineSnapshotRevision=data.publishedReview?.revision;
