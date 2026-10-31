@@ -1,5 +1,5 @@
 import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-treefix8';
-import {createReviewEditor} from './review-editor.mjs?v=20261031-preserve1';
+import {createReviewEditor} from './review-editor.mjs?v=20261031-content2';
 const $=id=>document.getElementById(id);
 document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
 document.querySelector('.tools-menu-content').addEventListener('click',event=>{if(event.target.closest('a,button'))document.querySelector('.tools-menu').open=false;});
@@ -10,8 +10,10 @@ function caseUrl(item,lang=language,hash=''){const url=new URL(item.slug+'/'+(la
 const t=(zh,en)=>language==='en'?en:zh;
 let data,selectedCase,index=0,editor=null;
 let skipped=new Set();
+const reviewPositionKey=e=>(e.branch&&e.step?[e.branch,e.step]:[null,e.displayMove??e.move??0]).join(':')+JSON.stringify(e.suggestedPoint??null);
 function rebuildTimeline(){
  skipped=repeatedPrefixIndices(data.events,e=>{const shown=editor?editor.effective(e):e;return language==='en'?shown.textEn:shown.text;});
+ for(let i=1;i<data.events.length;i++)if(reviewPositionKey(data.events[i])===reviewPositionKey(data.events[i-1]))skipped.add(i);
 }
 function setLanguage(){
  document.documentElement.lang=language==='en'?'en':'zh-CN';$('language').value=language;
