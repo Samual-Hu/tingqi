@@ -45,6 +45,14 @@ export function effectiveEvent(d,e){
  const point=d.points[positionKey(e)];if(point){result.suggestedPoint=point.point;result.suggestedColor=point.color;result.color=point.color;result.coordinate=coordinate(point.point);result.kind='pointer';result.last=null;result.marks=[];}
  return result;
 }
+// SGF review selects a position, which may have several source utterances/events.
+export function effectivePositionEvent(d,e){
+ const result=effectiveEvent(d,e),notes=notesAt(d,e),eventIds=new Set(d.placements.filter(p=>p.position===positionKey(e)).map(p=>p.eventId));
+ result.text=notes.map(s=>s.text).join('');
+ result.textEn=notes.map(s=>s.text===(s.baselineText??s.originalText)?s.textEn??'':'').join('');
+ result.annotations=(d.annotations??[]).filter(a=>eventIds.has(a.eventId)||a.eventId===e.id).map(a=>({...a,anchorStatus:resolveAnchor(a,result.text)?'linked':a.anchor?'needs_review':'unlinked'}));
+ return result;
+}
 export function resolveAnchor(annotation,text){
  const a=annotation.anchor;if(!a)return null;
  if(text.slice(a.start,a.start+a.quote.length)===a.quote)return{start:a.start,end:a.start+a.quote.length,quote:a.quote};
