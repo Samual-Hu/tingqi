@@ -1,5 +1,5 @@
 import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-treefix8';
-import {createReviewEditor} from './review-editor.mjs?v=20261031-content2';
+import {createReviewEditor} from './review-editor.mjs?v=20261031-opening4';
 import {migrateStoredReview} from './review-migration.mjs?v=20261031-opening3';
 const $=id=>document.getElementById(id);
 document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
