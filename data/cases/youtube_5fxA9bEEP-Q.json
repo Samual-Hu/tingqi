@@ -30800,7 +30800,9 @@
       "textEdits": [],
       "contentVersion": 3,
       "sourceMove": 38,
-      "sourceKind": "review"
+      "sourceKind": "review",
+      "playbackExcluded": true,
+      "playbackExclusionReason": "User requested playback to end at the last explained variation; closing retrospective retained for provenance."
     },
     {
       "id": "e0508-forward-171",
@@ -30829,7 +30831,9 @@
       "textEdits": [],
       "contentVersion": 3,
       "sourceMove": 39,
-      "sourceKind": "review"
+      "sourceKind": "review",
+      "playbackExcluded": true,
+      "playbackExclusionReason": "User requested playback to end at the last explained variation; closing retrospective retained for provenance."
     },
     {
       "id": "e0509-forward-171",
@@ -30858,7 +30862,9 @@
       "textEdits": [],
       "contentVersion": 3,
       "sourceMove": 41,
-      "sourceKind": "review"
+      "sourceKind": "review",
+      "playbackExcluded": true,
+      "playbackExclusionReason": "User requested playback to end at the last explained variation; closing retrospective retained for provenance."
     },
     {
       "id": "e0510",

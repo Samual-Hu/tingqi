@@ -7,6 +7,7 @@ export function scoreLabel(score){return score>=0?'黑领先 '+score.toFixed(1)+
 // Keep source events intact. Only omit silent, already-shown branch prefixes or dead-end duplicate attempts.
 export function repeatedPrefixIndices(events,textOf=e=>e.text){
  const skipped=new Set();
+ events.forEach((e,i)=>{if(e.playbackExcluded||e.kind==='finish'&&!textOf(e)?.trim())skipped.add(i);});
  // Position-level comments also project onto the synthetic reset event.
  // That does not turn a silent reset into another lecture step.
  events.forEach((e,i)=>{if(e.kind==='transition'&&!e.text?.trim())skipped.add(i);});
@@ -89,5 +90,5 @@ export function repeatedPrefixIndices(events,textOf=e=>e.text){
 
 export function adjacentEvent(events,index,direction,skipped){
  let next=index+direction;while(next>=0&&next<events.length&&skipped.has(next))next+=direction;
- return Math.max(0,Math.min(events.length-1,next));
+ return next<0||next>=events.length?index:next;
 }

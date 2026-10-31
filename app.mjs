@@ -1,4 +1,4 @@
-import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261031-return1';
+import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261031-end1';
 import {loadPublishedReview} from './review-published.mjs?v=20261031-reviewed1';
 import {prepareLocalReview} from './review-local.mjs?v=20261031-local1';
 import {createReviewEditor} from './review-editor.mjs?v=20261031-flow1';
@@ -94,7 +94,7 @@ function render(){
  $('comment').contentEditable=language==='zh'?'plaintext-only':'false';
  $('comment').style.color=e.text?'':'#8d958c';
  $('segment-detail').textContent=e.kind==='start'?'用上一步、下一步或方向键查看讲解。':isVariation?'对应实战第'+e.move+'手的比较变化。图表始终显示实战曲线。':e.kind==='context'?(e.displayMove===e.move?'这一阶段的局面讲解。':'当前棋盘是第'+e.displayMove+'手，讲解指向第'+e.move+'手。'):e.kind==='finish'?'可以点击目差曲线，重新查看任意一手。':e.kind==='review'?'按讲解顺序回看这手棋。':'';
- $('previous').disabled=index===0;$('next').disabled=index===data.events.length-1;
+ $('previous').disabled=adjacentEvent(data.events,index,-1,skipped)===index;$('next').disabled=adjacentEvent(data.events,index,1,skipped)===index;
  if(selectedTopic&&e.move!==selectedTopic&&e.kind==='main')$('segment-detail').textContent='正在播放第'+selectedTopic+'手的完整讲解，先看相关局面。';
  if(language==='en'){
   $('board-context').textContent=e.branch?'Variation '+e.branch:e.kind==='review'?'Review':'Game';
