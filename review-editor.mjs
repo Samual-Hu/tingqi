@@ -1,4 +1,4 @@
-import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,effectivePositionEvent,exportSgf,coordinate,toggleAnnotation,resolveAnchor,exportTrainingCandidates}from'./review-core.mjs?v=20261031-content2';
+import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,effectivePositionEvent,exportSgf,coordinate,toggleAnnotation,resolveAnchor,exportTrainingCandidates}from'./review-core.mjs?v=20261031-opening4';
 import{createTreeEditor}from'./review-tree-editor.mjs?v=20261025-layout1';
 import{openDraftStore,saveHistory,installHistoryMenu}from'./review-storage.mjs?v=20261031-preserve1';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -7,7 +7,7 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  let draft=createDraft(data),enabled=false,placing=false,query='',filter='unassigned',limit=50,undo=[],redo=[],storageError=false;
  let marking=false,pendingAnchor=null,markEventId=null;
  let treeEditor=null;
- function displayEvent(e=current()){const shown=treeEditor?.projectRaw(e)??e;return effectivePositionEvent(draft,shown);}
+ function displayEvent(e=current()){const shown={...(treeEditor?.projectRaw(e)??e)},node=treeEditor?.tree().nodes[shown.treeNodeId];shown.reviewPositionKeys=[...new Set([positionKey(shown),...(node?.eventIds??[]).map(id=>data.events.find(e=>e.id===id)).filter(Boolean).map(positionKey)])];return effectivePositionEvent(draft,shown);}
  let store=null,historyTimer=null;
  function archive(record){const write=()=>saveHistory(record).catch(()=>notice('自动历史备份失败，请用“备份修改”另存。'));if(record.reason==='edit'){clearTimeout(historyTimer);historyTimer=setTimeout(write,500);}else void write();}
  try{store=openDraftStore(localStorage,data,{archive,conflict:()=>notice('另一个标签页已有更新：双方版本均已保留，当前修改另存。')});draft=store.draft;if(store.blocked)notice('旧版人工稿已保留，未用新发布内容覆盖；请在“⋯”中备份旧版修改。');}catch(e){storageError=true;notice('无法读取保存的稿件：'+e.message);}
@@ -39,8 +39,8 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  let editing=null;
  window.addEventListener('storage',event=>{if(!store||event.key!==store.key||!event.newValue)return;if(editing){archive({raw:event.newValue,reason:'concurrent-edit',caseId:data.id});notice('其他标签页有修改，已保留对方版本；当前改字另存避免覆盖。');return;}try{const next=store.adoptExternal(event);if(next){draft=next;refresh();render();}}catch{notice('其他标签页版本不同，当前稿保留。');}});
  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&draft.updatedAt)void saveHistory({raw:JSON.stringify(draft),caseId:data.id,reason:'page-hidden'}).catch(()=>{});});
- comment.onfocus=()=>{stop();editing={event:treeEditor.projectRaw(current()),grouped:true,before:JSON.stringify(draft)};if(!displayEvent().text)comment.textContent='';};
- comment.oninput=()=>{if(!editing)return;const e=editing.event,text=comment.innerText.replace(/\r\n?/g,'\n');const placements=draft.placements.filter(p=>editing.grouped?p.position===positionKey(e):p.eventId===e.id);const notes=placements.map(p=>draft.sentences.find(s=>s.id===p.sentenceId));
+ comment.onfocus=()=>{stop();const shown=displayEvent();editing={event:treeEditor.projectRaw(current()),grouped:true,positions:shown.reviewPositionKeys,before:JSON.stringify(draft)};if(!shown.text)comment.textContent='';};
+ comment.oninput=()=>{if(!editing)return;const e=editing.event,text=comment.innerText.replace(/\r\n?/g,'\n');const placements=draft.placements.filter(p=>editing.grouped?editing.positions.includes(p.position):p.eventId===e.id);const notes=placements.map(p=>draft.sentences.find(s=>s.id===p.sentenceId));
   if(notes.length){notes[0].text=text;for(const s of notes.slice(1))s.text='';}
   else{const id='user:'+e.id;let s=draft.sentences.find(s=>s.id===id);if(!s){s={id,text,originalText:'',sourceIds:[],section:'commentary',userAdded:true};draft.sentences.push(s);}s.text=text;assign(draft,id,e);}
   draft.reviewedEventIds=(draft.reviewedEventIds??[]).filter(id=>id!==e.id);draft.updatedAt=new Date().toISOString();persist();renderProgress();renderAnnotations();
