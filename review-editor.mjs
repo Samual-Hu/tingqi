@@ -1,6 +1,6 @@
 import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,effectivePositionEvent,exportSgf,coordinate,toggleAnnotation,resolveAnchor,exportTrainingCandidates}from'./review-core.mjs?v=20261031-opening4';
 import{createTreeEditor}from'./review-tree-editor.mjs?v=20261025-layout1';
-import{openDraftStore,saveHistory,installHistoryMenu}from'./review-storage.mjs?v=20261031-preserve1';
+import{openDraftStore,saveHistory,installHistoryMenu}from'./review-storage.mjs?v=20261031-return1';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  const host=document.getElementById('review-editor'),toggle=document.getElementById('review-toggle');
