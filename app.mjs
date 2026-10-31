@@ -1,5 +1,6 @@
-import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-treefix8';
-import {createReviewEditor} from './review-editor.mjs?v=20261031-opening4';
+import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261031-return1';
+import {loadPublishedReview} from './review-published.mjs?v=20261031-return1';
+import {createReviewEditor} from './review-editor.mjs?v=20261031-return1';
 import {migrateStoredReview} from './review-migration.mjs?v=20261031-opening3';
 const $=id=>document.getElementById(id);
 document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
@@ -197,6 +198,7 @@ try{
  const response=await fetch(selected.data,{cache:'no-store'});if(!response.ok)throw new Error('data');
  data=await response.json();
  await migrateStoredReview(localStorage,data,{notice:say});
+ try{await loadPublishedReview(localStorage,data,{notice:say});}catch(e){say(e.message);}
  const hasEnglish=selected.languages?.includes('en')??data.translation?.status==='complete';
  $('language').hidden=!hasEnglish;if(!hasEnglish)language='zh';
  editor=createReviewEditor({data,current,navigate:i=>moveTo(i,false),stop,refresh:()=>{rebuildTimeline();render();},notice:say});
