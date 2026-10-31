@@ -1,5 +1,6 @@
 import {chapterForMove,curveMoveAtX,scoreLabel,repeatedPrefixIndices,adjacentEvent} from './player-core.mjs?v=20261025-treefix8';
 import {createReviewEditor} from './review-editor.mjs?v=20261031-content2';
+import {migrateStoredReview} from './review-migration.mjs?v=20261031-opening3';
 const $=id=>document.getElementById(id);
 document.querySelector('.lecture-panel').append(document.querySelector('.analysis'));
 document.querySelector('.tools-menu-content').addEventListener('click',event=>{if(event.target.closest('a,button'))document.querySelector('.tools-menu').open=false;});
@@ -195,6 +196,7 @@ try{
  selector.addEventListener('change',()=>{location.href=caseUrl(library.cases.find(c=>c.id===selector.value)).href;});
  const response=await fetch(selected.data,{cache:'no-store'});if(!response.ok)throw new Error('data');
  data=await response.json();
+ await migrateStoredReview(localStorage,data,{notice:say});
  const hasEnglish=selected.languages?.includes('en')??data.translation?.status==='complete';
  $('language').hidden=!hasEnglish;if(!hasEnglish)language='zh';
  editor=createReviewEditor({data,current,navigate:i=>moveTo(i,false),stop,refresh:()=>{rebuildTimeline();render();},notice:say});
