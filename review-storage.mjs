@@ -45,6 +45,10 @@ export function installHistoryMenu({data,store,download,restore,notice}){
  const menu=document.getElementById('backup-review').parentElement;
  const button=(text,action)=>{const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=action;menu.append(b);};
  if(store?.blocked)button('备份未迁移的旧版修改',()=>download(data.id+'.previous.review.json',store.blocked,'application/json'));
+ if(data.onlineReviewDraft){
+  button('下载线上审核备份',()=>download(data.id+'.online.review.json',JSON.stringify(data.onlineReviewDraft,null,2),'application/json'));
+  button('恢复线上审核备份',()=>{restore(structuredClone(data.onlineReviewDraft));notice('已恢复线上审核备份；原本机版本仍在自动备份中。');});
+ }
  button('恢复自动备份',async()=>{try{
   const records=await readHistory(data.id),dialog=document.createElement('dialog');dialog.setAttribute('aria-label','自动备份历史');
   dialog.style.cssText='max-width:680px;width:90vw;max-height:80vh;overflow:auto;padding:20px';
