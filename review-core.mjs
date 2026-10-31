@@ -47,7 +47,7 @@ export function effectiveEvent(d,e){
 }
 // SGF review selects a position, which may have several source utterances/events.
 export function effectivePositionEvent(d,e){
- const result=effectiveEvent(d,e),notes=notesAt(d,e),eventIds=new Set(d.placements.filter(p=>p.position===positionKey(e)).map(p=>p.eventId));
+ const result=effectiveEvent(d,e),keys=new Set(e.reviewPositionKeys??[positionKey(e)]),placed=d.placements.filter(p=>keys.has(p.position)),byId=new Map(d.sentences.map(s=>[s.id,s])),notes=placed.map(p=>byId.get(p.sentenceId)).filter(Boolean),eventIds=new Set(placed.map(p=>p.eventId));
  result.text=notes.map(s=>s.text).join('');
  result.textEn=notes.map(s=>s.text===(s.baselineText??s.originalText)?s.textEn??'':'').join('');
  result.annotations=(d.annotations??[]).filter(a=>eventIds.has(a.eventId)||a.eventId===e.id).map(a=>({...a,anchorStatus:resolveAnchor(a,result.text)?'linked':a.anchor?'needs_review':'unlinked'}));
