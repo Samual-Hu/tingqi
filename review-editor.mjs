@@ -1,4 +1,4 @@
-import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,exportSgf,coordinate,toggleAnnotation,resolveAnchor,exportTrainingCandidates}from'./review-core.mjs?v=20261025-treefix8';
+import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,effectivePositionEvent,exportSgf,coordinate,toggleAnnotation,resolveAnchor,exportTrainingCandidates}from'./review-core.mjs?v=20261031-content2';
 import{createTreeEditor}from'./review-tree-editor.mjs?v=20261025-layout1';
 import{openDraftStore,saveHistory,installHistoryMenu}from'./review-storage.mjs?v=20261031-preserve1';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -7,6 +7,7 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  let draft=createDraft(data),enabled=false,placing=false,query='',filter='unassigned',limit=50,undo=[],redo=[],storageError=false;
  let marking=false,pendingAnchor=null,markEventId=null;
  let treeEditor=null;
+ function displayEvent(e=current()){const shown=treeEditor?.projectRaw(e)??e;return effectivePositionEvent(draft,shown);}
  let store=null,historyTimer=null;
  function archive(record){const write=()=>saveHistory(record).catch(()=>notice('自动历史备份失败，请用“备份修改”另存。'));if(record.reason==='edit'){clearTimeout(historyTimer);historyTimer=setTimeout(write,500);}else void write();}
  try{store=openDraftStore(localStorage,data,{archive,conflict:()=>notice('另一个标签页已有更新：双方版本均已保留，当前修改另存。')});draft=store.draft;if(store.blocked)notice('旧版人工稿已保留，未用新发布内容覆盖；请在“⋯”中备份旧版修改。');}catch(e){storageError=true;notice('无法读取保存的稿件：'+e.message);}
@@ -38,8 +39,8 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  let editing=null;
  window.addEventListener('storage',event=>{if(!store||event.key!==store.key||!event.newValue)return;if(editing){archive({raw:event.newValue,reason:'concurrent-edit',caseId:data.id});notice('其他标签页有修改，已保留对方版本；当前改字另存避免覆盖。');return;}try{const next=store.adoptExternal(event);if(next){draft=next;refresh();render();}}catch{notice('其他标签页版本不同，当前稿保留。');}});
  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&draft.updatedAt)void saveHistory({raw:JSON.stringify(draft),caseId:data.id,reason:'page-hidden'}).catch(()=>{});});
- comment.onfocus=()=>{stop();editing={event:current(),before:JSON.stringify(draft)};if(!effectiveEvent(draft,current()).text)comment.textContent='';};
- comment.oninput=()=>{if(!editing)return;const e=editing.event,text=comment.innerText.replace(/\r\n?/g,'\n');const placements=draft.placements.filter(p=>p.eventId===e.id);const notes=placements.map(p=>draft.sentences.find(s=>s.id===p.sentenceId));
+ comment.onfocus=()=>{stop();editing={event:treeEditor.projectRaw(current()),grouped:true,before:JSON.stringify(draft)};if(!displayEvent().text)comment.textContent='';};
+ comment.oninput=()=>{if(!editing)return;const e=editing.event,text=comment.innerText.replace(/\r\n?/g,'\n');const placements=draft.placements.filter(p=>editing.grouped?p.position===positionKey(e):p.eventId===e.id);const notes=placements.map(p=>draft.sentences.find(s=>s.id===p.sentenceId));
   if(notes.length){notes[0].text=text;for(const s of notes.slice(1))s.text='';}
   else{const id='user:'+e.id;let s=draft.sentences.find(s=>s.id===id);if(!s){s={id,text,originalText:'',sourceIds:[],section:'commentary',userAdded:true};draft.sentences.push(s);}s.text=text;assign(draft,id,e);}
   draft.reviewedEventIds=(draft.reviewedEventIds??[]).filter(id=>id!==e.id);draft.updatedAt=new Date().toISOString();persist();renderProgress();renderAnnotations();
@@ -48,19 +49,19 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  const annotationButton=el('button','标注');annotationButton.type='button';annotationButton.setAttribute('aria-label','标注棋盘与解说');progress.before(annotationButton);
  const markBar=el('div',undefined,'annotation-tools'),anchorLabel=el('span'),markList=el('div',undefined,'annotation-list');markBar.hidden=true;markList.hidden=true;comment.before(markBar);comment.after(markList);
  markBar.append(anchorLabel);
- annotationButton.onmousedown=ev=>ev.preventDefault();annotationButton.onclick=()=>{marking=!marking;markEventId=current().id;if(!marking)pendingAnchor=null;else if(!pendingAnchor){const groups=new Map();for(const a of draft.annotations??[]){if(a.eventId!==current().id)continue;const span=resolveAnchor(a,effectiveEvent(draft,current()).text);if(span)groups.set(span.start+':'+span.end,a.anchor);}if(groups.size===1)pendingAnchor=[...groups.values()][0];}refresh();};
+ annotationButton.onmousedown=ev=>ev.preventDefault();annotationButton.onclick=()=>{marking=!marking;markEventId=current().id;if(!marking)pendingAnchor=null;else if(!pendingAnchor){const groups=new Map();for(const a of draft.annotations??[]){if(a.eventId!==current().id)continue;const span=resolveAnchor(a,displayEvent().text);if(span)groups.set(span.start+':'+span.end,a.anchor);}if(groups.size===1)pendingAnchor=[...groups.values()][0];}refresh();};
  document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&marking){marking=false;pendingAnchor=null;refresh();ev.preventDefault();}});
  function captureSelection(){
   const selection=window.getSelection();if(!selection||selection.isCollapsed||comment.contentEditable==='false')return;
   const range=selection.getRangeAt(0);if(!comment.contains(range.startContainer)||!comment.contains(range.endContainer))return;
-  const quote=selection.toString().trim();if(!quote||quote.length>2000)return;const text=effectiveEvent(draft,current()).text,before=range.cloneRange();before.selectNodeContents(comment);before.setEnd(range.startContainer,range.startOffset);
+  const quote=selection.toString().trim();if(!quote||quote.length>2000)return;const text=displayEvent().text,before=range.cloneRange();before.selectNodeContents(comment);before.setEnd(range.startContainer,range.startOffset);
   let start=before.toString().length;if(text.slice(start,start+quote.length)!==quote){start=text.indexOf(quote);if(start<0||text.indexOf(quote,start+1)>=0)return;}
   if(pendingAnchor?.start===start&&pendingAnchor.quote===quote&&markEventId===current().id)return;
   pendingAnchor={quote,start};markEventId=current().id;marking=true;refresh();
  }
  comment.addEventListener('pointerup',captureSelection);comment.addEventListener('keyup',captureSelection);
  function renderAnnotations(){
-  const shown=effectiveEvent(draft,current()),annotations=shown.annotations??[];markBar.hidden=!marking;annotationButton.setAttribute('aria-pressed',String(marking));annotationButton.textContent=marking?'完成标注':'标注';annotationButton.setAttribute('aria-label',marking?'完成标注':'标注棋盘与解说');anchorLabel.textContent=(pendingAnchor?'“'+pendingAnchor.quote+'” · ':'')+'连续点击棋盘可多选，再点同一点取消；完成后点“完成标注”或直接下一步。';
+  const shown=displayEvent(),annotations=shown.annotations??[];markBar.hidden=!marking;annotationButton.setAttribute('aria-pressed',String(marking));annotationButton.textContent=marking?'完成标注':'标注';annotationButton.setAttribute('aria-label',marking?'完成标注':'标注棋盘与解说');anchorLabel.textContent=(pendingAnchor?'“'+pendingAnchor.quote+'” · ':'')+'连续点击棋盘可多选，再点同一点取消；完成后点“完成标注”或直接下一步。';
   markList.replaceChildren();markList.hidden=!annotations.length;
   const groups=new Map();for(const a of annotations){const span=resolveAnchor(a,shown.text),key=span?span.start+':'+span.end:a.id;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(a);}
   for(const group of groups.values()){const a=group[0],chip=el('span',undefined,'annotation-chip'),label=el('span',(a.anchor?'“'+a.anchor.quote+'” → ':'')+(a.anchorStatus==='needs_review'?'请重新关联原话 · ':a.anchorStatus==='unlinked'?'未关联原话 · ':''));if(a.anchorStatus==='linked'){label.title='点击继续标注这一组棋子';label.style.cursor='pointer';label.onmousedown=ev=>ev.preventDefault();label.onclick=()=>{pendingAnchor=a.anchor;marking=true;markEventId=current().id;refresh();};}chip.append(label);for(const point of group){chip.append(el('span',coordinate(point.point)));const remove=el('button','×');remove.type='button';remove.setAttribute('aria-label','删除'+coordinate(point.point)+'标注');remove.onclick=()=>commit(()=>draft.annotations=draft.annotations.filter(n=>n.id!==point.id));chip.append(remove);}markList.append(chip);}
@@ -124,5 +125,5 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  window.addEventListener('pagehide',()=>{if(mediaUrl)URL.revokeObjectURL(mediaUrl);});
  treeEditor=createTreeEditor({data,draft:()=>draft,commit,refresh,persist,remember:savePosition,current,notice,navigate,stopOtherModes:()=>{marking=false;pendingAnchor=null;placing=false;},undo:()=>undoButton.click(),redo:()=>redoButton.click(),canUndo:()=>!!undo.length,canRedo:()=>!!redo.length,orphanCard:s=>card(s,false)});
  document.getElementById('sgf-download').onclick=ev=>{ev.preventDefault();try{download((data.slug||data.id)+'.review.sgf',exportSgf(data,draft),'application/x-go-sgf');}catch(e){notice(e.message);}};
- return{get enabled(){return enabled;},get marking(){return marking;},get editingBoard(){return treeEditor.editingBoard;},get mainlineChanged(){return treeEditor.mainlineChanged;},get treeSelected(){return treeEditor.selected;},stepTree:d=>treeEditor.step(d),canStepTree:d=>treeEditor.canStep(d),viewEvent:e=>treeEditor.viewEvent(e),sourceNavigation:()=>treeEditor.reset(),sourceDeleted:e=>false,effective:e=>effectiveEvent(draft,treeEditor.projectRaw(e)),render,rememberCurrent:savePosition,resumeIndex(hash){const b=draft.bookmark;if(!b)return -1;const e=data.events.find(e=>e.id===b.eventId);if(!e)return -1;return !hash||hash===b.hash||!b.hash&&hash==='#'+(e.move||e.displayMove)?data.events.indexOf(e):-1;},get draft(){return draft;}};
+ return{get enabled(){return enabled;},get marking(){return marking;},get editingBoard(){return treeEditor.editingBoard;},get mainlineChanged(){return treeEditor.mainlineChanged;},get treeSelected(){return treeEditor.selected;},stepTree:d=>treeEditor.step(d),canStepTree:d=>treeEditor.canStep(d),viewEvent:e=>treeEditor.viewEvent(e),sourceNavigation:()=>treeEditor.reset(),sourceDeleted:e=>false,effective:displayEvent,render,rememberCurrent:savePosition,resumeIndex(hash){const b=draft.bookmark;if(!b)return -1;const e=data.events.find(e=>e.id===b.eventId);if(!e)return -1;return !hash||hash===b.hash||!b.hash&&hash==='#'+(e.move||e.displayMove)?data.events.indexOf(e):-1;},get draft(){return draft;}};
 }
