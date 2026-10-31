@@ -1,23 +1,15 @@
 import{createDraft,validateDraft,positionKey,assign,detach,notesAt,effectiveEvent,exportSgf,coordinate,toggleAnnotation,resolveAnchor,exportTrainingCandidates}from'./review-core.mjs?v=20261025-treefix8';
 import{createTreeEditor}from'./review-tree-editor.mjs?v=20261025-layout1';
+import{openDraftStore,saveHistory,installHistoryMenu}from'./review-storage.mjs?v=20261031-preserve1';
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
- const host=document.getElementById('review-editor'),toggle=document.getElementById('review-toggle'),key='tingqi-review-v1:'+data.id;
+ const host=document.getElementById('review-editor'),toggle=document.getElementById('review-toggle');
  let draft=createDraft(data),enabled=false,placing=false,query='',filter='unassigned',limit=50,undo=[],redo=[],storageError=false;
  let marking=false,pendingAnchor=null,markEventId=null;
  let treeEditor=null;
- try{
-  const saved=localStorage.getItem(key);
-  if(saved){
-   draft=validateDraft(JSON.parse(saved),data);
-   if(Array.isArray(draft.treeOps)&&draft.treeOps.some(op=>op.type==='remove')){
-    draft.treeOps=draft.treeOps.filter(op=>op.type!=='remove');
-    delete draft.treeSelection;
-    delete draft.treePreferredEvent;
-    try{localStorage.setItem(key,JSON.stringify(draft));}catch{}
-   }
-  }
- }catch(e){notice(e.message||'本地草稿未载入，原始棋局仍可查看。');}
+ let store=null,historyTimer=null;
+ function archive(record){const write=()=>saveHistory(record).catch(()=>notice('自动历史备份失败，请用“备份修改”另存。'));if(record.reason==='edit'){clearTimeout(historyTimer);historyTimer=setTimeout(write,500);}else void write();}
+ try{store=openDraftStore(localStorage,data,{archive,conflict:()=>notice('另一个标签页已有更新：双方版本均已保留，当前修改另存。')});draft=store.draft;if(store.blocked)notice('旧版人工稿已保留，未用新发布内容覆盖；请在“⋯”中备份旧版修改。');}catch(e){storageError=true;notice('无法读取保存的稿件：'+e.message);}
  for(const a of draft.annotations??[])if(a.shape!=='triangle'){a.previousVisualShape??=a.shape;if(a.label)a.previousVisualLabel??=a.label;a.shape='triangle';delete a.label;}
  const toolbar=el('div',undefined,'review-toolbar'),position=el('select');position.setAttribute('aria-label','选择实战或变化局面');
  const positions=new Map();data.events.forEach((e,i)=>{const k=positionKey(e);if(!positions.has(k)&&((!e.branch&&e.kind==='main')||e.branch&&e.step||e.kind==='start'))positions.set(k,{event:e,index:i});});
@@ -35,14 +27,17 @@ export function createReviewEditor({data,current,navigate,stop,refresh,notice}){
  const finder=el('div',undefined,'review-finder');finder.append(search,filters);const pool=el('div',undefined,'review-pool');
  const footer=el('div',undefined,'review-footer'),status=el('span','修改仅保存在此浏览器，导出后可跨电脑继续。','review-status');
  function button(text,action){const b=el('button',text);b.type='button';b.onclick=action;footer.append(b);return b;}
- function persist(){try{localStorage.setItem(key,JSON.stringify(draft));storageError=false;status.textContent='已保存到此浏览器 · 备份后可跨电脑继续';}catch{if(!storageError)notice('浏览器保存失败，请用右上角“⋯ → 备份修改”保存。');storageError=true;status.textContent='浏览器保存失败，请立即备份修改';}}
+ function persist(){try{if(!store)throw Error('保存未初始化');store.save(draft);storageError=false;status.textContent='已保存到此浏览器';}catch{if(!storageError)notice('浏览器保存失败，请用右上角“⋯ → 备份修改”保存。');storageError=true;status.textContent='浏览器保存失败，请立即备份修改';}}
  function commit(fn){undo.push(JSON.stringify(draft));if(undo.length>40)undo.shift();redo=[];fn();draft.updatedAt=new Date().toISOString();persist();refresh();render();}
  const comment=document.getElementById('comment'),progress=document.getElementById('review-progress');
  const progressText=el('span');progress.append(progressText);progress.title='修改和当前局面自动保存在此浏览器，重新打开本局会回到上次位置。';
  document.getElementById('backup-review').onclick=()=>{download((data.slug||data.id)+'.review.json',JSON.stringify(draft,null,2),'application/json');notice('已下载修改备份；换电脑时可用“恢复修改备份”。');};
- function savePosition(){if(markEventId!==current().id){marking=false;pendingAnchor=null;markEventId=current().id;}draft.bookmark={eventId:current().id,hash:location.hash,savedAt:new Date().toISOString()};persist();renderProgress();}
+ installHistoryMenu({data,store,download,notice,restore:recovered=>commit(()=>draft=structuredClone(recovered))});
+ function savePosition(){if(markEventId!==current().id){marking=false;pendingAnchor=null;markEventId=current().id;}draft.bookmark={eventId:current().id,hash:location.hash,savedAt:new Date().toISOString()};try{if(!store)throw Error('保存未初始化');store.saveBookmark(draft.bookmark);}catch{storageError=true;}renderProgress();}
  function renderProgress(){progressText.textContent=storageError?'未保存，请备份修改':'已自动保存在此浏览器';}
  let editing=null;
+ window.addEventListener('storage',event=>{if(!store||event.key!==store.key||!event.newValue)return;if(editing){archive({raw:event.newValue,reason:'concurrent-edit',caseId:data.id});notice('其他标签页有修改，已保留对方版本；当前改字另存避免覆盖。');return;}try{const next=store.adoptExternal(event);if(next){draft=next;refresh();render();}}catch{notice('其他标签页版本不同，当前稿保留。');}});
+ document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&draft.updatedAt)void saveHistory({raw:JSON.stringify(draft),caseId:data.id,reason:'page-hidden'}).catch(()=>{});});
  comment.onfocus=()=>{stop();editing={event:current(),before:JSON.stringify(draft)};if(!effectiveEvent(draft,current()).text)comment.textContent='';};
  comment.oninput=()=>{if(!editing)return;const e=editing.event,text=comment.innerText.replace(/\r\n?/g,'\n');const placements=draft.placements.filter(p=>p.eventId===e.id);const notes=placements.map(p=>draft.sentences.find(s=>s.id===p.sentenceId));
   if(notes.length){notes[0].text=text;for(const s of notes.slice(1))s.text='';}
