@@ -501,19 +501,6 @@ export function createTreeEditor({data, draft, commit, refresh, persist, remembe
   }
 
   related.replaceChildren();
-  const explanations = n.eventIds.map(id => data.events.find(e => e.id === id)).filter(e => e?.text);
-  if (explanations.length > 1) {
-   related.append(el('span', '相关解说：'));
-   for (const [i, e] of explanations.entries()) {
-    button(String(i + 1), () => {
-     draft().treeSelection = id;
-     draft().treePreferredEvent = e.id;
-     remember();
-     refresh();
-    }, related);
-   }
-  }
-
   const parked = draft().placements.filter(p => t.nodes[t.eventNodes[p.eventId]]?.deleted);
   orphanTitle.textContent = '待重新归属的原话 · ' + parked.length;
   orphans.hidden = !parked.length;
