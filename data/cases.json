@@ -3,6 +3,18 @@
   "defaultCase": "prototype-2026-10-25",
   "cases": [
     {
+      "id": "weijia-2026-playoffs-fanyin-tu-xiaoyu",
+      "slug": "weijia-2026-playoffs-fanyin-tu-xiaoyu",
+      "title": "范胤 · 屠晓宇｜2026中国围甲季后赛2轮 深圳聂道VS成都队【已人工审核】",
+      "data": "data/cases/weijia-2026-playoffs-fanyin-tu-xiaoyu.json",
+      "sgf": "data/cases/weijia-2026-playoffs-fanyin-tu-xiaoyu.sgf",
+      "languages": [
+        "zh"
+      ],
+      "humanReview": "approved",
+      "reviewSnapshotSha256": "11c02b5663020d17161c2b0226e3bec43be7d28266098c1c08dbf89d585dc8d0"
+    },
+    {
       "id": "youtube_5fxA9bEEP-Q",
       "slug": "lg-2026-round24-guzihao-nahyun",
       "title": "辜梓豪 · 罗玄｜第31届LG杯24强【已人工审核】",
